@@ -1,0 +1,44 @@
+.mainCategoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+
+  h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+}
+
+.categoryContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+
+  .categoryCard {
+    position: relative;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .imgContainer {
+      width: 17.5rem;
+      height: 17.5rem;
+      position: relative;
+      overflow: hidden;
+      border-radius: 0.5rem;
+    }
+
+    h3 {
+      z-index: 99;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}

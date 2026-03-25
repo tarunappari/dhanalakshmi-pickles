@@ -1,0 +1,9 @@
+.shopContainer {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  position: relative;
+
+  & > div{
+    padding: 2rem;
+  }
+}

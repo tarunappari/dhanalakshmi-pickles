@@ -1,0 +1,40 @@
+.AboutContainer{
+    min-height: 92vh;
+    background: url("/assets/about/wall.webp") center/cover no-repeat
+    fixed border-box;
+    overflow: hidden;
+    position: relative;
+
+    & > div{
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        z-index: 9;
+        h1{
+            font-size: 3rem;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+            position: relative;
+            left: 5rem;
+            top: 6rem;
+            color: var(--white);
+        }
+
+        h2{
+            position: absolute;
+            bottom: 10rem;
+            right: 8rem;
+            text-align: right;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--white);
+        }
+    }
+}
+
+.AboutContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }

@@ -1,0 +1,89 @@
+/* components/CouponCard.module.scss */
+
+.card {
+  position: relative;
+  background: #fffdf9;
+  border: 1.25px dashed #c7c7c7;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.ribbon {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: #32a852;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 4px;
+  transform: rotate(-5deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.percentIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #32a852;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.5rem;
+  color: #222;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.infoStrip {
+  background-color: #e8f8ed;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #222;
+  font-size: 0.85rem;
+  margin-bottom: 1.2rem;
+}
+
+.checkmark {
+  color: #2f9e44;
+  font-size: 1rem;
+}
+
+.cta {
+  background-color: #32a852;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #278a42;
+}
