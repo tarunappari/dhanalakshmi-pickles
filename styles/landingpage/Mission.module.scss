@@ -1,0 +1,26 @@
+.missionContainer{
+  background: #f0fdf4;
+  background-color: var(--palmcream);
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 7rem;
+  border-radius: 1rem;
+  justify-content: space-around;
+  align-items: center;
+
+  .missionCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+      width: 8rem;
+    }
+    p{
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+  }
+}

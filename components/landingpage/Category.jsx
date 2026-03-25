@@ -1,49 +1,56 @@
 import React from "react";
 import styles from "@/styles/landingpage/Category.module.scss";
 import Image from "next/image";
-import majorCat from "@/public/assets/landingpage/category/majorCat.jpg";
+import nonveg from '@/public/assets/landingpage/category/nonveg.png'
+import sweets from '@/public/assets/landingpage/category/sweets.png'
+import podi from '@/public/assets/landingpage/category/podi.png'
+import snacks from '@/public/assets/landingpage/category/snacks.png'
+import spices from '@/public/assets/landingpage/category/spices.png'
+import dryitems from '@/public/assets/landingpage/category/dryitems.png'
+import fryums from '@/public/assets/landingpage/category/fryums.png'
+import veg from '@/public/assets/landingpage/category/veg.png'
 import Link from "next/link";
 
 const categories = [
   {
     name: "Veg Pickles",
     link: "/vegpickles",
-    img: majorCat,
+    img: veg,
   },
   {
     name: "Non-Veg Pickles",
     link: "/nonvegpickles",
-    img: majorCat,
+    img: nonveg,
   },
   {
     name: "Podis",
     link: "/podis",
-    img: majorCat,
+    img: podi,
   },
   {
     name: "Dry Non-Veg Items",
     link: "/drynonveg",
-    img: majorCat,
+    img: dryitems,
   },
   {
     name: "Snacks",
     link: "/snacks",
-    img: majorCat,
+    img: snacks,
   },
   {
     name: "Sweets",
     link: "/sweets",
-    img: majorCat,
+    img: sweets,
   },
   {
     name: "Vadiyalu(Fryums)",
     link: "/vadiyalu",
-    img: majorCat,
+    img: fryums,
   },
   {
-    name: "Godavari Specials",
-    link: "/godavari-specials",
-    img: majorCat,
+    name: "Spices",
+    link: "/spices",
+    img: spices,
   },
 ];
 

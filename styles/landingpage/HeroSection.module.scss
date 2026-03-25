@@ -17,7 +17,6 @@
     align-items: center;
     gap: 1rem;
   }
-
   .categoryCard {
     padding: 0 1rem;
     transition: all 0.3s ease-in-out;
@@ -35,6 +34,7 @@
     p {
       text-align: center;
       padding: 0.5rem;
+      font-weight: 600;
       transition: all 0.4s ease-in-out;
       position: relative;
     }
@@ -57,16 +57,28 @@
 }
 
 .containerHero {
-  background: url("/assets/offers.png") center/cover no-repeat
-    fixed border-box;
+  background: url("/assets/offers.png") center/cover no-repeat fixed border-box;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   position: relative;
 
-  .imgContainer{
+  .imgContainer {
     z-index: 8;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+    }
+    img:hover {
+      transform: scale(1);
+    }
   }
 
   .infoContainer {
@@ -80,37 +92,4 @@
       color: var(--white);
     }
   }
-}
-
-// this is the mission css
-.missionContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  padding: 6rem 2rem;
-  margin: 2rem;
-  background: url("/assets/landingpage/forest.webp") center/cover no-repeat
-    fixed border-box;
-  position: relative;
-
-  h1,
-  p {
-    text-align: center;
-    color: var(--white);
-    z-index: 9;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-}
-
-.containerHero::before,
-.missionContainer::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
 }

@@ -1,23 +1,37 @@
 import React from 'react'
 
 // css will be in herosection 
-import styles from '@/styles/landingpage/HeroSection.module.scss'
-import WhiteBgButton from '../common/WhiteBgButton';
-import FadeInWhenVisible from '../animations/FadeInWhenVisible';
-import Link from 'next/link';
+import styles from '@/styles/landingpage/Mission.module.scss'
+import palmoil from '@/public/assets/decors/nopalmoil.png'
+import Image from 'next/image'
 
 const Mission = () => {
   return (
     <div className={styles.missionContainer}>
-      <FadeInWhenVisible direction="left" delay={0}>
-        <h1>We’re on a Mission To Clean Up the Industry</h1>
-      </FadeInWhenVisible>
-      <FadeInWhenVisible direction="left" delay={0.25}>
-        <p>Read about our progress in our latest Impact Report.</p>
-      </FadeInWhenVisible>
-      <FadeInWhenVisible direction="left" delay={0.5} effect='bounce'>
-        <Link href={'/about'}><WhiteBgButton text={'LEARN MORE'} /></Link>
-      </FadeInWhenVisible>
+      <div className={styles.missionCard}>
+        <div>
+          <Image src={palmoil} alt='img' loading='lazy'/>
+        </div>
+        <p>No palm oil</p>
+      </div>
+      <div className={styles.missionCard}>
+        <div>
+          <Image src={palmoil} alt='img' loading='lazy'/>
+        </div>
+        <p>No preservatives</p>
+      </div>
+      <div className={styles.missionCard}>
+        <div>
+          <Image src={palmoil} alt='img' loading='lazy'/>
+        </div>
+        <p>No added colors</p>
+      </div>
+      <div className={styles.missionCard}>
+        <div>
+          <Image src={palmoil} alt='img' loading='lazy'/>
+        </div>
+        <p>Freshly prepared</p>
+      </div>
     </div>
   )
 }

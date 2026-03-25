@@ -1,13 +1,17 @@
-import catPlant from '@/public/assets/indoor.jpg'
+import ammammabest from '@/public/assets/landingpage/category/ammammabest.png'
+import konaseema from '@/public/assets/landingpage/category/konaseema.png'
+import godavari from '@/public/assets/landingpage/category/godavari.png'
+import heritage from '@/public/assets/landingpage/category/heritage.png'
+import favorites from '@/public/assets/landingpage/category/favorites.png'
 
 
 
 export const categoriesForLandingPage = [
-  { label: 'Ammamma’s Best', image: catPlant },
-  { label: 'Favorites', image: catPlant },
-  { label: 'Konaseema Classics', image: catPlant },
-  { label: 'Godavari Flavours', image: catPlant },
-  { label: 'Heritage Recipes', image: catPlant },
+  { label: 'Ammamma’s Best', image: ammammabest },
+  { label: 'Favorites', image: favorites },
+  { label: 'Konaseema Classics', image: konaseema },
+  { label: 'Godavari Flavours', image: godavari },
+  { label: 'Heritage Recipes', image: heritage },
 ];
 
 export const testimonials = [
@@ -66,3 +70,200 @@ export const testimonials = [
     role: "Interior Styling Hobbyist",
   },
 ];
+
+// const products = [
+//   {
+//     id: 1,
+//     name: "Chicken Pickle",
+//     category: "nonveg",
+//     tagline: "A spicy and tangy delight straight from Andhra kitchens!",
+//     description: "Authentic Andhra-style chicken pickle with rich spices.",
+//     image: chicken,
+//     price: { '300g': '549', '500g': '849', '1kg': '1399' },
+//     discountPrice: { '300g': '499', '500g': '799', '1kg': '1299' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+//   {
+//     id: 2,
+//     name: "Prawns Pickle (Veinless)",
+//     category: "nonveg",
+//     tagline: "Juicy prawns blended with bold Andhra masala.",
+//     description: "Premium veinless prawns infused with traditional spices.",
+//     image: prawns,
+//     price: { '300g': '599', '500g': '899', '1kg': '1499' },
+//     discountPrice: { '300g': '549', '500g': '849', '1kg': '1399' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: false,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+//   {
+//     id: 3,
+//     name: "Mutton Pickle",
+//     category: "nonveg",
+//     tagline: "Rich, spicy and packed with authentic flavors.",
+//     description: "Tender mutton pieces marinated in traditional spices.",
+//     image: mutton,
+//     price: { '300g': '649', '500g': '999', '1kg': '1699' },
+//     discountPrice: { '300g': '599', '500g': '949', '1kg': '1599' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+
+//   // 🌿 VEG PICKLES
+//   {
+//     id: 10,
+//     name: "Avakai (Mango Pickle)",
+//     category: "veg",
+//     tagline: "The king of Andhra pickles!",
+//     description: "Raw mango pickle with mustard and spice blend.",
+//     image: avakai,
+//     price: { '300g': '299', '500g': '499', '1kg': '899' },
+//     discountPrice: { '300g': '269', '500g': '459', '1kg': '849' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+//   {
+//     id: 11,
+//     name: "Gongura Pickle",
+//     category: "veg",
+//     tagline: "Tangy gongura leaves with fiery spice.",
+//     description: "A signature Andhra sour and spicy delight.",
+//     image: gongura,
+//     price: { '300g': '299', '500g': '499', '1kg': '899' },
+//     discountPrice: { '300g': '269', '500g': '459', '1kg': '849' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+
+//   // 🌶️ POWDERS
+//   {
+//     id: 20,
+//     name: "Kandi Podi",
+//     category: "podi",
+//     tagline: "Protein-rich traditional spice powder.",
+//     description: "Roasted toor dal blended with spices.",
+//     image: kandiPodi,
+//     price: { '250g': '199', '500g': '349', '1kg': '649' },
+//     discountPrice: { '250g': '179', '500g': '329', '1kg': '599' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: false,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+//   {
+//     id: 21,
+//     name: "Nalla Karam Podi",
+//     category: "podi",
+//     tagline: "Spicy black chili podi for rice & idli.",
+//     description: "A fiery Andhra staple powder.",
+//     image: nallaKaram,
+//     price: { '250g': '199', '500g': '349', '1kg': '649' },
+//     discountPrice: { '250g': '179', '500g': '329', '1kg': '599' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+
+//   // 🧂 SPICES
+//   {
+//     id: 30,
+//     name: "Garam Masala",
+//     category: "spices",
+//     tagline: "Aromatic blend of premium spices.",
+//     description: "Enhance every dish with rich Indian aroma.",
+//     image: garamMasala,
+//     price: { '100g': '149', '250g': '299', '500g': '549' },
+//     discountPrice: { '100g': '129', '250g': '269', '500g': '499' },
+//     fav: false,
+//     ammammabest: false,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+
+//   // 🍘 SNACKS
+//   {
+//     id: 40,
+//     name: "Andhra Karapusa",
+//     category: "snacks",
+//     tagline: "Crunchy, spicy and addictive!",
+//     description: "Deep-fried snack with gram flour and spices.",
+//     image: karapusa,
+//     price: { '250g': '149', '500g': '279', '1kg': '499' },
+//     discountPrice: { '250g': '129', '500g': '249', '1kg': '459' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: false,
+//   },
+
+//   // 🍬 SWEETS
+//   {
+//     id: 50,
+//     name: "Pootharekulu (Dry Fruit)",
+//     category: "sweets",
+//     tagline: "Paper-thin sweet filled with richness.",
+//     description: "Traditional Andhra sweet with dry fruits.",
+//     image: pootharekulu,
+//     price: { '250g': '399', '500g': '749', '1kg': '1399' },
+//     discountPrice: { '250g': '359', '500g': '699', '1kg': '1299' },
+//     fav: true,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+
+//   // 🐟 DRY NONVEG
+//   {
+//     id: 60,
+//     name: "Dry Prawns",
+//     category: "dry-nonveg",
+//     tagline: "Intense coastal flavor in every bite.",
+//     description: "Sun-dried prawns with authentic taste.",
+//     image: dryPrawns,
+//     price: { '250g': '349', '500g': '649', '1kg': '1199' },
+//     discountPrice: { '250g': '319', '500g': '599', '1kg': '1099' },
+//     fav: false,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: true,
+//     heritagerecipes: true,
+//   },
+
+//   // ☀️ VADIYALU
+//   {
+//     id: 70,
+//     name: "Saggubiyyam Vadiyalu",
+//     category: "vadiyalu",
+//     tagline: "Crispy sun-dried wafers.",
+//     description: "Perfect side for rice meals.",
+//     image: saggubiyyam,
+//     price: { '250g': '199', '500g': '349', '1kg': '649' },
+//     discountPrice: { '250g': '179', '500g': '329', '1kg': '599' },
+//     fav: false,
+//     ammammabest: true,
+//     konaseemaclassics: true,
+//     godavariflavors: false,
+//     heritagerecipes: true,
+//   }
+// ];

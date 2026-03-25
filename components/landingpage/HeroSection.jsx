@@ -1,10 +1,7 @@
 import React from "react";
 import styles from "@/styles/landingpage/HeroSection.module.scss";
-import WhiteBgButton from "../common/WhiteBgButton";
-import FadeInWhenVisible from "../animations/FadeInWhenVisible";
-import Link from "next/link";
 import { categoriesForLandingPage } from "@/data/data";
-import bgImg from "@/public/assets/heroBg.jpeg";
+import bgImg from "@/public/assets/decors/herosection.png";
 import Image from "next/image";
 
 const HeroSection = () => {

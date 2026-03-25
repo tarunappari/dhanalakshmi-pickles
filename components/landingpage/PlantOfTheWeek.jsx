@@ -10,14 +10,15 @@ import {
 } from "@/components/ui/carousel";
 import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
+import sweets from '@/public/assets/landingpage/category/sweets.png';
 
 const PlantOfTheWeek = () => {
   const [quantity, setQuantity] = useState(1);
 
   // Sample plant data - you can replace this with props or API data
   const plantData = {
-    name: "Monstera Deliciosa",
-    subtitle: "Swiss Cheese Plant",
+    name: "Pootharekulu",
+    subtitle: "World famous",
     rating: 4.8,
     reviewCount: 127,
     originalPrice: 89.99,
@@ -32,7 +33,7 @@ const PlantOfTheWeek = () => {
       "Pet-friendly option available",
     ],
     images: [
-      "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?q=80&w=800&auto=format&fit=crop",
+      sweets.src,
       "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1463320726281-696a485928c7?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop",
@@ -67,7 +68,6 @@ const PlantOfTheWeek = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        {/* Header */}
         <motion.div
           className={styles.header}
           initial={{ opacity: 0, y: 20 }}
@@ -75,11 +75,7 @@ const PlantOfTheWeek = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className={styles.badge}>Plant of the Week</div>
-          <h2 className={styles.mainTitle}>Featured This Week</h2>
-          {/* <p className={styles.headerSubtitle}>
-            Discover our carefully selected plant that's perfect for your space
-          </p> */}
+          <div className={styles.badge}>Product of the Week</div>
         </motion.div>
 
         {/* Main Content */}
@@ -144,18 +140,18 @@ const PlantOfTheWeek = () => {
               <div className={styles.priceSection}>
                 <div className={styles.priceContainer}>
                   <span className={styles.currentPrice}>
-                    ${plantData.discountedPrice}
+                    ₹{plantData.discountedPrice}
                   </span>
                   {plantData.originalPrice > plantData.discountedPrice && (
                     <span className={styles.originalPrice}>
-                      ${plantData.originalPrice}
+                      ₹{plantData.originalPrice}
                     </span>
                   )}
                 </div>
                 <div className={styles.stockInfo}>
                   {plantData.inStock ? (
                     <span className={styles.inStock}>
-                      ✓ In Stock ({plantData.stockCount} available)
+                      ✓ In Stock
                     </span>
                   ) : (
                     <span className={styles.outOfStock}>Out of Stock</span>

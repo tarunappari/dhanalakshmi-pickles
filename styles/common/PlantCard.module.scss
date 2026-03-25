@@ -7,15 +7,17 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 330px;
-  
+
   &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #10b981;
+    transform: translateY(-3px);
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #934d33;
   }
 }
 
-.offerCard{
+.offerCard {
   background: white;
   border-radius: 1rem;
   border: 1px solid #e5e7eb;
@@ -24,27 +26,29 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 370px;
-  
+
   &:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #10b981;
+    box-shadow:
+      0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #934d33;
   }
 }
 
 .imageContainer {
   position: relative;
   width: 100%;
-  height: 290px;
+  height: 260px;
   overflow: hidden;
-  
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
   }
-  
+
   &:hover img {
     transform: scale(1.05);
   }
@@ -62,7 +66,7 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #1f2937;
-  line-height: 1.4;
+  line-height: 1.1;
   margin: 0;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -80,20 +84,20 @@
 .originalPrice {
   font-size: 1.125rem;
   font-weight: 700;
-  color: #10b981;
+  color: #271607;
 }
 
 .discountedPrice {
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   color: #6b7280;
   text-decoration: line-through;
 }
 
 .viewButton {
   width: 100% !important;
-  background: #10b981 !important;
+  background: #934d33 !important;
   color: white !important;
-  border: 2px solid #059669 !important;
+  border: 2px solid #934d33 !important;
   border-radius: 0.5rem;
   padding: 12px 24px !important;
   font-size: 14px !important;
@@ -103,16 +107,15 @@
   text-decoration: none !important;
   text-align: center !important;
   display: block !important;
-  margin-top: 16px !important;
+  margin-top: 10px !important;
   min-height: 44px !important;
   line-height: 1.2 !important;
-  
+
   &:hover {
-    background: linear-gradient(135deg, #059669 0%, #047857 100%);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+    box-shadow: 0 4px 12px rgb(147, 77, 51, 0.3);
   }
-  
+
   &:active {
     transform: translateY(0);
   }
@@ -123,15 +126,15 @@
   .plantCard {
     max-width: 280px;
   }
-  
+
   .imageContainer {
     height: 200px;
   }
-  
+
   .cardContent {
     padding: 1.25rem;
   }
-  
+
   .title {
     font-size: 1.125rem;
   }
@@ -163,7 +166,7 @@
     position: relative;
     z-index: 3;
 
-    .rating{
+    .rating {
       position: absolute;
       bottom: 1rem;
       left: 1rem;
@@ -184,19 +187,6 @@
     // Ensure content elements maintain 3D
     > * {
       transform-style: preserve-3d;
-    }
-  }
-}
-
-// Hover states for better interaction
-.plantCard {
-  &:hover {
-    .title {
-      color: #059669;
-    }
-    
-    .originalPrice {
-      color: #047857;
     }
   }
 }
@@ -224,11 +214,11 @@
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
-  background: #ef4444;
-  color: white;
+  background: var(--palmcream);
+  color: var(--darkbrown);
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   z-index: 10;
 }
@@ -236,7 +226,7 @@
 // Out of stock state (optional)
 .outOfStock {
   .imageContainer::after {
-    content: 'Out of Stock';
+    content: "Out of Stock";
     position: absolute;
     top: 0;
     left: 0;
@@ -250,11 +240,11 @@
     font-weight: 600;
     font-size: 1.125rem;
   }
-  
+
   .viewButton {
     background: #9ca3af;
     cursor: not-allowed;
-    
+
     &:hover {
       background: #9ca3af;
       transform: none;

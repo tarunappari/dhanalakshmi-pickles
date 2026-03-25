@@ -2,8 +2,9 @@
 import React from "react";
 import Link from "next/link";
 import styles from "@/styles/common/PlantCard.module.scss";
-import Image from "next/image";
+import chicken from '@/public/assets/products/nonveg/chicken.png'
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export function PlantCard({ product }) {
 
@@ -11,16 +12,12 @@ export function PlantCard({ product }) {
 
   // Extract product data with fallbacks
   const title = product?.title || "Product Title";
-  const price = product?.priceRange?.minVariantPrice?.amount || "0.00";
-  const discountedPrice = price + 300;
-  const currency = product?.priceRange?.minVariantPrice?.currencyCode || "USD";
+  const price = product?.priceRange?.minVariantPrice?.amount || "600";
+  const discountedPrice =  899;
   const imageUrl =
     "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?q=80&w=800&auto=format&fit=crop";
-  const imageAlt = product?.images?.edges?.[0]?.node?.altText || title;
   const isOnSale = true;
   const inStock = true;
-  const isOfferCard = pathname === '/offers';
-  console.log(isOfferCard , pathname);
   
 
   // Create a handle from title for URL (simplified approach)
@@ -35,11 +32,11 @@ export function PlantCard({ product }) {
     <div className={styles.plantCard}>
       {/* Image at top */}
       <div className={styles.imageContainer}>
-        {isOnSale && <div className={styles.saleBadge}>SALE</div>}
-        <div className={styles.rating}>
-          4.82<span style={{color:'#1c9c57'}}>★</span> | 321
-        </div>
-        <img src={imageUrl} alt={title}  loading="lazy" />
+        {isOnSale && <div className={styles.saleBadge}>-32%</div>}
+        {/* <div className={styles.rating}>
+          4.82<span style={{color:'#1c9c57'}}>★</span>
+        </div> */}
+        <Image src={chicken} alt={title}  loading="lazy" />
       </div>
 
       {/* Card content */}
@@ -49,9 +46,9 @@ export function PlantCard({ product }) {
 
         {/* Price section with original and discounted prices */}
         <div className={styles.priceContainer}>
-          <span className={styles.originalPrice}>{price}</span>
+          <span className={styles.originalPrice}>₹{price}</span>
 
-          <span className={styles.discountedPrice}>{discountedPrice}</span>
+          <span className={styles.discountedPrice}>₹{discountedPrice}</span>
         </div>
 
         {/* View button at the bottom */}

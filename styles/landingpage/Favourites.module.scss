@@ -14,9 +14,9 @@
     }
 
     h1 {
-      font-size: 2rem;
+      font-size: 2.25rem;
       font-weight: 700;
-      padding-bottom: 1rem;
+      padding-bottom: 0.5rem;
     }
   }
 }
@@ -24,11 +24,13 @@
 .carouselContainer {
   width: 90%;
   padding: 1rem 0;
-
-  .cardContainer{
-    padding: 1rem;
-  }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  
 }
+
+
 
 .testimonalContainer {
   padding: 2rem;
