@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/landingpage/Favourites.module.scss";
-import { PlantCard } from "../common/PlantCard";
+import { PlantCard } from "../common/ProductCard";
 
 const Favourites = () => {
   return (

@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
-import sweets from '@/public/assets/landingpage/category/sweets.png';
+import sweets from '@/public/assets/landingpage/category/sweets.webp';
 
 const PlantOfTheWeek = () => {
   const [quantity, setQuantity] = useState(1);

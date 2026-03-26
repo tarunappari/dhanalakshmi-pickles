@@ -1,8 +1,8 @@
-import ammammabest from '@/public/assets/landingpage/category/ammammabest.png'
-import konaseema from '@/public/assets/landingpage/category/konaseema.png'
-import godavari from '@/public/assets/landingpage/category/godavari.png'
-import heritage from '@/public/assets/landingpage/category/heritage.png'
-import favorites from '@/public/assets/landingpage/category/favorites.png'
+import ammammabest from '@/public/assets/landingpage/category/ammammabest.webp'
+import konaseema from '@/public/assets/landingpage/category/konaseema.webp'
+import godavari from '@/public/assets/landingpage/category/godavari.webp'
+import heritage from '@/public/assets/landingpage/category/heritage.webp'
+import favorites from '@/public/assets/landingpage/category/favorites.webp'
 
 
 

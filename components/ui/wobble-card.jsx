@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
-export const WobbleCard = ({
-  children,
-  containerClassName,
-  className,
-}) => {
+export const WobbleCard = ({ children, containerClassName, className }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
 
@@ -35,9 +31,9 @@ export const WobbleCard = ({
       }}
       className={cn(
         "mx-auto w-full bg-green-800 relative rounded-2xl overflow-hidden",
-        containerClassName
+        containerClassName,
       )}
-      style={{ minHeight: '400px', height: '400px' }}
+      style={{ minHeight: "400px", height: "400px" }}
     >
       <div
         className="relative h-full [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] sm:mx-0 sm:rounded-2xl overflow-hidden"
@@ -65,12 +61,6 @@ export const WobbleCard = ({
 
 const Noise = () => {
   return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/noise.webp)",
-        backgroundSize: "30%",
-      }}
-    />
+    <div className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]" />
   );
 };

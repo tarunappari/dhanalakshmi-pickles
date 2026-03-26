@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@/styles/landingpage/HeroSection.module.scss";
 import { categoriesForLandingPage } from "@/data/data";
-import bgImg from "@/public/assets/decors/herosection.png";
+import bgImg from "@/public/assets/decors/herosection.webp";
 import Image from "next/image";
 
 const HeroSection = () => {
@@ -21,7 +21,7 @@ const HeroSection = () => {
       </div>
       <div className={styles.containerHero}>
         <div className={styles.imgContainer}>
-          <Image src={bgImg} alt="bg" />
+          <Image src={bgImg} alt="bg" loading="eager" />
         </div>
       </div>
     </div>

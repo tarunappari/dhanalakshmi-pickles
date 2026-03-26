@@ -1,7 +1,7 @@
 import useProducts from "@/lib/hooks/useProducts";
 import React, { useEffect } from "react";
 import styles from "@/styles/common/main/ProductsCollection.module.scss";
-import { PlantCard } from "../PlantCard";
+import { PlantCard } from "../ProductCard";
 import bgImg from "@/public/assets/offers.png";
 import Image from "next/image";
 import CouponCard from "../CouponCard";

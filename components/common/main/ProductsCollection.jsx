@@ -1,39 +1,12 @@
 import useProducts from "@/lib/hooks/useProducts";
 import React, { useEffect } from "react";
 import styles from "@/styles/common/main/ProductsCollection.module.scss";
-import { PlantCard } from "../PlantCard";
+import { PlantCard } from "../ProductCard";
 import bgImg from "@/public/assets/ugaoBg.png";
 import Image from "next/image";
 
-const ProductsCollection = ({title}) => {
-  const { products, loading, error, fetchProducts } = useProducts();
+const ProductsCollection = () => {
 
-  useEffect(() => {
-    // Fetch products when component mounts
-    fetchProducts();
-  }, [fetchProducts]);
-
-  if (loading) {
-    return (
-      <div className={styles.collectionsContainer}>
-        <div className={styles.title}>
-          <h1>New Arrivals</h1>
-          <p>Loading...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className={styles.collectionsContainer}>
-        <div className={styles.title}>
-          <h1>New Arrivals</h1>
-          <p>Error: {error}</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className={styles.collectionsContainer}>
