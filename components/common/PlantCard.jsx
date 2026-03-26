@@ -39,19 +39,15 @@ export function PlantCard({ product }) {
         <Image src={chicken} alt={title}  loading="lazy" />
       </div>
 
-      {/* Card content */}
       <div className={styles.cardContent}>
-        {/* Title below image */}
         <h3 className={styles.title}>{title}</h3>
 
-        {/* Price section with original and discounted prices */}
         <div className={styles.priceContainer}>
           <span className={styles.originalPrice}>₹{price}</span>
 
           <span className={styles.discountedPrice}>₹{discountedPrice}</span>
         </div>
 
-        {/* View button at the bottom */}
         <Link href={`/plants/${handle}`} className={styles.viewButton}>
           {inStock ? "VIEW PLANT" : "OUT OF STOCK"}
         </Link>
