@@ -2,9 +2,9 @@
 // import React from "react";
 // import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 // import Link from "next/link";
-// import styles from "@/styles/common/PlantCard.module.scss";
+// import styles from "@/styles/common/ProductCard.module.scss";
 
-// export function PlantCard({
+// export function ProductCard({
 //   plant = {
 //     id: "1",
 //     title: "Monstera Deliciosa - Swiss Cheese Plant",
@@ -21,7 +21,7 @@
 // }) {
 //   return (
 //     <CardContainer className={styles.cardWrapper}>
-//       <CardBody className={styles.plantCard}>
+//       <CardBody className={styles.ProductCard}>
 //         {/* Image at top with 3D effect */}
 //         <CardItem translateZ="100" className={styles.imageContainer}>
 //           {plant.isOnSale && <div className={styles.saleBadge}>SALE</div>}
@@ -64,8 +64,7 @@
 //   );
 // }
 
-
-// .plantCard {
+// .ProductCard {
 //   background: white;
 //   border-radius: 1rem;
 //   border: 1px solid #e5e7eb;
@@ -74,7 +73,7 @@
 //   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 //   width: 100%;
 //   max-width: 320px;
-  
+
 //   &:hover {
 //     transform: translateY(-4px);
 //     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
@@ -87,14 +86,14 @@
 //   width: 100%;
 //   height: 240px;
 //   overflow: hidden;
-  
+
 //   img {
 //     width: 100%;
 //     height: 100%;
 //     object-fit: cover;
 //     transition: transform 0.3s ease;
 //   }
-  
+
 //   &:hover img {
 //     transform: scale(1.05);
 //   }
@@ -155,13 +154,13 @@
 //   margin-top: 16px !important;
 //   min-height: 44px !important;
 //   line-height: 1.2 !important;
-  
+
 //   &:hover {
 //     background: linear-gradient(135deg, #059669 0%, #047857 100%);
 //     transform: translateY(-1px);
 //     box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
 //   }
-  
+
 //   &:active {
 //     transform: translateY(0);
 //   }
@@ -169,18 +168,18 @@
 
 // // Responsive design
 // @media (max-width: 768px) {
-//   .plantCard {
+//   .ProductCard {
 //     max-width: 280px;
 //   }
-  
+
 //   .imageContainer {
 //     height: 200px;
 //   }
-  
+
 //   .cardContent {
 //     padding: 1.25rem;
 //   }
-  
+
 //   .title {
 //     font-size: 1.125rem;
 //   }
@@ -190,7 +189,7 @@
 // .cardWrapper {
 //   perspective: 1000px;
 
-//   .plantCard {
+//   .ProductCard {
 //     transform-style: preserve-3d;
 //     position: relative;
 
@@ -202,7 +201,7 @@
 // }
 
 // // Fix for 3D card layout
-// .plantCard {
+// .ProductCard {
 //   // Override any conflicting 3D card styles
 //   height: auto !important;
 //   width: auto !important;
@@ -226,12 +225,12 @@
 // }
 
 // // Hover states for better interaction
-// .plantCard {
+// .ProductCard {
 //   &:hover {
 //     .title {
 //       color: #059669;
 //     }
-    
+
 //     .originalPrice {
 //       color: #047857;
 //     }
@@ -287,11 +286,11 @@
 //     font-weight: 600;
 //     font-size: 1.125rem;
 //   }
-  
+
 //   .viewButton {
 //     background: #9ca3af;
 //     cursor: not-allowed;
-    
+
 //     &:hover {
 //       background: #9ca3af;
 //       transform: none;

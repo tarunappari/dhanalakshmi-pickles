@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "@/components/common/Footer";
 import Navbar from "@/components/common/Navbar";
-import Plant from "@/components/shop/plant/Product";;
 
 const page = async () => {
  
@@ -30,7 +29,7 @@ const page = async () => {
   return (
     <div>
       <Navbar />
-      <Plant />
+      plant
       <Footer />
     </div>
   )

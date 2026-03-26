@@ -1,7 +1,7 @@
 import useProducts from "@/lib/hooks/useProducts";
 import React, { useEffect } from "react";
 import styles from "@/styles/common/main/ProductsCollection.module.scss";
-import { PlantCard } from "../ProductCard";
+import { ProductCard } from "../ProductCard";
 import bgImg from "@/public/assets/offers.png";
 import Image from "next/image";
 import CouponCard from "../CouponCard";
@@ -54,7 +54,7 @@ const OffersCollection = ({ title }) => {
       </div>
       <div className={styles.ProductsCollection}>
         {products.map((product, index) => (
-          <PlantCard key={product.id || index} product={product} />
+          <ProductCard key={product.id || index} product={product} />
         ))}
       </div>
       <div className={styles.collectionInfo}>

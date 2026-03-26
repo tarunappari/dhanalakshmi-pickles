@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "@/styles/landingpage/Favourites.module.scss";
-import { PlantCard } from "../common/ProductCard";
+import { ProductCard } from "../common/ProductCard";
 
 const Favourites = () => {
   return (
@@ -11,28 +11,28 @@ const Favourites = () => {
       </div>
       <div className={styles.carouselContainer}>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
         <div className={styles.cardContainer}>
-          <PlantCard />
+          <ProductCard />
         </div>
       </div>
       <div>

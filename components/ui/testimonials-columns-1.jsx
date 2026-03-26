@@ -16,7 +16,7 @@ export const TestimonialsColumn = (props) => {
           ease: "linear",
           repeatType: "loop",
         }}
-        className="flex flex-col gap-6 pb-6 bg-background"
+        className="flex flex-col gap-6 pb-6 bg-[#fbf6eb]"
       >
         {[
           ...new Array(2).fill(0).map((_, index) => (
@@ -24,7 +24,7 @@ export const TestimonialsColumn = (props) => {
               {props.testimonials.map(({ text, image, name, role }, i) => (
                 <div
                   className="rounded-3xl border border-gray-200 shadow-lg bg-white hover:shadow-xl transition-shadow duration-300 max-w-xs w-full"
-                  style={{ padding: '2rem' }}
+                  style={{ padding: '2rem',backgroundColor:'#F5E6C8' }}
                   key={i}
                 >
                   <div

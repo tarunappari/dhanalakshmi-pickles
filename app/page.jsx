@@ -18,11 +18,11 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Category />
-      <Mission />
-      <Favourites />
       <PlantOfTheWeek />
-      <DiscoverAranyaGreens />
+      <Favourites />
+      <Mission />
       <GodavariSplsSection />
+      <DiscoverAranyaGreens />
       <BlogsSection />
       <About />
       <Testimonals />

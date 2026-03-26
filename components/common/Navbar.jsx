@@ -76,12 +76,6 @@ const Navbar = () => {
           GIFTING
         </Link>
         <Link
-          href="/offers"
-          className={pathname === "/offers" ? styles.active : ""}
-        >
-          OFFERS
-        </Link>
-        <Link
           href="/about"
           className={pathname === "/about" ? styles.active : ""}
         >

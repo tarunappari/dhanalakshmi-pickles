@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
-import sweets from '@/public/assets/landingpage/category/sweets.webp';
+import sweets from "@/public/assets/landingpage/category/sweets.webp";
 
 const PlantOfTheWeek = () => {
   const [quantity, setQuantity] = useState(1);
@@ -58,8 +58,8 @@ const PlantOfTheWeek = () => {
           index < Math.floor(rating)
             ? "fill-yellow-400 text-yellow-400"
             : index < rating
-            ? "fill-yellow-200 text-yellow-400"
-            : "text-gray-300"
+              ? "fill-yellow-200 text-yellow-400"
+              : "text-gray-300"
         }`}
       />
     ));
@@ -68,26 +68,14 @@ const PlantOfTheWeek = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <motion.div
-          className={styles.header}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
+        <div className={styles.header}>
           <div className={styles.badge}>Product of the Week</div>
-        </motion.div>
+        </div>
 
         {/* Main Content */}
         <div className={styles.mainContent}>
           {/* Left Side - Carousel */}
-          <motion.div
-            className={styles.carouselSection}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+          <div className={styles.carouselSection}>
             <Carousel className={styles.carousel}>
               <CarouselContent>
                 {plantData.images.map((image, index) => (
@@ -110,16 +98,10 @@ const PlantOfTheWeek = () => {
               <CarouselPrevious className={styles.carouselBtn} />
               <CarouselNext className={styles.carouselBtn} />
             </Carousel>
-          </motion.div>
+          </div>
 
           {/* Right Side - Plant Details */}
-          <motion.div
-            className={styles.detailsSection}
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+          <div className={styles.detailsSection}>
             <div>
               {/* Plant Name & Rating */}
               <div className={styles.plantHeader}>
@@ -150,9 +132,7 @@ const PlantOfTheWeek = () => {
                 </div>
                 <div className={styles.stockInfo}>
                   {plantData.inStock ? (
-                    <span className={styles.inStock}>
-                      ✓ In Stock
-                    </span>
+                    <span className={styles.inStock}>✓ In Stock</span>
                   ) : (
                     <span className={styles.outOfStock}>Out of Stock</span>
                   )}
@@ -196,7 +176,7 @@ const PlantOfTheWeek = () => {
                 <p className={styles.description}>{plantData.description}</p>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
