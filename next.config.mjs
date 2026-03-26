@@ -7,11 +7,6 @@ const nextConfig = {
       });
       return config;
     },
-    // Enable static generation with revalidation
-    experimental: {
-      // Enable static generation for dynamic routes
-      staticPageGenerationTimeout: 1000,
-    },
     // Configure revalidation
     async headers() {
       return [
