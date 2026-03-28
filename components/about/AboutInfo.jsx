@@ -10,7 +10,7 @@ const AboutInfo = () => {
     return (
         <div className={styles.AboutInfoContainer}>
             <div className={styles.info}>
-                <p>A mission statement is a concise declaration of an organization's core purpose and focus. It serves as a guiding principle for decision-making and helps align the team towards common goals. A well-crafted mission statement articulates the values and objectives of the organization, providing clarity on what it stands for and its commitment to stakeholders. It often reflects the company's dedication to ethical practices, quality, and transparency in its operations.</p>
+                <p>A missioement is a concise declaration of an organization's core purpose and focus. It serves as a guiding principle for decision-making and helps align the team towards common goals. A well-crafted mission statement articulates the values and objectives of the organization, providing clarity on what it stands for and its commitment to stakeholders. It often reflects the company's dedication to ethical practices, quality, and transparency in its operations.</p>
             </div>
             <div className={styles.approach}>
                 <div className={`${styles.aboutInfoImgContainer}`}>
