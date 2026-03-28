@@ -2,12 +2,12 @@
 
 import { motion } from "framer-motion";
 
-const FadeInWhenVisible = ({ children, direction = "right", delay = 0, effect = "spring",className='' }) => {
+const FadeInWhenVisible = ({ children, direction = "bottom", delay = 0, effect = "spring",className='' }) => {
   const variants = {
     hidden: {
       opacity: 0,
       x: direction === "right" ? 50 : direction === "left" ? -50 : 0,
-      y: direction === "top" ? -50 : direction === "bottom" ? 50 : 0,
+      y: direction === "top" ? -50 : direction === "bottom" ? 20 : 0,
     },
     visible: {
       opacity: 1,

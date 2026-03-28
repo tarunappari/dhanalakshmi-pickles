@@ -11,14 +11,6 @@ const Blog = () => {
     <div>
       <Navbar />
       <BlogHeroSection />
-      <div className={styles.blogSocialSection}>
-        <FadeInWhenVisible>
-          <h1>Follow us on social for more</h1>
-        </FadeInWhenVisible>
-        <FadeInWhenVisible effect='bounce' delay={0.25}>
-          <WhiteBgButton text={'//Instagram-Handle//'} />
-        </FadeInWhenVisible>
-      </div>
       <Footer />
     </div>
   )
