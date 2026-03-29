@@ -58,8 +58,8 @@ const Navbar = () => {
       </div>
       <div>
         <Link
-          href="/plants"
-          className={pathname === "/plants" ? styles.active : ""}
+          href="/products"
+          className={pathname === "/products" ? styles.active : ""}
         >
           PRODUCTS
         </Link>
