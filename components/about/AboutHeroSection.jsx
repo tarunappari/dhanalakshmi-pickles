@@ -7,7 +7,7 @@ const AboutHeroSection = () => {
         <div className={styles.AboutContainer}>
             <div>
                 <FadeInWhenVisible>
-                    <h1>We believe</h1>
+                    <h1>We </h1>
                 </FadeInWhenVisible>
                 <FadeInWhenVisible delay={0.25}>
                     <h1>we can all make a difference.</h1>
