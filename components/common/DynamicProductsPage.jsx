@@ -4,8 +4,25 @@ import { ProductCard } from "../common/ProductCard";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import cover from "@/public/assets/decors/cover.png";
 import Image from "next/image";
+import { products } from "@/data/data";
 
-const DynamicProductsPage = () => {
+const CATEGORY_MAP = {
+  vegpickles: { key: "veg", title: "Veg Pickles" },
+  nonvegpickles: { key: "nonveg", title: "Non-Veg Pickles" },
+  podis: { key: "podi", title: "Podis" },
+  drynonveg: { key: "drynonveg", title: "Dry Non-Veg Items" },
+  snacks: { key: "snacks", title: "Snacks" },
+  sweets: { key: "sweets", title: "Sweets" },
+  vadiyalu: { key: "vadiyalu", title: "Vadiyalu (Fryums)" },
+  spices: { key: "spices", title: "Spices" },
+};
+
+const DynamicProductsPage = ({ categoryId }) => {
+  const categoryInfo = CATEGORY_MAP[categoryId] || { key: "", title: "All Products" };
+  const filteredProducts = categoryInfo.key
+    ? products.filter(p => p.category === categoryInfo.key)
+    : products;
+
   return (
     <div className={styles.container}>
       <div className={styles.cover}>
@@ -14,21 +31,16 @@ const DynamicProductsPage = () => {
       <div>
         <div className={styles.sectionContainer}>
           <div className={styles.header}>
-            <h2>Products Category Title</h2>
+            <h2>{categoryInfo.title}</h2>
           </div>
           <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
+            {filteredProducts.length > 0 ? (
+              filteredProducts.map((product) => (
+                <ProductCard key={product.id} product={product} />
+              ))
+            ) : (
+              <p>No products found in this category.</p>
+            )}
           </div>
         </div>
       </div>
