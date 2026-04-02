@@ -4,158 +4,48 @@ import { ProductCard } from "../common/ProductCard";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
 import cover from "@/public/assets/decors/cover.png";
 import Image from "next/image";
+import { products } from "@/data/data";
 
 const ProductsSection = () => {
+  const sections = [
+    { title: "Veg Pickles", category: "veg" },
+    { title: "Non-Veg Pickles", category: "nonveg" },
+    { title: "Sweets", category: "sweets" },
+    { title: "Hot Snacks", category: "snacks" },
+    { title: "Dry Non-Veg Items", category: "drynonveg" },
+    { title: "Podi's (powders)", category: "podi" },
+    { title: "Fryums (vadiyalu)", category: "vadiyalu" },
+    { title: "Spices", category: "spices" }
+  ];
+
   return (
     <div className={styles.container}>
       <div className={styles.cover}>
         <Image src={cover} alt="cover" />
       </div>
-      <div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Veg Pickles</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
+      <div className={styles.productsContainer}>
+        {sections.map(({ title, category }) => (
+          <div className={styles.sectionContainer} key={category}>
+            <div className={styles.header}>
+              <h2>{title}</h2>
+              <div className={styles.viewAllBtn}>
+                <button>VIEW ALL </button>
+                <IconArrowNarrowRight />
+              </div>
             </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Non-Veg Pickles</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
+            <div className={styles.productsContainer}>
+              {products
+                .filter((p) => p.category === category)
+                .slice(0, 4)
+                .map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
             </div>
+            <button className={`viewBtn ${styles.viewBtnInMobile}`}>
+              View All
+            </button>
           </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Sweets</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
-            </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Hot Snacks</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
-            </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Dry Non-Veg Items</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
-            </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Podi's (powders)</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
-            </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Fryums (vadiyalu)</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
-            </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
-        <div className={styles.sectionContainer}>
-          <div className={styles.header}>
-            <h2>Spices</h2>
-            <div className={styles.viewAllBtn}>
-              <button>VIEW ALL </button>
-              <IconArrowNarrowRight />
-            </div>
-          </div>
-          <div className={styles.productsContainer}>
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
-          <button className={`viewBtn ${styles.viewBtnInMobile}`}>
-            View All
-          </button>
-        </div>
+        ))}
       </div>
       <div className={styles.content}>
         <div>

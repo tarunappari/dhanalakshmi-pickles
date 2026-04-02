@@ -4,12 +4,14 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Minus, Plus, Trash2, ShoppingBag } from 'lucide-react';
+import { useRouter } from 'next/navigation';
 import styles from '@/styles/cart/Cart.module.scss';
 import { useCartStore } from '@/store/cartStore';
 
 const Cart = () => {
   const { items, isCartOpen, closeCart, updateQuantity, removeFromCart, getCartTotal } = useCartStore();
   const [mounted, setMounted] = useState(false);
+  const router = useRouter();
 
   // Prevent hydration mismatch for persisted store
   useEffect(() => {
@@ -151,8 +153,14 @@ const Cart = () => {
                   <button className={styles.continueBtn} onClick={closeCart}>
                     Continue Shopping
                   </button>
-                  <button className={styles.checkoutBtn}>
-                    Proceed to Cart
+                  <button 
+                    className={styles.checkoutBtn}
+                    onClick={() => {
+                      closeCart();
+                      router.push('/checkout');
+                    }}
+                  >
+                    Proceed to Checkout
                   </button>
                 </div>
               </div>
