@@ -50,7 +50,7 @@ export function ProductCard({ product }) {
           <span className={styles.discountedPrice}>₹{discountedPrice}</span>
         </div>
 
-        <Link href={`/product/${product?.id || handle}`} className={styles.viewButton}>
+        <Link href={`/products/${product?.id || handle}`} className={styles.viewButton}>
           {inStock ? "VIEW PRODUCT" : "OUT OF STOCK"}
         </Link>
       </div>
