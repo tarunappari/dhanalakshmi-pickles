@@ -7,6 +7,8 @@ import { motion } from 'framer-motion';
 import { Minus, Plus, ShoppingBag, Heart, ShieldCheck, Truck, ChevronRight, Star } from 'lucide-react';
 import styles from '@/styles/common/ProductDetails.module.scss';
 import clsx from 'clsx';
+import Cart from '../cart/Cart';
+import { useCartStore } from '@/store/cartStore';
 
 const ProductDetails = ({ product }) => {
   const [selectedVariantIdx, setSelectedVariantIdx] = useState(0);
@@ -14,16 +16,28 @@ const ProductDetails = ({ product }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const [added, setAdded] = useState(false);
 
+  const { items, addToCart, openCart } = useCartStore();
+
   if (!product) return null;
 
   const currentVariant = product.variants && product.variants.length > 0 ? product.variants[selectedVariantIdx] : null;
+
+  // Check if current variant is already in cart
+  const isInCart = currentVariant && items.some(
+    item => item.product.id === product.id && item.variant.weight === currentVariant.weight
+  );
 
   const handleDecrease = () => setQuantity(prev => Math.max(1, prev - 1));
   const handleIncrease = () => setQuantity(prev => prev + 1);
 
   const handleAddToCart = () => {
-    setAdded(true);
-    setTimeout(() => setAdded(false), 2000);
+    if (isInCart) {
+      openCart();
+    } else {
+      addToCart(product, currentVariant, quantity);
+      setAdded(true);
+      setTimeout(() => setAdded(false), 2000);
+    }
   };
 
   const tagList = Object.entries(product.tags || {})
@@ -152,10 +166,10 @@ const ProductDetails = ({ product }) => {
                 <div className={styles.buyButtons}>
                   <button 
                     onClick={handleAddToCart}
-                    className={clsx(styles.addToCartBtn, added && styles.addedSuccess)}
+                    className={clsx(styles.addToCartBtn, (added || isInCart) && styles.addedSuccess)}
                   >
                     <ShoppingBag size={20} />
-                    {added ? 'Added to Cart ✓' : 'Add to Cart'}
+                    {isInCart ? 'View Cart' : added ? 'Added to Cart ✓' : 'Add to Cart'}
                   </button>
                   <button className={styles.buyNowBtn}>
                     Buy it Now
@@ -179,6 +193,7 @@ const ProductDetails = ({ product }) => {
           </div>
         </div>
       </div>
+      <Cart />
     </div>
   );
 };

@@ -10,13 +10,21 @@ export default function SmoothScroll() {
       smooth: true,
     });
 
+    // Share the instance globally so it can be stopped/started by overlays
+    window.lenis = lenis;
+
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
 
     requestAnimationFrame(raf);
-    return () => lenis.destroy();
+    return () => {
+      if (window.lenis === lenis) {
+        delete window.lenis;
+      }
+      lenis.destroy();
+    };
   }, []);
 
   return null;
