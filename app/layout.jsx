@@ -3,6 +3,7 @@ import "@/styles/_globals.scss";
 import TopSlider from "@/components/common/TopSlider";
 import SmoothScroll from "@/components/animations/SmoothScroll";
 import MobileNav from "@/components/common/MobileNav";
+import Cart from "@/components/cart/Cart";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({ children }) {
         <TopSlider />
         {children}
         <MobileNav />
+        <Cart />
       </body>
     </html>
   );
