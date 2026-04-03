@@ -3,6 +3,7 @@ import konaseema from '@/public/assets/landingpage/category/konaseema.webp'
 import godavari from '@/public/assets/landingpage/category/godavari.webp'
 import heritage from '@/public/assets/landingpage/category/heritage.webp'
 import favorites from '@/public/assets/landingpage/category/favorites.webp'
+import kathalu from '@/public/assets/landingpage/category/kathalu.png'
 
 import chicken_pickle from '@/public/assets/products/nonveg/chicken.png';
 import prawns_pickle from '@/public/assets/products/nonveg/chicken.png';
@@ -75,7 +76,7 @@ export const categoriesForLandingPage = [
   { label: 'Favorites', image: favorites },
   { label: 'Konaseema Classics', image: konaseema },
   { label: 'Godavari Flavours', image: godavari },
-  { label: 'Heritage Recipes', image: heritage },
+  { label: 'Ammamma Kathalu', image: kathalu },
 ];
 
 export const testimonials = [

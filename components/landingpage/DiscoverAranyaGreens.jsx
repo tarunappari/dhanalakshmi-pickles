@@ -13,14 +13,14 @@ export default function DiscoverAranyaGreens() {
       {/* 3 Cards Grid */}
       <div className={styles.aboutContainer}>
         <div className={styles.content}>
-          <h2>Dhanalakshmi Ruchulu</h2>
+          <h2>Venkatrao Vantillu</h2>
           <p>
             not just a food brand — it is a journey back to the kitchens of
             Konaseema, where every recipe carries the warmth of home and the
             love of generations.
           </p>
           <p>
-            Born from the hands of Ammamma Dhanalakshmi, our food is prepared
+            Born from the hands of Ammamma Dhanalakshmi and thathayya Venkatrao, our food is prepared
             using traditional methods that have been followed for decades. From
             sun-dried ingredients to slow-cooked pickles, every step reflects
             patience, care, and authenticity.
@@ -33,7 +33,7 @@ export default function DiscoverAranyaGreens() {
           <p>
             Each jar, each snack, and each podi brings you a piece of Konaseema
             — the aroma of fresh spices, the taste of homemade cooking, and the
-            feeling of sitting in a grandmother’s kitchen.
+            feeling of sitting in a grandparents kitchen.
           </p>
           <p>
             From our village to your table, we bring you flavors that feel like

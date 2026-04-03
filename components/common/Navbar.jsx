@@ -2,14 +2,15 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "@/styles/common/Navbar.module.scss";
 import Link from "next/link";
-import CartIcon from "@/public/assets/icons/cart.svg";
-import SearchIcon from "@/public/assets/icons/search.svg";
 import { usePathname } from "next/navigation";
 import { useCartStore } from "@/store/cartStore";
+import logo from "@/public/assets/vv-logo.png";
+import { IconGardenCart, IconSearch } from "@tabler/icons-react";
+import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const { openCart } = useCartStore();
+  const { openCart, items } = useCartStore();
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const searchInputRef = useRef(null);
 
@@ -58,18 +59,20 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.title}>
-        <Link href="/">Dhana</Link>
+        <Link href="/">
+          <Image src={logo} alt="logo" />
+        </Link>
       </div>
-      <div>
+      <div className={styles.linksContainer}>
         <Link
           href="/products"
-          className={pathname === "/products" ? styles.active : ""}
+          className={pathname === "/products" ? styles.active : "link"}
         >
           PRODUCTS
         </Link>
         <Link
           href="/blog"
-          className={pathname === "/blog" ? styles.active : ""}
+          className={pathname === "/blog" ? styles.active : "link"}
         >
           BLOG
         </Link>
@@ -97,11 +100,16 @@ const Navbar = () => {
             />
           </form>
           <div className={styles.searchIcon} onClick={toggleSearch}>
-            <SearchIcon width={30} />
+            <IconSearch stroke={2} />
           </div>
         </div>
-        <div style={{ cursor: "pointer", display: "flex", alignItems: "center" }} onClick={openCart}>
-          <CartIcon width={30} />
+        <div
+          style={{ cursor: "pointer", display: "flex", alignItems: "center" }}
+          className={styles.cartIcon}
+          onClick={openCart}
+        >
+          <IconGardenCart stroke={2} />
+          <span>{items.reduce((acc, item) => acc + item.quantity, 0)}</span>
         </div>
       </div>
     </div>
