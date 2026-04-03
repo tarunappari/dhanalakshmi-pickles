@@ -5,18 +5,21 @@ import { IconArrowNarrowRight } from "@tabler/icons-react";
 import cover from "@/public/assets/decors/cover.png";
 import Image from "next/image";
 import { products } from "@/data/data";
+import Link from "next/link";
 
 const ProductsSection = () => {
   const sections = [
-    { title: "Veg Pickles", category: "veg" },
-    { title: "Non-Veg Pickles", category: "nonveg" },
-    { title: "Sweets", category: "sweets" },
-    { title: "Hot Snacks", category: "snacks" },
-    { title: "Dry Non-Veg Items", category: "drynonveg" },
-    { title: "Podi's (powders)", category: "podi" },
-    { title: "Fryums (vadiyalu)", category: "vadiyalu" },
-    { title: "Spices", category: "spices" }
+    { title: "Veg Pickles", category: "veg", link: "/vegpickles" },
+    { title: "Non-Veg Pickles", category: "nonveg", link: "/nonvegpickles" },
+    { title: "Sweets", category: "sweets", link: "/sweets" },
+    { title: "Hot Snacks", category: "snacks", link: "/snacks" },
+    { title: "Dry Non-Veg Items", category: "drynonveg", link: "/drynonveg" },
+    { title: "Podi's (powders)", category: "podi", link: "/podis" },
+    { title: "Fryums (vadiyalu)", category: "vadiyalu", link: "/vadiyalu" },
+    { title: "Spices", category: "spices", link: "/spices" },
   ];
+
+  
 
   return (
     <div className={styles.container}>
@@ -24,14 +27,14 @@ const ProductsSection = () => {
         <Image src={cover} alt="cover" />
       </div>
       <div className={styles.productsContainer}>
-        {sections.map(({ title, category }) => (
+        {sections.map(({ title, category, link }) => (
           <div className={styles.sectionContainer} key={category}>
             <div className={styles.header}>
               <h2>{title}</h2>
-              <div className={styles.viewAllBtn}>
-                <button>VIEW ALL </button>
+              <Link href={link} className={styles.viewAllBtn}>
+                VIEW ALL
                 <IconArrowNarrowRight />
-              </div>
+              </Link>
             </div>
             <div className={styles.productsContainer}>
               {products
@@ -41,9 +44,9 @@ const ProductsSection = () => {
                   <ProductCard key={product.id} product={product} />
                 ))}
             </div>
-            <button className={`viewBtn ${styles.viewBtnInMobile}`}>
+            <Link href={link} className={`viewBtn ${styles.viewBtnInMobile}`}>
               View All
-            </button>
+            </Link>
           </div>
         ))}
       </div>

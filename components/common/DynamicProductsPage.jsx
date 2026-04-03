@@ -15,6 +15,8 @@ const CATEGORY_MAP = {
   sweets: { key: "sweets", title: "Sweets" },
   vadiyalu: { key: "vadiyalu", title: "Vadiyalu (Fryums)" },
   spices: { key: "spices", title: "Spices" },
+  fav: { key: "fav", title: "Our Signature Ruchulu" },
+  new: { key: "new", title: "New Arrivals" },
 };
 
 const DynamicProductsPage = ({ categoryId }) => {
