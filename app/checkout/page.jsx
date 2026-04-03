@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Script from "next/script";
 import { ArrowLeft, CreditCard, User, Mail, Phone, MapPin } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
 import styles from "@/styles/checkout/Checkout.module.scss";
@@ -11,8 +12,9 @@ import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
 
 const CheckoutPage = () => {
-  const { items, getCartTotal } = useCartStore();
+  const { items, getCartTotal, clearCart } = useCartStore();
   const [mounted, setMounted] = useState(false);
+  const [isProcessing, setIsProcessing] = useState(false);
   const router = useRouter();
 
   const [formData, setFormData] = useState({
@@ -33,11 +35,119 @@ const CheckoutPage = () => {
   // Check if every field has a non-empty value
   const isFormValid = Object.values(formData).every((val) => val.trim() !== "");
 
+  const makePayment = async () => {
+    if (!isFormValid || typeof window === "undefined" || !window.Razorpay) return;
+    setIsProcessing(true);
+
+    try {
+      // 1. Create order on backend
+      const res = await fetch("/api/create-order", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          amount: getCartTotal(),
+          receipt: `receipt_${Date.now()}`,
+          customer_details: formData,
+          items: items.map(item => ({
+            id: item.product.id,
+            name: `${item.product.name} (${item.variant.weight})`,
+            price: item.variant.discountPrice,
+            quantity: item.quantity
+          }))
+        }),
+      });
+
+      const orderData = await res.json();
+
+      if (!orderData.success) {
+        alert(orderData.error || "Failed to create order");
+        setIsProcessing(false);
+        return;
+      }
+
+      // 2. Initialize Razorpay Checkout
+      const options = {
+        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
+        amount: orderData.order.amount,
+        currency: orderData.order.currency,
+        name: "Dhanalakshmi Pickles",
+        description: "Order Checkout",
+        order_id: orderData.order.id,
+        handler: async function (response) {
+          // 3. Verify payment signature on backend
+          try {
+            const verifyRes = await fetch("/api/verify", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                razorpay_order_id: response.razorpay_order_id,
+                razorpay_payment_id: response.razorpay_payment_id,
+                razorpay_signature: response.razorpay_signature,
+                order_details: formData,
+              }),
+            });
+
+            const verifyData = await verifyRes.json();
+
+            if (verifyData.success) {
+              clearCart();
+
+              // Trigger WhatsApp notification in background
+              try {
+                fetch("/api/send-whatsapp", {
+                  method: "POST",
+                  headers: { "Content-Type": "application/json" },
+                  body: JSON.stringify({
+                    name: formData.fullName,
+                    phone: formData.phone,
+                    orderId: response.razorpay_order_id,
+                  }),
+                }).catch((e) => console.error("WhatsApp network error:", e));
+              } catch (e) {
+                console.error("WhatsApp notification failed:", e);
+              }
+
+              router.push(`/order-success?payment_id=${response.razorpay_payment_id}`);
+            } else {
+              alert("Payment verification failed");
+              setIsProcessing(false);
+            }
+          } catch (err) {
+            console.error("Verification Error:", err);
+            alert("Error in verifying payment.");
+            setIsProcessing(false);
+          }
+        },
+        prefill: {
+          name: formData.fullName,
+          email: formData.email,
+          contact: formData.phone,
+        },
+        theme: {
+          color: "#c0392b",
+        },
+      };
+
+      const razorpay = new window.Razorpay(options);
+      
+      razorpay.on("payment.failed", function (response) {
+        alert(`Payment failed: ${response.error.description}`);
+        setIsProcessing(false);
+      });
+      
+      razorpay.open();
+
+    } catch (error) {
+      console.error("Payment error:", error);
+      alert("Something went wrong");
+      setIsProcessing(false);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isFormValid) {
-      const qs = new URLSearchParams(formData).toString();
-      router.push(`/test?${qs}`);
+      makePayment();
     }
   };
 
@@ -57,6 +167,11 @@ const CheckoutPage = () => {
 
   return (
     <div>
+      <Script
+        id="razorpay-checkout-js"
+        src="https://checkout.razorpay.com/v1/checkout.js"
+        strategy="lazyOnload"
+      />
       <Navbar />
       <div className={styles.checkoutWrapper}>
         <div className={styles.container}>
@@ -273,9 +388,9 @@ const CheckoutPage = () => {
                     <button
                       type="submit"
                       className={styles.payBtn}
-                      disabled={!isFormValid}
+                      disabled={!isFormValid || isProcessing}
                     >
-                      Pay ₹{total.toLocaleString("en-IN")}
+                      {isProcessing ? "Processing..." : `Pay ₹${total.toLocaleString("en-IN")}`}
                     </button>
                   </div>
                 </form>

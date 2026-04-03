@@ -147,7 +147,7 @@ export const products = [
     "image": chicken_pickle,
     "currency": "INR",
     "variants": [
-      { "weight": "300g", "price": 549, "discountPrice": 499 },
+      { "weight": "300g", "price": 549, "discountPrice": 1 },
       { "weight": "500g", "price": 849, "discountPrice": 799 },
       { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
     ],
@@ -170,7 +170,7 @@ export const products = [
     "image": prawns_pickle,
     "currency": "INR",
     "variants": [
-      { "weight": "300g", "price": 599, "discountPrice": 549 },
+      { "weight": "300g", "price": 599, "discountPrice": 1 },
       { "weight": "500g", "price": 899, "discountPrice": 849 },
       { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
     ],
@@ -193,7 +193,7 @@ export const products = [
     "image": mutton_pickle,
     "currency": "INR",
     "variants": [
-      { "weight": "300g", "price": 649, "discountPrice": 599 },
+      { "weight": "300g", "price": 649, "discountPrice": 1 },
       { "weight": "500g", "price": 999, "discountPrice": 949 },
       { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
     ],

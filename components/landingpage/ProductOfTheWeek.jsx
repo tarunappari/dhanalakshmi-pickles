@@ -29,7 +29,7 @@ const PlantOfTheWeek = () => {
     rating: 4.8,
     reviewCount: 127,
     originalPrice: 380,
-    discountedPrice: 350,
+    discountedPrice: 10,
     discount: getDiscount(380, 350),
     description:
       "The Monstera Deliciosa is a stunning tropical plant known for its iconic split leaves and easy care requirements. Perfect for brightening up any indoor space, this plant thrives in medium to bright indirect light and adds a touch of jungle vibes to your home.",
