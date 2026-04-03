@@ -4,11 +4,12 @@ import styles from "@/styles/common/Navbar.module.scss";
 import Link from "next/link";
 import CartIcon from "@/public/assets/icons/cart.svg";
 import SearchIcon from "@/public/assets/icons/search.svg";
-import UserIcon from "@/public/assets/icons/user.svg";
 import { usePathname } from "next/navigation";
+import { useCartStore } from "@/store/cartStore";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const { openCart } = useCartStore();
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const searchInputRef = useRef(null);
 
@@ -29,18 +30,21 @@ const Navbar = () => {
   // Close search when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (searchInputRef.current && !searchInputRef.current.contains(event.target) &&
-          !event.target.closest(`.${styles.searchIcon}`)) {
+      if (
+        searchInputRef.current &&
+        !searchInputRef.current.contains(event.target) &&
+        !event.target.closest(`.${styles.searchIcon}`)
+      ) {
         setIsSearchVisible(false);
       }
     };
 
     if (isSearchVisible) {
-      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isSearchVisible]);
 
@@ -69,7 +73,7 @@ const Navbar = () => {
         >
           BLOG
         </Link>
-        <Link
+        {/* <Link
           href="/gifting"
           className={pathname === "/gifting" ? styles.active : ""}
         >
@@ -80,7 +84,7 @@ const Navbar = () => {
           className={pathname === "/about" ? styles.active : ""}
         >
           ABOUT
-        </Link>
+        </Link> */}
       </div>
       <div className={styles.iconsDiv}>
         <div className={styles.searchContainer}>
@@ -89,15 +93,16 @@ const Navbar = () => {
               ref={searchInputRef}
               type="text"
               placeholder="Search products..."
-              className={`${styles.searchInput} ${isSearchVisible ? styles.searchVisible : ''}`}
+              className={`${styles.searchInput} ${isSearchVisible ? styles.searchVisible : ""}`}
             />
           </form>
           <div className={styles.searchIcon} onClick={toggleSearch}>
             <SearchIcon width={30} />
           </div>
         </div>
-        <CartIcon width={30} />
-        <UserIcon width={30} />
+        <div style={{ cursor: "pointer", display: "flex", alignItems: "center" }} onClick={openCart}>
+          <CartIcon width={30} />
+        </div>
       </div>
     </div>
   );

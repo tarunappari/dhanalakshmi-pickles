@@ -11,6 +11,7 @@ import PlantOfTheWeek from "@/components/landingpage/ProductOfTheWeek";
 import GodavariSplsSection from "@/components/landingpage/GodavariFlavors";
 import BlogsSection from "@/components/landingpage/BlogsSection";
 import About from "@/components/landingpage/About";
+import Cart from "@/components/cart/Cart";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <About />
       <Testimonals />
       <Footer />
+      <Cart />
     </div>
   );
 }

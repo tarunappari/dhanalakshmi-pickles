@@ -11,9 +11,16 @@ import {
 import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
 import sweets from "@/public/assets/landingpage/category/sweets.webp";
+import { useCartStore } from "@/store/cartStore";
 
 const PlantOfTheWeek = () => {
   const [quantity, setQuantity] = useState(1);
+  const [added, setAdded] = useState(false);
+  const { items, addToCart, openCart } = useCartStore();
+
+  const getDiscount = (original, discounted) => {
+    return Math.round(((original - discounted) / original) * 100);
+  };
 
   // Sample plant data - you can replace this with props or API data
   const plantData = {
@@ -21,9 +28,9 @@ const PlantOfTheWeek = () => {
     subtitle: "World famous",
     rating: 4.8,
     reviewCount: 127,
-    originalPrice: 89.99,
-    discountedPrice: 64.99,
-    discount: 28,
+    originalPrice: 380,
+    discountedPrice: 350,
+    discount: getDiscount(380, 350),
     description:
       "The Monstera Deliciosa is a stunning tropical plant known for its iconic split leaves and easy care requirements. Perfect for brightening up any indoor space, this plant thrives in medium to bright indirect light and adds a touch of jungle vibes to your home.",
     features: [
@@ -47,6 +54,33 @@ const PlantOfTheWeek = () => {
       setQuantity((prev) => Math.min(prev + 1, plantData.stockCount));
     } else {
       setQuantity((prev) => Math.max(prev - 1, 1));
+    }
+  };
+
+  const currentVariant = {
+    weight: "500g",
+    price: plantData.originalPrice,
+    discountPrice: plantData.discountedPrice,
+  };
+  const productToCart = {
+    ...plantData,
+    id: "potw-1",
+    image: plantData.images[0],
+  };
+
+  const isInCart = items.some(
+    (item) =>
+      item.product.id === productToCart.id &&
+      item.variant.weight === currentVariant.weight,
+  );
+
+  const handleAddToCart = () => {
+    if (isInCart) {
+      openCart();
+    } else {
+      addToCart(productToCart, currentVariant, quantity);
+      setAdded(true);
+      setTimeout(() => setAdded(false), 2000);
     }
   };
 
@@ -160,9 +194,20 @@ const PlantOfTheWeek = () => {
                     </button>
                   </div>
 
-                  <button className={styles.addToCartBtn}>
+                  <button
+                    onClick={handleAddToCart}
+                    className={
+                      added || isInCart
+                        ? `${styles.addToCartBtn} ${styles.addedSuccess}`
+                        : styles.addToCartBtn
+                    }
+                  >
                     <ShoppingCart className="w-5 h-5" />
-                    Add to Cart
+                    {isInCart
+                      ? "View Cart"
+                      : added
+                        ? "Added to Cart ✓"
+                        : "Add to Cart"}
                   </button>
                   <button className={styles.buyNowBtn}>
                     <Zap className="w-5 h-5" />

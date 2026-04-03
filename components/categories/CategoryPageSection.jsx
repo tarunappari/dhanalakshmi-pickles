@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "@/styles/landingpage/Category.module.scss";
 import Image from "next/image";
-import nonveg from '@/public/assets/landingpage/category/nonveg.webp'
-import sweets from '@/public/assets/landingpage/category/sweets.webp'
-import podi from '@/public/assets/landingpage/category/podi.webp'
-import snacks from '@/public/assets/landingpage/category/snacks.webp'
-import spices from '@/public/assets/landingpage/category/spices.webp'
-import dryitems from '@/public/assets/landingpage/category/dryitems.webp'
-import fryums from '@/public/assets/landingpage/category/fryums.webp'
-import veg from '@/public/assets/landingpage/category/veg.webp'
+import nonveg from "@/public/assets/landingpage/category/nonveg.webp";
+import sweets from "@/public/assets/landingpage/category/sweets.webp";
+import podi from "@/public/assets/landingpage/category/podi.webp";
+import snacks from "@/public/assets/landingpage/category/snacks.webp";
+import spices from "@/public/assets/landingpage/category/spices.webp";
+import dryitems from "@/public/assets/landingpage/category/dryitems.webp";
+import fryums from "@/public/assets/landingpage/category/fryums.webp";
+import veg from "@/public/assets/landingpage/category/veg.webp";
 import Link from "next/link";
+import cover from "@/public/assets/decors/cover.png";
 
 const categories = [
   {
@@ -54,9 +55,12 @@ const categories = [
   },
 ];
 
-const Category = () => {
+const CategoryPageSection = () => {
   return (
     <div id="categories" className={styles.mainCategoryContainer}>
+      <div className={styles.cover}>
+        <Image src={cover} alt="cover" />
+      </div>
       <h1>A Collection Made with Love 🌴🏡❤️</h1>
       <div className={styles.categoryContainer}>
         {categories.map((cat, index) => (
@@ -72,4 +76,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default CategoryPageSection;

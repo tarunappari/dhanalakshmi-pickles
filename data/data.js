@@ -151,6 +151,7 @@ export const products = [
       { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -173,6 +174,7 @@ export const products = [
       { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -195,6 +197,7 @@ export const products = [
       { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
     ],
     "tags": {
+      "new": true,
       "fav": false,
       "ammammabest": true,
       "konaseemaclassics": false,
@@ -217,6 +220,7 @@ export const products = [
       { "weight": "1kg",  "price": 1899, "discountPrice": 1799 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -239,6 +243,7 @@ export const products = [
       { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
     ],
     "tags": {
+      "new": true,
       "fav": false,
       "ammammabest": false,
       "konaseemaclassics": true,
@@ -261,6 +266,7 @@ export const products = [
       { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -283,6 +289,7 @@ export const products = [
       { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
+      "new": true,
       "fav": false,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -305,6 +312,7 @@ export const products = [
       { "weight": "1kg",  "price": 1899, "discountPrice": 1799 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -327,6 +335,7 @@ export const products = [
       { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
     ],
     "tags": {
+      "new": true,
       "fav": false,
       "ammammabest": false,
       "konaseemaclassics": true,
@@ -349,6 +358,7 @@ export const products = [
       { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -371,6 +381,7 @@ export const products = [
       { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
+      "new": true,
       "fav": false,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -393,6 +404,7 @@ export const products = [
       { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -415,6 +427,7 @@ export const products = [
       { "weight": "1kg",  "price": 699, "discountPrice": 649 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,
@@ -437,6 +450,7 @@ export const products = [
       { "weight": "1kg",  "price": 699, "discountPrice": 649 }
     ],
     "tags": {
+      "new": true,
       "fav": true,
       "ammammabest": true,
       "konaseemaclassics": true,

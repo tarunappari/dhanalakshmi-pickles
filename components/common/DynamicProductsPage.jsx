@@ -22,7 +22,9 @@ const CATEGORY_MAP = {
 const DynamicProductsPage = ({ categoryId }) => {
   const categoryInfo = CATEGORY_MAP[categoryId] || { key: "", title: "All Products" };
   const filteredProducts = categoryInfo.key
-    ? products.filter(p => p.category === categoryInfo.key)
+    ? (categoryInfo.key === "fav" || categoryInfo.key === "new" 
+        ? products.filter(p => p.tags && p.tags[categoryInfo.key])
+        : products.filter(p => p.category === categoryInfo.key))
     : products;
 
   return (
