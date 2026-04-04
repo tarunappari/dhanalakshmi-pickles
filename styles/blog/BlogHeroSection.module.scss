@@ -86,7 +86,7 @@
             font-weight: 600;
           }
 
-          button {
+          .readMoreBtn {
             margin-top: auto;
             align-self: flex-start;
             position: relative;
@@ -96,9 +96,13 @@
             background: none;
             border: none;
             cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            font-size: 0.9rem;
+            font-weight: 600;
           }
 
-          button::before {
+          .readMoreBtn::before {
             content: "";
             width: 30px;
             height: 2px;
@@ -108,7 +112,7 @@
         }
       }
 
-      .card:hover .content button::before {
+      .card:hover .content .readMoreBtn::before {
         width: 45px;
       }
     }
