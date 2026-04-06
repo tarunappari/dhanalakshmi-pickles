@@ -12,7 +12,7 @@
   .title {
     padding-left: 2rem;
     img {
-      width: 7.5rem;
+      width: 10rem;
     }
 
     img:hover {
@@ -140,6 +140,78 @@
       padding: 0px 6px;
       font-size: 0.8rem;
       padding-top: 0.2rem;
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .container {
+    .title {
+      img {
+        width: 7.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    .title {
+      padding-left: 0rem;
+      img {
+        width: 6rem;
+      }
+    }
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0;
+    .title {
+      img {
+        width: 7rem;
+      }
+    }
+
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .linksContainer {
+      display: none;
+    }
+
+    .iconsDiv {
+      gap: 0.5rem;
+    }
+
+    .searchForm {
+      right: 22.5px;
+    }
+
+    .searchInput {
+      padding: 4px 8px;
+      border: 1.5px solid var(--para);
+      font-size: 0.9rem;
+    }
+
+    .searchVisible {
+      width: 220px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    .searchVisible {
+      width: 180px;
     }
   }
 }

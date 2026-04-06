@@ -1,10 +1,16 @@
-.container{
+.container {
   display: flex;
-  padding: 0.65rem 2rem;
+  padding: 0.5rem 2rem;
   align-items: center;
   justify-content: space-around;
   background-color: var(--green);
-  background-color: #D4C79A;
+  background-color: #d4c79a;
   font-size: 0.9rem;
   font-weight: 600;
+}
+
+@media (max-width: 550px) {
+  .container {
+    font-size: 0.8rem;
+  }
 }

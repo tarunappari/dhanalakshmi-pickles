@@ -38,21 +38,6 @@
       transition: all 0.4s ease-in-out;
       position: relative;
     }
-
-    // p::after {
-    //   content: "";
-    //   position: absolute;
-    //   left: 0;
-    //   bottom: 1rem !important;
-    //   width: 0%;
-    //   height: 1px;
-    //   background-color: var(--para);
-    //   transition: width 0.3s ease-in-out;
-    // }
-
-    // &:hover p::after {
-    //   width: 100%;
-    // }
   }
 }
 
@@ -89,6 +74,120 @@
       font-size: 3rem;
       font-weight: 700;
       color: var(--white);
+    }
+  }
+}
+
+@media (max-width: 1700px) {
+  .categoryContainer {
+    padding: 0.25rem 0rem;
+    margin: 0 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: -0.75rem;
+
+    .categoriesList {
+      gap: 0.5rem;
+    }
+    .categoryCard {
+      padding: 0 0.5rem;
+      & div {
+        height: 8rem;
+        width: 8rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .categoryContainer {
+    .categoryCard {
+      & div {
+        height: 6rem;
+        width: 6rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .containerHero {
+    .imgContainer {
+      height: 50vh;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .containerHero {
+    .imgContainer {
+      height: 35vh;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .categoryContainer {
+    .categoriesList {
+      padding-left: 5rem;
+    }
+  }
+
+  .containerHero {
+    .imgContainer {
+      height: 30vh;
+    }
+  }
+}
+
+@media (max-width: 515px) {
+  .categoryContainer {
+    .categoriesList {
+      padding-left: 8rem;
+    }
+
+    .categoryCard {
+      & div {
+        height: 5rem;
+        width: 5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .containerHero {
+    .imgContainer {
+      height: 25vh;
+    }
+  }
+}
+
+@media (max-width: 435px) {
+  .categoryContainer {
+    .categoriesList {
+      padding-left: 12rem;
+    }
+
+    .categoryCard {
+      p {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 355px) {
+  .categoryContainer {
+    .categoriesList {
+      padding-left: 13rem;
     }
   }
 }
