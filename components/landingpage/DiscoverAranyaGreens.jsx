@@ -13,7 +13,7 @@ export default function DiscoverAranyaGreens() {
       {/* 3 Cards Grid */}
       <div className={styles.aboutContainer}>
         <div className={styles.content}>
-          <h2>Venkatrao Vantillu</h2>
+          <h2>Venkatraogari Vantillu</h2>
           <p>
             not just a food brand — it is a journey back to the kitchens of
             Konaseema, where every recipe carries the warmth of home and the
