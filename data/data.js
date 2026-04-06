@@ -72,11 +72,11 @@ import pindi_vadiyalu from '@/public/assets/products/nonveg/chicken.png';
 
 
 export const categoriesForLandingPage = [
-  { label: 'Ammamma’s Best', image: ammammabest },
-  { label: 'Favorites', image: favorites },
-  { label: 'Konaseema Classics', image: konaseema },
-  { label: 'Godavari Flavours', image: godavari },
-  { label: 'Ammamma Kathalu', image: kathalu },
+  { label: 'Ammamma’s Best', image: ammammabest, path: '/ammammabest' },
+  { label: 'Favorites', image: favorites, path: '/fav' },
+  { label: 'Konaseema Classics', image: konaseema, path: '/konaseemaclassics' },
+  { label: 'Godavari Flavours', image: godavari, path: '/godavariflavors' },
+  { label: 'Ammamma Kathalu', image: kathalu, path: '/blog' },
 ];
 
 export const testimonials = [

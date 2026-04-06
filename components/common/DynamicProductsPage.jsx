@@ -17,15 +17,35 @@ const CATEGORY_MAP = {
   spices: { key: "spices", title: "Spices" },
   fav: { key: "fav", title: "Our Signature Ruchulu" },
   new: { key: "new", title: "New Arrivals" },
+  ammammabest: { key: "ammammabest", title: "Ammamma’s Best" },
+  konaseemaclassics: { key: "konaseemaclassics", title: "Konaseema Classics" },
+  godavariflavors: { key: "godavariflavors", title: "Godavari Flavours" },
+  heritagerecipes: { key: "heritagerecipes", title: "Ammamma Kathalu" },
 };
 
-const DynamicProductsPage = ({ categoryId }) => {
-  const categoryInfo = CATEGORY_MAP[categoryId] || { key: "", title: "All Products" };
-  const filteredProducts = categoryInfo.key
-    ? (categoryInfo.key === "fav" || categoryInfo.key === "new" 
-        ? products.filter(p => p.tags && p.tags[categoryInfo.key])
-        : products.filter(p => p.category === categoryInfo.key))
-    : products;
+const DynamicProductsPage = ({ categoryId, searchTerm }) => {
+  let categoryInfo = { key: "", title: "All Products" };
+  let filteredProducts = products;
+  let title = "All Products";
+
+  if (searchTerm) {
+    title = `Search Results for "${searchTerm}"`;
+    const lowerSearchTerm = searchTerm.toLowerCase();
+    filteredProducts = products.filter(p => 
+      p.name?.toLowerCase().includes(lowerSearchTerm) || 
+      p.category?.toLowerCase().includes(lowerSearchTerm) ||
+      p.description?.toLowerCase().includes(lowerSearchTerm)
+    );
+  } else {
+    categoryInfo = CATEGORY_MAP[categoryId] || { key: "", title: "All Products" };
+    title = categoryInfo.title;
+    if (categoryInfo.key) {
+      const isTag = ["fav", "new", "ammammabest", "konaseemaclassics", "godavariflavors", "heritagerecipes"].includes(categoryInfo.key);
+      filteredProducts = isTag
+          ? products.filter(p => p.tags && p.tags[categoryInfo.key])
+          : products.filter(p => p.category === categoryInfo.key);
+    }
+  }
 
   return (
     <div className={styles.container}>
@@ -35,7 +55,7 @@ const DynamicProductsPage = ({ categoryId }) => {
       <div>
         <div className={styles.sectionContainer}>
           <div className={styles.header}>
-            <h2>{categoryInfo.title}</h2>
+            <h2>{title}</h2>
           </div>
           <div className={styles.productsContainer}>
             {filteredProducts.length > 0 ? (

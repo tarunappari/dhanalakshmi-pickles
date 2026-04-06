@@ -1,77 +1,100 @@
-import React from 'react'
-import styles from '@/styles/common/Footer.module.scss'
-import Link from 'next/link';
-import RightArrow from '@/public/assets/icons/rightArrow.svg'
-import FacebookIcon from '@/public/assets/icons/facebook.svg'
-import InstagramIcon from '@/public/assets/icons/instagram.svg'
-import TwitterIcon from '@/public/assets/icons/twitter.svg'
-import LinkedinIcon from '@/public/assets/icons/linkedin.svg'
+"use client";
+import React, { useState } from "react";
+import styles from "@/styles/common/Footer.module.scss";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "@/public/assets/vv-logo.png";
+import { 
+  IconBrandFacebook, 
+  IconBrandInstagram, 
+  IconBrandTwitter, 
+  IconBrandYoutube,
+  IconMapPin,
+  IconPhone,
+  IconMail
+} from "@tabler/icons-react";
 
 const Footer = () => {
-    return (
-        <div className={styles.footerContainer}>
-            <div className={styles.footerLinksContainer}>
-                <div>
-                    <h2>Acount</h2>
-                </div>
-                <div>
-                    <Link href="">Log In</Link>
-                    <Link href="">Sign Up</Link>
-                    <Link href="">Redeem a Gift Card</Link>
-                </div>
+  const [openSection, setOpenSection] = useState("");
+
+  const toggleSection = (sectionName) => {
+    setOpenSection(openSection === sectionName ? "" : sectionName);
+  };
+
+  return (
+    <footer className={styles.footerContainer}>
+      <div className={styles.footerMain}>
+        {/* Brand & About */}
+        <div className={styles.footerBrand}>
+          <div className={styles.logoContainer}>
+            <Image src={logo} alt="Dhanalakshmi Ruchulu Logo" />
+          </div>
+          <p className={styles.aboutText}>
+            Delivering the authentic taste of Andhra directly to your home. Handcrafted with love, patience, and age-old traditional recipes.
+          </p>
+          <div className={styles.socialIcons}>
+            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <IconBrandFacebook stroke={1.5} />
+            </Link>
+            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <IconBrandInstagram stroke={1.5} />
+            </Link>
+            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <IconBrandTwitter stroke={1.5} />
+            </Link>
+            <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <IconBrandYoutube stroke={1.5} />
+            </Link>
+          </div>
+        </div>
+
+        {/* Quick Links */}
+        <div className={styles.footerLinks}>
+          <h3 onClick={() => toggleSection('links')} className={openSection === 'links' ? styles.active : ''}>
+            <span>Quick Links</span>
+            <span className={styles.toggleIcon}>{openSection === 'links' ? "−" : "+"}</span>
+          </h3>
+          <ul className={openSection === 'links' ? styles.open : ''}>
+            <li><Link href="/">Home</Link></li>
+            <li><Link href="/products">Shop All</Link></li>
+            <li><Link href="/categories">Categories</Link></li>
+            <li><Link href="/blog">Our Story</Link></li>
+          </ul>
+        </div>
+
+        {/* Contact Info */}
+        <div className={styles.footerContact}>
+          <h3 onClick={() => toggleSection('contact')} className={openSection === 'contact' ? styles.active : ''}>
+            <span>Get In Touch</span>
+            <span className={styles.toggleIcon}>{openSection === 'contact' ? "−" : "+"}</span>
+          </h3>
+          <div className={`${styles.contactInfoWrapper} ${openSection === 'contact' ? styles.open : ''}`}>
+            <div className={styles.contactItem}>
+              <IconMapPin stroke={1.5} />
+              <span>12/4 Heritage Street, Godavari District, Andhra Pradesh, India.</span>
             </div>
-            <div className={styles.footerLinksContainer}>
-                <div>
-                    <h2>Company</h2>
-                </div>
-                <div>
-                    <Link href="">About</Link>
-                    <Link href="">Environmental Initiatives</Link>
-                    <Link href="">Careers</Link>
-                    <Link href="">International</Link>
-                    <Link href="">Accessibility</Link>
-                </div>
+            <div className={styles.contactItem}>
+              <IconPhone stroke={1.5} />
+              <span>+91 98765 43210</span>
             </div>
-            <div className={styles.footerLinksContainer}>
-                <div>
-                    <h2>Get Help</h2>
-                </div>
-                <div>
-                    <Link href="">Help Center</Link>
-                    <Link href="">Return Policy</Link>
-                    <Link href="">Shipping Info</Link>
-                    <Link href="">Corporate Orders</Link>
-                </div>
+            <div className={styles.contactItem}>
+              <IconMail stroke={1.5} />
+              <span>hello@dhanalakshmiruchulu.com</span>
             </div>
-            <div className={styles.footerLinksContainer}>
-                <div>
-                    <h2>Connect</h2>
-                </div>
-                <div className={styles.socialIcons}>
-                    <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FacebookIcon width={28} height={28} />
-                    </Link>
-                    <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <InstagramIcon width={28} height={28} />
-                    </Link>
-                    <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <TwitterIcon width={28} height={28} />
-                    </Link>
-                    <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                        <LinkedinIcon width={28} height={28} />
-                    </Link>
-                    <Link href="">Affiliates</Link>
-                </div>
-            </div>
-            <div className={styles.footerInput}>
-                <input type="text" placeholder='Email Address' />
-                <button><RightArrow width={30} /></button>
-            </div>
-            <div className={styles.copyright}>
-                <p>© {new Date().getFullYear()} Aranya. All rights reserved.</p>
-            </div>
-        </div >
-    )
-}
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.footerBottom}>
+        <p>&copy; {new Date().getFullYear()} Dhanalakshmi Ruchulu. All rights reserved.</p>
+        <div className={styles.bottomLinks}>
+          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Service</Link>
+          <Link href='/refund-policy'>Refunds & Returns</Link>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;

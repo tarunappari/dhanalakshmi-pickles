@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "@/styles/common/Navbar.module.scss";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useCartStore } from "@/store/cartStore";
 import logo from "@/public/assets/vv-logo.png";
 import { IconGardenCart, IconSearch } from "@tabler/icons-react";
@@ -10,6 +10,7 @@ import Image from "next/image";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const { openCart, items } = useCartStore();
   const [isSearchVisible, setIsSearchVisible] = useState(false);
   const searchInputRef = useRef(null);
@@ -22,9 +23,9 @@ const Navbar = () => {
     e.preventDefault();
     const searchTerm = searchInputRef.current.value.trim();
     if (searchTerm) {
-      // Handle search functionality here
-      console.log("Searching for:", searchTerm);
-      // You can add navigation to search results page or filter products
+      router.push(`/search?q=${encodeURIComponent(searchTerm)}`);
+      setIsSearchVisible(false);
+      searchInputRef.current.value = "";
     }
   };
 
