@@ -194,25 +194,27 @@ const PlantOfTheWeek = () => {
                     </button>
                   </div>
 
-                  <button
-                    onClick={handleAddToCart}
-                    className={
-                      added || isInCart
-                        ? `${styles.addToCartBtn} ${styles.addedSuccess}`
-                        : styles.addToCartBtn
-                    }
-                  >
-                    <ShoppingCart className="w-5 h-5" />
-                    {isInCart
-                      ? "View Cart"
-                      : added
-                        ? "Added to Cart ✓"
-                        : "Add to Cart"}
-                  </button>
-                  <button className={styles.buyNowBtn}>
-                    <Zap className="w-5 h-5" />
-                    Buy Now
-                  </button>
+                  <div className={styles.actionBtns}>
+                    <button
+                      onClick={handleAddToCart}
+                      className={
+                        added || isInCart
+                          ? `${styles.addToCartBtn} ${styles.addedSuccess}`
+                          : styles.addToCartBtn
+                      }
+                    >
+                      <ShoppingCart className="w-5 h-5" />
+                      {isInCart
+                        ? "View Cart"
+                        : added
+                          ? "Added to Cart ✓"
+                          : "Add to Cart"}
+                    </button>
+                    <button className={styles.buyNowBtn}>
+                      <Zap className="w-5 h-5" />
+                      Buy Now
+                    </button>
+                  </div>
                 </div>
               </div>
 
