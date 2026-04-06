@@ -97,7 +97,6 @@ const Cart = () => {
                           src={item.product.image}
                           alt={item.product.name}
                           fill
-                          style={{ objectFit: 'contain' }}
                         />
                       </div>
 
@@ -147,7 +146,7 @@ const Cart = () => {
                   <span>Subtotal</span>
                   <span className={styles.totalPrice}>₹{total}</span>
                 </div>
-                <p className={styles.taxInfo}>Taxes and shipping calculated at checkout</p>
+                <p className={styles.taxInfo}>Including tax and shipping</p>
                 
                 <div className={styles.actionButtons}>
                   <button className={styles.continueBtn} onClick={closeCart}>

@@ -36,7 +36,8 @@ const CheckoutPage = () => {
   const isFormValid = Object.values(formData).every((val) => val.trim() !== "");
 
   const makePayment = async () => {
-    if (!isFormValid || typeof window === "undefined" || !window.Razorpay) return;
+    if (!isFormValid || typeof window === "undefined" || !window.Razorpay)
+      return;
     setIsProcessing(true);
 
     try {
@@ -48,12 +49,12 @@ const CheckoutPage = () => {
           amount: getCartTotal(),
           receipt: `receipt_${Date.now()}`,
           customer_details: formData,
-          items: items.map(item => ({
+          items: items.map((item) => ({
             id: item.product.id,
             name: `${item.product.name} (${item.variant.weight})`,
             price: item.variant.discountPrice,
-            quantity: item.quantity
-          }))
+            quantity: item.quantity,
+          })),
         }),
       });
 
@@ -107,7 +108,9 @@ const CheckoutPage = () => {
                 console.error("WhatsApp notification failed:", e);
               }
 
-              router.push(`/order-success?payment_id=${response.razorpay_payment_id}`);
+              router.push(
+                `/order-success?payment_id=${response.razorpay_payment_id}`,
+              );
             } else {
               alert("Payment verification failed");
               setIsProcessing(false);
@@ -129,14 +132,13 @@ const CheckoutPage = () => {
       };
 
       const razorpay = new window.Razorpay(options);
-      
+
       razorpay.on("payment.failed", function (response) {
         alert(`Payment failed: ${response.error.description}`);
         setIsProcessing(false);
       });
-      
-      razorpay.open();
 
+      razorpay.open();
     } catch (error) {
       console.error("Payment error:", error);
       alert("Something went wrong");
@@ -166,7 +168,7 @@ const CheckoutPage = () => {
   // }
 
   return (
-    <div>
+    <div className="pageContainer">
       <Script
         id="razorpay-checkout-js"
         src="https://checkout.razorpay.com/v1/checkout.js"
@@ -188,72 +190,6 @@ const CheckoutPage = () => {
           </header>
 
           <div className={styles.contentGrid}>
-            {/* LEFT: Order Summary */}
-            <div className={styles.leftColumn}>
-              <div className={styles.card}>
-                <h2 className={styles.cardTitle}>Order Summary</h2>
-
-                <div className={styles.itemsList}>
-                  {items.length === 0 ? (
-                    <p className={styles.emptyMsg}>Your cart is empty.</p>
-                  ) : (
-                    items.map((item) => (
-                      <div
-                        key={`${item.product.id}-${item.variant.weight}`}
-                        className={styles.orderItem}
-                      >
-                        <div className={styles.itemImage}>
-                          <Image
-                            src={item.product.image}
-                            alt={item.product.name}
-                            fill
-                            style={{ objectFit: "contain" }}
-                          />
-                        </div>
-                        <div className={styles.itemInfo}>
-                          <h3>{item.product.name}</h3>
-                          <p className={styles.infoRow}>
-                            SIZE: <span>{item.variant.weight}</span>
-                          </p>
-                          <p className={styles.infoRow}>
-                            Qty: <span>{item.quantity}</span>
-                          </p>
-                          <p className={styles.unitPrice}>
-                            ₹{item.variant.discountPrice}/{item.variant.weight}{" "}
-                            each
-                          </p>
-                        </div>
-                        <div className={styles.itemTotal}>
-                          <p>
-                            ₹
-                            {(
-                              item.variant.discountPrice * item.quantity
-                            ).toLocaleString("en-IN")}
-                          </p>
-                        </div>
-                      </div>
-                    ))
-                  )}
-                </div>
-
-                <div className={styles.summaryTotals}>
-                  <div className={styles.totalRow}>
-                    <span>Subtotal:</span>
-                    <span>₹{subtotal.toLocaleString("en-IN")}</span>
-                  </div>
-                  <div className={styles.totalRow}>
-                    <span>Shipping:</span>
-                    <span>Free</span>
-                  </div>
-                  <div className={styles.grandTotal}>
-                    <span>Total:</span>
-                    <span>₹{total.toLocaleString("en-IN")}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* RIGHT: Customer Information */}
             <div className={styles.rightColumn}>
               <div className={styles.card}>
                 <h2 className={styles.cardTitle}>Customer Information</h2>
@@ -390,10 +326,74 @@ const CheckoutPage = () => {
                       className={styles.payBtn}
                       disabled={!isFormValid || isProcessing}
                     >
-                      {isProcessing ? "Processing..." : `Pay ₹${total.toLocaleString("en-IN")}`}
+                      {isProcessing
+                        ? "Processing..."
+                        : `Pay ₹${total.toLocaleString("en-IN")}`}
                     </button>
                   </div>
                 </form>
+              </div>
+            </div>
+            <div className={styles.leftColumn}>
+              <div className={styles.card}>
+                <h2 className={styles.cardTitle}>Order Summary</h2>
+
+                <div className={styles.itemsList}>
+                  {items.length === 0 ? (
+                    <p className={styles.emptyMsg}>Your cart is empty.</p>
+                  ) : (
+                    items.map((item) => (
+                      <div
+                        key={`${item.product.id}-${item.variant.weight}`}
+                        className={styles.orderItem}
+                      >
+                        <div className={styles.itemImage}>
+                          <Image
+                            src={item.product.image}
+                            alt={item.product.name}
+                            fill
+                          />
+                        </div>
+                        <div className={styles.itemInfo}>
+                          <h3>{item.product.name}</h3>
+                          <p className={styles.infoRow}>
+                            SIZE: <span>{item.variant.weight}</span>
+                          </p>
+                          <p className={styles.infoRow}>
+                            Qty: <span>{item.quantity}</span>
+                          </p>
+                          <p className={styles.unitPrice}>
+                            ₹{item.variant.discountPrice}/{item.variant.weight}{" "}
+                            each
+                          </p>
+                        </div>
+                        <div className={styles.itemTotal}>
+                          <p>
+                            ₹
+                            {(
+                              item.variant.discountPrice * item.quantity
+                            ).toLocaleString("en-IN")}
+                          </p>
+                        </div>
+                      </div>
+                    ))
+                  )}
+                </div>
+
+                <div className={styles.summaryTotals}>
+                  <div className={styles.totalRow}>
+                    <span>Subtotal:</span>
+                    <span>₹{subtotal.toLocaleString("en-IN")}</span>
+                  </div>
+                  <div className={styles.totalRow}>
+                    <span>Shipping:</span>
+                    <span>Free</span>
+                  </div>
+                  <div className={styles.grandTotal}>
+                    <span>Total:</span>
+                    <span>₹{total.toLocaleString("en-IN")}</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

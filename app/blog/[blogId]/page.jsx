@@ -30,7 +30,7 @@ const BlogPost = async ({ params }) => {
   }
 
   return (
-    <div className={styles.pageContainer}>
+    <div className={`${styles.pageContainer} pageContainer`}>
       <Navbar />
       <div className={styles.postContainer}>
         <div className={styles.heroImageContainer}>

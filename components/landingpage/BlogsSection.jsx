@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import blog1 from "@/public/assets/decors/village.png";
 import styles from "@/styles/landingpage/BlogsSection.module.scss";
+import Link from "next/link";
 
 const BlogsSection = () => {
   return (
@@ -23,7 +24,7 @@ const BlogsSection = () => {
               slow mixing, every step carries a story of heritage and taste.
               💛🌿
             </p>
-            <button>Read More</button>
+            <Link href="/blog"><button>Read More</button></Link>
           </div>
         </div>
         <div className={styles.card}>
@@ -37,7 +38,7 @@ const BlogsSection = () => {
               through generations. Experience the warmth, care, and
               unforgettable flavours that make every bite feel like home. 🏡💛
             </p>
-            <button>Read More</button>
+            <Link href="/blog"><button>Read More</button></Link>
           </div>
         </div>
         <div className={styles.card}>
@@ -51,12 +52,12 @@ const BlogsSection = () => {
               traditional, homemade snacks bring unmatched flavour, purity, and
               nostalgia compared to mass-produced alternatives. 💛🍘
             </p>
-            <button>Read More</button>
+            <Link href="/blog"><button>Read More</button></Link>
           </div>
         </div>
       </div>
       <div className={styles.viewBtnContainer}>
-        <button className="viewBtn">VIEW MORE</button>
+        <Link href="/blog"><button className="viewBtn">VIEW MORE</button></Link>
       </div>
     </div>
   );
