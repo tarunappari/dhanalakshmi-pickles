@@ -68,6 +68,8 @@ export async function POST(request) {
   } catch (error) {
     console.error('Error verifying payment:', error);
     
+    
+
     return NextResponse.json(
       { 
         error: 'Payment verification failed',
