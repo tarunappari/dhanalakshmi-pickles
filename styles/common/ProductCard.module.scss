@@ -85,15 +85,15 @@
 }
 
 .originalPrice {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #271607;
-}
-
-.discountedPrice {
   font-size: 0.95rem;
   color: #6b7280;
   text-decoration: line-through;
+}
+
+.discountedPrice {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #271607;
 }
 
 .viewButton {
@@ -121,76 +121,6 @@
 
   &:active {
     transform: translateY(0);
-  }
-}
-
-// Responsive design
-@media (max-width: 768px) {
-  .ProductCard {
-    max-width: 280px;
-  }
-
-  .imageContainer {
-    height: 200px;
-  }
-
-  .cardContent {
-    padding: 1.25rem;
-  }
-
-  .title {
-    font-size: 1.125rem;
-  }
-}
-
-// 3D card integration styling
-.cardWrapper {
-  perspective: 1000px;
-
-  .ProductCard {
-    transform-style: preserve-3d;
-    position: relative;
-
-    // Ensure all child elements preserve 3D
-    * {
-      transform-style: preserve-3d;
-    }
-  }
-}
-
-// Fix for 3D card layout
-.ProductCard {
-  // Override any conflicting 3D card styles
-  height: auto !important;
-  width: auto !important;
-
-  // Ensure proper stacking
-  .imageContainer {
-    position: relative;
-    z-index: 3;
-
-    .rating {
-      position: absolute;
-      bottom: 1rem;
-      left: 1rem;
-      font-size: 0.85rem;
-      background-color: rgba(253, 252, 252, 0.5);
-      padding: 0.25rem 0.5rem;
-      color: var(--para);
-      border-radius: 0.25rem;
-      z-index: 99;
-    }
-  }
-
-  .cardContent {
-    position: relative;
-    z-index: 2;
-    transform-style: preserve-3d;
-
-    // Ensure content elements maintain 3D
-    > * {
-      transform-style: preserve-3d;
-    }
   }
 }
 
@@ -253,5 +183,76 @@
       transform: none;
       box-shadow: none;
     }
+  }
+}
+
+@media (max-width: 1600px) {
+  .imageContainer {
+    height: 14rem;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .priceContainer {
+    gap: 0.5rem;
+  }
+
+  .discountedPrice {
+    font-size: 1.1rem;
+  }
+
+  .viewButton {
+    padding: 10px 0px !important;
+    margin-top: 2px !important;
+    min-height: 0px !important;
+  }
+}
+
+@media (max-width: 770px) {
+  .imageContainer {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .priceContainer {
+    gap: 0.5rem;
+  }
+
+  .discountedPrice {
+    font-size: 1.1rem;
+  }
+
+  .viewButton {
+    padding: 8px 0px !important;
+    margin-top: 2px !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .imageContainer {
+    height: 10rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .priceContainer {
+    gap: 0.5rem;
+  }
+
+  .originalPrice {
+    font-size: 0.9rem;
+  }
+
+  .discountedPrice {
+    font-size: 1rem;
   }
 }

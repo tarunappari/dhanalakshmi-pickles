@@ -13,25 +13,57 @@
     height: 35rem;
     overflow: hidden;
 
-    img:hover{
+    img:hover {
       transform: scale(1);
     }
   }
 
-  .content{
+  .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
 
-    h2{
+    h2 {
       font-size: 2.25rem;
       font-weight: 700;
     }
 
-    h3{
+    h3 {
       font-size: 1rem;
       font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+
+    .imgContainer {
+      margin: 0 auto;
+      width: 20rem;
+      height: 20rem;
+    }
+
+    .content {
+      gap: 1rem;
+
+      h2 {
+        font-size: 1.75rem;
+      }
+      
+      p{
+        font-size: 0.95rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -13,13 +13,14 @@ export function ProductCard({ product }) {
   const title = product?.name || "Product Title";
   const price = product?.variants?.[0]?.price || "600";
   const discountedPrice = product?.variants?.[0]?.discountPrice || "899";
-  
+
   const inStock = product?.inStock ?? true;
-  
+
   // Calculate discount percentage if both prices exist
-  const discountPercent = price && discountedPrice && price > discountedPrice 
-    ? Math.round(((price - discountedPrice) / price) * 100) 
-    : 0;
+  const discountPercent =
+    price && discountedPrice && price > discountedPrice
+      ? Math.round(((price - discountedPrice) / price) * 100)
+      : 0;
   const isOnSale = discountPercent > 0;
 
   // Create a handle from title for URL
@@ -34,7 +35,9 @@ export function ProductCard({ product }) {
     <div className={styles.ProductCard}>
       {/* Image at top */}
       <div className={styles.imageContainer}>
-        {isOnSale && <div className={styles.saleBadge}>-{discountPercent}%</div>}
+        {isOnSale && (
+          <div className={styles.saleBadge}>-{discountPercent}%</div>
+        )}
         {/* <div className={styles.rating}>
           4.82<span style={{color:'#1c9c57'}}>★</span>
         </div> */}
@@ -45,12 +48,14 @@ export function ProductCard({ product }) {
         <h3 className={styles.title}>{title}</h3>
 
         <div className={styles.priceContainer}>
-          <span className={styles.originalPrice}>₹{price}</span>
-
           <span className={styles.discountedPrice}>₹{discountedPrice}</span>
+          <span className={styles.originalPrice}>₹{price}</span>
         </div>
 
-        <Link href={`/products/${product?.id || handle}`} className={styles.viewButton}>
+        <Link
+          href={`/products/${product?.id || handle}`}
+          className={styles.viewButton}
+        >
           {inStock ? "VIEW PRODUCT" : "OUT OF STOCK"}
         </Link>
       </div>

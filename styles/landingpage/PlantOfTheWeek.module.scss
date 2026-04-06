@@ -15,6 +15,12 @@
   margin-bottom: 2rem;
 }
 
+.actionBtns {
+  display: flex;
+  width: 75%;
+  gap: 0.5rem;
+}
+
 .badge {
   display: inline-block;
   background: var(--brown);

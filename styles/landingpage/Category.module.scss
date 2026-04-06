@@ -122,6 +122,8 @@
 @media (max-width: 770px) {
   .categoryContainer {
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1rem;
+    margin-top: -1rem;
   }
 }
 

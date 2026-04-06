@@ -25,12 +25,12 @@ export default function DiscoverAranyaGreens() {
             sun-dried ingredients to slow-cooked pickles, every step reflects
             patience, care, and authenticity.
           </p>
-          <p>
+          <p className={styles.disable}>
             We don’t believe in shortcuts. No factory processes, no artificial
             preservatives — just real ingredients, real flavors, and real
             stories.
           </p>
-          <p>
+          <p className={styles.disable}>
             Each jar, each snack, and each podi brings you a piece of Konaseema
             — the aroma of fresh spices, the taste of homemade cooking, and the
             feeling of sitting in a grandparents kitchen.

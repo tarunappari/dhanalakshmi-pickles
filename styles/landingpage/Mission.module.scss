@@ -1,4 +1,4 @@
-.missionContainer{
+.missionContainer {
   background: #f0fdf4;
   background-color: var(--palmcream);
   padding: 1.5rem;
@@ -9,18 +9,57 @@
   justify-content: space-around;
   align-items: center;
 
-  .missionCard{
+  .missionCard {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-    img{
+    img {
       width: 8rem;
     }
-    p{
+    p {
       font-size: 0.9rem;
       font-weight: 700;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .missionContainer {
+    padding: 1rem;
+    margin: 2rem 3rem;
+
+    .missionCard {
+      img {
+        width: 6rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .missionContainer {
+    padding: 1rem;
+    margin: 2rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center !important;
+    align-items: center !important;
+    gap: 0rem;
+
+    .missionCard {
+      width: 8rem;
+      
+      img {
+        width: 6rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
     }
   }
 }

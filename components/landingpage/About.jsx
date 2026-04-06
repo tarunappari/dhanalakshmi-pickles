@@ -9,7 +9,7 @@ const About = () => {
       <div className={styles.content}>
         <h2>Dhanalakshmi & Venkatrao</h2>
         <p>
-          At the heart of ధనలక్ష్మి రుచులు are two souls who have spent a
+          At the heart of వెంకట్రావ్ గారి వంటిల్లు are two souls who have spent a
           lifetime living simply, cooking traditionally, and sharing generously
           — Dhanalakshmi and Venkatrao.
         </p>
@@ -23,12 +23,10 @@ const About = () => {
         <p>
           Venkatrao, our Thatha, has been her constant support — helping in
           preparation, sourcing ingredients, and being part of the everyday
-          rhythm of their village life. Together, they represent the simplicity,
-          discipline, and authenticity of a time when food was made with
-          patience and care.
+          rhythm of their village life.
         </p>
         <h3>
-          hey may come from a small village, but the values they carry are
+          They may come from a small village, but the values they carry are
           timeless.Through this brand, we are not just sharing food — we are
           sharing their life, their legacy, and their love.
         </h3>

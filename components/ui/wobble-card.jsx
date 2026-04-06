@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import styles from '@/styles/landingpage/DiscoverGreens.module.scss'
 
 export const WobbleCard = ({ children, containerClassName, className }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -30,10 +31,8 @@ export const WobbleCard = ({ children, containerClassName, className }) => {
         transition: "transform 0.1s ease-out",
       }}
       className={cn(
-        "mx-auto w-full bg-green-800 relative rounded-2xl overflow-hidden",
-        containerClassName,
+        `mx-auto w-full bg-green-800 relative rounded-2xl overflow-hidden ${containerClassName} ${styles.imgContainerrWobble}`,
       )}
-      style={{ minHeight: "400px", height: "400px" }}
     >
       <div
         className="relative h-full [background-image:radial-gradient(88%_100%_at_top,rgba(255,255,255,0.5),rgba(255,255,255,0))] sm:mx-0 sm:rounded-2xl overflow-hidden"

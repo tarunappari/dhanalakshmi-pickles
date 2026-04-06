@@ -29,10 +29,7 @@
   justify-items: center;
   align-items: center;
   gap: 2rem;
-  
 }
-
-
 
 .testimonalContainer {
   padding: 2rem;
@@ -81,5 +78,58 @@
         width: 20rem;
       }
     }
+  }
+}
+
+@media (max-width: 1600px) {
+  .favouritesContainer {
+    gap: 0.5rem;
+    padding: 0rem;
+  }
+
+  .carouselContainer {
+    width: 95%;
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .favouritesContainer {
+    .title {
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .carouselContainer {
+    width: 100%;
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .favouritesContainer {
+    margin: 2rem 1rem;
+    .title {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      P{
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .carouselContainer {
+    margin-top: -0.75rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
