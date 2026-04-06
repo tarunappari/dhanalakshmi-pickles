@@ -17,7 +17,7 @@ const page = async ({ params }) => {
   }
 
   return (
-    <div>
+    <div className="pageContainer">
       <Navbar />
       <ProductDetails product={product} />
       <Footer />

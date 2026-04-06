@@ -8,7 +8,7 @@ import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
 
 const Blog = () => {
   return (
-    <div>
+    <div className='pageContainer'>
       <Navbar />
       <BlogHeroSection />
       <Footer />
