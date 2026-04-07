@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@/styles/products/ProductSection.module.scss";
 import { ProductCard } from "../common/ProductCard";
 import { IconArrowNarrowRight } from "@tabler/icons-react";
-import cover from "@/public/assets/decors/cover.png";
+import cover from "@/public/assets/decors/cover.webp";
 import Image from "next/image";
 import { products } from "@/data/data";
 import Link from "next/link";

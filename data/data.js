@@ -6,45 +6,45 @@ import favorites from '@/public/assets/landingpage/category/favorites.webp'
 import kathalu from '@/public/assets/landingpage/category/kathalu.webp'
 
 import chicken_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import prawns_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import mutton_pickle from '@/public/assets/products/nonveg/chicken.webp';
+import prawns_pickle from '@/public/assets/products/nonveg/prawn.webp';
+import mutton_pickle from '@/public/assets/products/nonveg/mutton.webp';
 import mutton_boneless from '@/public/assets/products/nonveg/chicken.webp';
-import fish_pickle from '@/public/assets/products/nonveg/chicken.webp';
+import fish_pickle from '@/public/assets/products/nonveg/fish.webp';
 import gongura_chicken from '@/public/assets/products/nonveg/chicken.webp';
-import gongura_chicken_boneless from '@/public/assets/products/nonveg/chicken.webp';
+import gongura_chicken_boneless from '@/public/assets/products/nonveg/chickengongura.webp';
 import gongura_mutton_boneless from '@/public/assets/products/nonveg/chicken.webp';
-import crabs_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import chicken_boneless from '@/public/assets/products/nonveg/chicken.webp';
-import prawn_gongura from '@/public/assets/products/nonveg/chicken.webp';
-import gongura_mutton from '@/public/assets/products/nonveg/chicken.webp';
-import avakai_mango from '@/public/assets/products/nonveg/chicken.webp';
-import gongura_veg from '@/public/assets/products/nonveg/chicken.webp';
-import tomato_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import chinthakaya_mirchi from '@/public/assets/products/nonveg/chicken.webp';
-import dosakaya_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import karvepaku_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import kakarakaya_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import lemon_pickle from '@/public/assets/products/nonveg/chicken.webp';
+import crabs_pickle from '@/public/assets/products/nonveg/crab.webp';
+import chicken_boneless from '@/public/assets/products/nonveg/chiceknboneless.webp';
+import prawn_gongura from '@/public/assets/products/nonveg/gonguraprawn.webp';
+import gongura_mutton from '@/public/assets/products/nonveg/gonguramutton.webp';
+import avakai_mango from '@/public/assets/products/veg/mango2.webp';
+import gongura_veg from '@/public/assets/products/veg/gongura.webp';
+import tomato_pickle from '@/public/assets/products/veg/tomato.webp';
+import chinthakaya_mirchi from '@/public/assets/products/veg/chintha.webp';
+import dosakaya_pickle from '@/public/assets/products/veg/dosa.webp';
+import karvepaku_pickle from '@/public/assets/products/veg/curry.webp';
+import kakarakaya_pickle from '@/public/assets/products/veg/kakar.webp';
+import lemon_pickle from '@/public/assets/products/veg/lemon.webp';
 import pandu_mirchi from '@/public/assets/products/nonveg/chicken.webp';
-import dondakaya_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import munakkaya_pickle from '@/public/assets/products/nonveg/chicken.webp';
-import kakarakaya_karam from '@/public/assets/products/nonveg/chicken.webp';
-import kandi_podi from '@/public/assets/products/nonveg/chicken.webp';
-import mungaku_karam from '@/public/assets/products/nonveg/chicken.webp';
-import nalla_karam from '@/public/assets/products/nonveg/chicken.webp';
+import dondakaya_pickle from '@/public/assets/products/veg/dhonda.webp';
+import munakkaya_pickle from '@/public/assets/products/veg/drum3.webp';
+import kakarakaya_karam from '@/public/assets/products/powders/kakarkaaram.webp';
+import kandi_podi from '@/public/assets/products/powders/kandipodi.webp';
+import mungaku_karam from '@/public/assets/products/powders/munagakupodi.webp';
+import nalla_karam from '@/public/assets/products/powders/karapodi.webp';
 import ammamma_special_karam from '@/public/assets/products/nonveg/chicken.webp';
 import nuvvula_podi from '@/public/assets/products/nonveg/chicken.webp';
 import karvepaku_podi from '@/public/assets/products/nonveg/chicken.webp';
 import velluli_karam from '@/public/assets/products/nonveg/chicken.webp';
-import kobbari_karam from '@/public/assets/products/nonveg/chicken.webp';
-import garam_masala from '@/public/assets/products/nonveg/chicken.webp';
-import biryani_masala from '@/public/assets/products/nonveg/chicken.webp';
-import dhaniya_powder from '@/public/assets/products/nonveg/chicken.webp';
-import ammamma_special_karam_red from '@/public/assets/products/nonveg/chicken.webp';
-import turmeric_powder from '@/public/assets/products/nonveg/chicken.webp';
+import kobbari_karam from '@/public/assets/products/powders/kobbarikaaram.webp';
+import garam_masala from '@/public/assets/products/spices/garam.webp';
+import biryani_masala from '@/public/assets/products/spices/biryanimasala.webp';
+import dhaniya_powder from '@/public/assets/products/spices/dhaniyapodi.webp';
+import ammamma_special_karam_red from '@/public/assets/products/powders/karampodi.webp';
+import turmeric_powder from '@/public/assets/products/spices/turmeric.webp';
 import pappu_chakodi from '@/public/assets/products/nonveg/chicken.webp';
 import andhra_karapusa from '@/public/assets/products/nonveg/chicken.webp';
-import all_mixture from '@/public/assets/products/nonveg/chicken.webp';
+import all_mixture from '@/public/assets/products/snacks/mixture.webp';
 import ringulu from '@/public/assets/products/nonveg/chicken.webp';
 import agra_mixture from '@/public/assets/products/nonveg/chicken.webp';
 import chekka_pakodi from '@/public/assets/products/nonveg/chicken.webp';
@@ -57,16 +57,16 @@ import kandriga_kova from '@/public/assets/products/nonveg/chicken.webp';
 import mamidi_thandra from '@/public/assets/products/nonveg/chicken.webp';
 import palli_laddulu from '@/public/assets/products/nonveg/chicken.webp';
 import bellam_kommulu from '@/public/assets/products/nonveg/chicken.webp';
-import dry_fruit_laddu from '@/public/assets/products/nonveg/chicken.webp';
+import dry_fruit_laddu from '@/public/assets/products/sweets/dryfruitladdo.webp';
 import sunnundalu from '@/public/assets/products/nonveg/chicken.webp';
 import katti_chepalu from '@/public/assets/products/nonveg/chicken.webp';
 import royyapattu from '@/public/assets/products/nonveg/chicken.webp';
-import dry_prawns from '@/public/assets/products/nonveg/chicken.webp';
-import koyyinga_dry_fish from '@/public/assets/products/nonveg/chicken.webp';
+import dry_prawns from '@/public/assets/products/drynonveg/dryprawns.webp';
+import koyyinga_dry_fish from '@/public/assets/products/drynonveg/koyyinga.webp';
 import gummadi_vadiyalu from '@/public/assets/products/nonveg/chicken.webp';
-import challa_mirapakayalu from '@/public/assets/products/nonveg/chicken.webp';
+import challa_mirapakayalu from '@/public/assets/products/fryums/challamirapa.webp';
 import saggubiyyam_vadiyalu from '@/public/assets/products/nonveg/chicken.webp';
-import pindi_vadiyalu from '@/public/assets/products/nonveg/chicken.webp';
+import pindi_vadiyalu from '@/public/assets/products/fryums/pindivadiyalu.webp';
 
 
 
@@ -149,7 +149,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 549, "discountPrice": 1 },
       { "weight": "500g", "price": 849, "discountPrice": 799 },
-      { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
+      { "weight": "1kg", "price": 1399, "discountPrice": 1299 }
     ],
     "tags": {
       "new": true,
@@ -172,7 +172,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 599, "discountPrice": 1 },
       { "weight": "500g", "price": 899, "discountPrice": 849 },
-      { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
+      { "weight": "1kg", "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
       "new": true,
@@ -195,7 +195,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 649, "discountPrice": 1 },
       { "weight": "500g", "price": 999, "discountPrice": 949 },
-      { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
+      { "weight": "1kg", "price": 1699, "discountPrice": 1599 }
     ],
     "tags": {
       "new": true,
@@ -218,7 +218,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 699, "discountPrice": 649 },
       { "weight": "500g", "price": 1099, "discountPrice": 1049 },
-      { "weight": "1kg",  "price": 1899, "discountPrice": 1799 }
+      { "weight": "1kg", "price": 1899, "discountPrice": 1799 }
     ],
     "tags": {
       "new": true,
@@ -241,7 +241,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 549, "discountPrice": 499 },
       { "weight": "500g", "price": 849, "discountPrice": 799 },
-      { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
+      { "weight": "1kg", "price": 1399, "discountPrice": 1299 }
     ],
     "tags": {
       "new": true,
@@ -264,7 +264,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 549, "discountPrice": 499 },
       { "weight": "500g", "price": 849, "discountPrice": 799 },
-      { "weight": "1kg",  "price": 1399, "discountPrice": 1299 }
+      { "weight": "1kg", "price": 1399, "discountPrice": 1299 }
     ],
     "tags": {
       "new": true,
@@ -287,7 +287,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 599, "discountPrice": 549 },
       { "weight": "500g", "price": 899, "discountPrice": 849 },
-      { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
+      { "weight": "1kg", "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
       "new": true,
@@ -310,7 +310,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 699, "discountPrice": 649 },
       { "weight": "500g", "price": 1099, "discountPrice": 1049 },
-      { "weight": "1kg",  "price": 1899, "discountPrice": 1799 }
+      { "weight": "1kg", "price": 1899, "discountPrice": 1799 }
     ],
     "tags": {
       "new": true,
@@ -333,7 +333,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 649, "discountPrice": 599 },
       { "weight": "500g", "price": 999, "discountPrice": 949 },
-      { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
+      { "weight": "1kg", "price": 1699, "discountPrice": 1599 }
     ],
     "tags": {
       "new": true,
@@ -356,7 +356,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 599, "discountPrice": 549 },
       { "weight": "500g", "price": 899, "discountPrice": 849 },
-      { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
+      { "weight": "1kg", "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
       "new": true,
@@ -379,7 +379,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 599, "discountPrice": 549 },
       { "weight": "500g", "price": 899, "discountPrice": 849 },
-      { "weight": "1kg",  "price": 1499, "discountPrice": 1399 }
+      { "weight": "1kg", "price": 1499, "discountPrice": 1399 }
     ],
     "tags": {
       "new": true,
@@ -402,7 +402,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 649, "discountPrice": 599 },
       { "weight": "500g", "price": 999, "discountPrice": 949 },
-      { "weight": "1kg",  "price": 1699, "discountPrice": 1599 }
+      { "weight": "1kg", "price": 1699, "discountPrice": 1599 }
     ],
     "tags": {
       "new": true,
@@ -425,7 +425,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "new": true,
@@ -448,7 +448,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "new": true,
@@ -471,7 +471,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": false,
@@ -493,7 +493,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": false,
@@ -515,7 +515,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": false,
@@ -537,7 +537,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": false,
@@ -559,7 +559,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": false,
@@ -581,7 +581,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": true,
@@ -603,7 +603,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": true,
@@ -625,7 +625,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": false,
@@ -647,7 +647,7 @@ export const products = [
     "variants": [
       { "weight": "300g", "price": 249, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 699, "discountPrice": 649 }
+      { "weight": "1kg", "price": 699, "discountPrice": 649 }
     ],
     "tags": {
       "fav": true,
@@ -669,7 +669,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": false,
@@ -691,7 +691,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": true,
@@ -713,7 +713,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 219, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 369 },
-      { "weight": "1kg",  "price": 769, "discountPrice": 709 }
+      { "weight": "1kg", "price": 769, "discountPrice": 709 }
     ],
     "tags": {
       "fav": false,
@@ -735,7 +735,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": true,
@@ -757,7 +757,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 229, "discountPrice": 209 },
       { "weight": "500g", "price": 429, "discountPrice": 399 },
-      { "weight": "1kg",  "price": 829, "discountPrice": 769 }
+      { "weight": "1kg", "price": 829, "discountPrice": 769 }
     ],
     "tags": {
       "fav": true,
@@ -779,7 +779,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": false,
@@ -801,7 +801,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": true,
@@ -823,7 +823,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": true,
@@ -845,7 +845,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 219, "discountPrice": 199 },
       { "weight": "500g", "price": 399, "discountPrice": 369 },
-      { "weight": "1kg",  "price": 769, "discountPrice": 709 }
+      { "weight": "1kg", "price": 769, "discountPrice": 709 }
     ],
     "tags": {
       "fav": false,
@@ -867,7 +867,7 @@ export const products = [
     "variants": [
       { "weight": "100g", "price": 129, "discountPrice": 99 },
       { "weight": "250g", "price": 299, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 1099, "discountPrice": 949 }
+      { "weight": "1kg", "price": 1099, "discountPrice": 949 }
     ],
     "tags": {
       "fav": false,
@@ -889,7 +889,7 @@ export const products = [
     "variants": [
       { "weight": "100g", "price": 149, "discountPrice": 129 },
       { "weight": "250g", "price": 349, "discountPrice": 299 },
-      { "weight": "1kg",  "price": 1299, "discountPrice": 1149 }
+      { "weight": "1kg", "price": 1299, "discountPrice": 1149 }
     ],
     "tags": {
       "fav": true,
@@ -911,7 +911,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 289, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 559, "discountPrice": 479 }
+      { "weight": "1kg", "price": 559, "discountPrice": 479 }
     ],
     "tags": {
       "fav": false,
@@ -933,7 +933,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 179, "discountPrice": 159 },
       { "weight": "500g", "price": 329, "discountPrice": 299 },
-      { "weight": "1kg",  "price": 629, "discountPrice": 569 }
+      { "weight": "1kg", "price": 629, "discountPrice": 569 }
     ],
     "tags": {
       "fav": true,
@@ -955,7 +955,7 @@ export const products = [
     "variants": [
       { "weight": "100g", "price": 89, "discountPrice": 69 },
       { "weight": "250g", "price": 199, "discountPrice": 179 },
-      { "weight": "1kg",  "price": 749, "discountPrice": 679 }
+      { "weight": "1kg", "price": 749, "discountPrice": 679 }
     ],
     "tags": {
       "fav": false,
@@ -977,7 +977,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": true,
@@ -999,7 +999,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": false,
@@ -1021,7 +1021,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": true,
@@ -1043,7 +1043,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": false,
@@ -1065,7 +1065,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": false,
@@ -1087,7 +1087,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": true,
@@ -1109,7 +1109,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 159, "discountPrice": 139 },
       { "weight": "500g", "price": 299, "discountPrice": 269 },
-      { "weight": "1kg",  "price": 579, "discountPrice": 519 }
+      { "weight": "1kg", "price": 579, "discountPrice": 519 }
     ],
     "tags": {
       "fav": true,
@@ -1131,7 +1131,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 169, "discountPrice": 149 },
       { "weight": "500g", "price": 319, "discountPrice": 289 },
-      { "weight": "1kg",  "price": 619, "discountPrice": 559 }
+      { "weight": "1kg", "price": 619, "discountPrice": 559 }
     ],
     "tags": {
       "fav": false,
@@ -1153,7 +1153,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 189, "discountPrice": 169 },
       { "weight": "500g", "price": 349, "discountPrice": 319 },
-      { "weight": "1kg",  "price": 679, "discountPrice": 619 }
+      { "weight": "1kg", "price": 679, "discountPrice": 619 }
     ],
     "tags": {
       "fav": true,
@@ -1217,7 +1217,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 249, "discountPrice": 219 },
       { "weight": "500g", "price": 479, "discountPrice": 449 },
-      { "weight": "1kg",  "price": 929, "discountPrice": 869 }
+      { "weight": "1kg", "price": 929, "discountPrice": 869 }
     ],
     "tags": {
       "fav": true,
@@ -1239,7 +1239,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": true,
@@ -1261,7 +1261,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 159, "discountPrice": 139 },
       { "weight": "500g", "price": 299, "discountPrice": 269 },
-      { "weight": "1kg",  "price": 579, "discountPrice": 519 }
+      { "weight": "1kg", "price": 579, "discountPrice": 519 }
     ],
     "tags": {
       "fav": false,
@@ -1283,7 +1283,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 169, "discountPrice": 149 },
       { "weight": "500g", "price": 319, "discountPrice": 289 },
-      { "weight": "1kg",  "price": 619, "discountPrice": 559 }
+      { "weight": "1kg", "price": 619, "discountPrice": 559 }
     ],
     "tags": {
       "fav": false,
@@ -1305,7 +1305,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 349, "discountPrice": 299 },
       { "weight": "500g", "price": 649, "discountPrice": 599 },
-      { "weight": "1kg",  "price": 1249, "discountPrice": 1149 }
+      { "weight": "1kg", "price": 1249, "discountPrice": 1149 }
     ],
     "tags": {
       "fav": true,
@@ -1327,7 +1327,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 229, "discountPrice": 199 },
       { "weight": "500g", "price": 429, "discountPrice": 399 },
-      { "weight": "1kg",  "price": 829, "discountPrice": 769 }
+      { "weight": "1kg", "price": 829, "discountPrice": 769 }
     ],
     "tags": {
       "fav": true,
@@ -1349,7 +1349,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 299, "discountPrice": 249 },
       { "weight": "500g", "price": 549, "discountPrice": 499 },
-      { "weight": "1kg",  "price": 1069, "discountPrice": 969 }
+      { "weight": "1kg", "price": 1069, "discountPrice": 969 }
     ],
     "tags": {
       "fav": false,
@@ -1371,7 +1371,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 349, "discountPrice": 299 },
       { "weight": "500g", "price": 649, "discountPrice": 599 },
-      { "weight": "1kg",  "price": 1249, "discountPrice": 1149 }
+      { "weight": "1kg", "price": 1249, "discountPrice": 1149 }
     ],
     "tags": {
       "fav": true,
@@ -1393,7 +1393,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 349, "discountPrice": 299 },
       { "weight": "500g", "price": 649, "discountPrice": 599 },
-      { "weight": "1kg",  "price": 1249, "discountPrice": 1149 }
+      { "weight": "1kg", "price": 1249, "discountPrice": 1149 }
     ],
     "tags": {
       "fav": false,
@@ -1415,7 +1415,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 299, "discountPrice": 249 },
       { "weight": "500g", "price": 549, "discountPrice": 499 },
-      { "weight": "1kg",  "price": 1069, "discountPrice": 969 }
+      { "weight": "1kg", "price": 1069, "discountPrice": 969 }
     ],
     "tags": {
       "fav": false,
@@ -1437,7 +1437,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 199, "discountPrice": 179 },
       { "weight": "500g", "price": 379, "discountPrice": 349 },
-      { "weight": "1kg",  "price": 729, "discountPrice": 669 }
+      { "weight": "1kg", "price": 729, "discountPrice": 669 }
     ],
     "tags": {
       "fav": true,
@@ -1459,7 +1459,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": true,
@@ -1481,7 +1481,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": false,
@@ -1503,7 +1503,7 @@ export const products = [
     "variants": [
       { "weight": "250g", "price": 149, "discountPrice": 129 },
       { "weight": "500g", "price": 279, "discountPrice": 249 },
-      { "weight": "1kg",  "price": 539, "discountPrice": 479 }
+      { "weight": "1kg", "price": 539, "discountPrice": 479 }
     ],
     "tags": {
       "fav": false,

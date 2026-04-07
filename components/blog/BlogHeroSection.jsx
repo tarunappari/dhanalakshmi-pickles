@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@/styles/blog/BlogHeroSection.module.scss";
 import Image from "next/image";
 import Link from "next/link";
-import cover from "@/public/assets/blog/cover.png";
+import cover from "@/public/assets/blog/cover.webp";
 import { blogData } from "@/data/blog";
 
 const BlogHeroSection = () => {

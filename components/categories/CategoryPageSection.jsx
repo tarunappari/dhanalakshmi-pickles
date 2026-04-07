@@ -10,7 +10,7 @@ import dryitems from "@/public/assets/landingpage/category/dryitems.webp";
 import fryums from "@/public/assets/landingpage/category/fryums.webp";
 import veg from "@/public/assets/landingpage/category/veg.webp";
 import Link from "next/link";
-import cover from "@/public/assets/decors/cover.png";
+import cover from "@/public/assets/decors/cover.webp";
 
 const categories = [
   {

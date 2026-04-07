@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1330px) {
   .container {
     .sectionContainer {
       margin: 2rem 1rem;
@@ -99,7 +99,7 @@
 
       .productsContainer {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
       }
 
@@ -134,23 +134,25 @@
   .container {
     .sectionContainer {
       .productsContainer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
       }
     }
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 675px) {
   .container {
     .sectionContainer {
+      .productsContainer {
+        grid-template-columns: 1fr 1fr;
+      }
       .header {
         h2 {
           font-size: 1.75rem;
         }
 
-        .viewAllBtn{
+        .viewAllBtn {
           font-size: 0.8rem;
         }
       }

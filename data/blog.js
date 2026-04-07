@@ -1,4 +1,4 @@
-import blog1 from "@/public/assets/decors/village.png";
+import blog1 from "@/public/assets/decors/village.webp";
 
 export const blogData = [
   {

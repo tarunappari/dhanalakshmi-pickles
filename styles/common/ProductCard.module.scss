@@ -5,7 +5,7 @@
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 25rem;
   max-width: 280px;
   padding: 0.25rem;
 
@@ -62,12 +62,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .title {
   font-size: 1.25rem;
   font-weight: 600;
+  text-align: center;
   color: #1f2937;
   line-height: 1.1;
   margin: 0;
@@ -210,6 +211,38 @@
   }
 }
 
+@media (max-width: 960px) {
+  .ProductCard {
+    width: 15rem;
+    max-width: 15rem;
+  }
+
+  .imageContainer {
+    height: 12rem;
+  }
+
+  .offerCard {
+    max-width: 15rem;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 830px) {
+  .ProductCard {
+    width: 12rem;
+    max-width: 12rem;
+  }
+
+  .imageContainer {
+    height: 10rem;
+  }
+
+  .offerCard {
+    width: 12rem;
+    max-width: 12rem;
+  }
+}
+
 @media (max-width: 770px) {
   .imageContainer {
     height: 10rem;
@@ -235,9 +268,51 @@
   }
 }
 
+@media (max-width: 675px) {
+  .ProductCard {
+    width: 15rem;
+    max-width: 15rem;
+  }
+
+  .imageContainer {
+    height: 12rem;
+  }
+
+  .offerCard {
+    max-width: 15rem;
+    width: 15rem;
+  }
+}
+
+@media (max-width: 525px) {
+  .ProductCard {
+    width: 13rem;
+    max-width: 13rem;
+  }
+
+  .imageContainer {
+    height: 11rem;
+  }
+
+  .offerCard {
+    width: 13rem;
+    max-width: 13rem;
+  }
+}
+
 @media (max-width: 450px) {
+  .ProductCard {
+    width: 11.5rem;
+    max-width: 11.5rem;
+  }
+
   .imageContainer {
     height: 10rem;
+  }
+
+  .offerCard {
+    width: 11.5rem;
+    max-width: 11.5rem;
   }
 
   .title {
@@ -254,5 +329,21 @@
 
   .discountedPrice {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .ProductCard {
+    width: 10rem;
+    max-width: 10rem;
+  }
+
+  .imageContainer {
+    height: 9rem;
+  }
+
+  .offerCard {
+    width: 10rem;
+    max-width: 10rem;
   }
 }
