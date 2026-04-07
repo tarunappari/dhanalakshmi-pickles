@@ -146,7 +146,15 @@ const Cart = () => {
                   <span>Subtotal</span>
                   <span className={styles.totalPrice}>₹{total}</span>
                 </div>
-                <p className={styles.taxInfo}>Including tax and shipping</p>
+                <div className={styles.deliveryRow} style={{ marginTop: '0.5rem' }}>
+                  <span>Delivery Charge</span>
+                  <span className={styles.totalPrice}>₹99</span>
+                </div>
+                <div className={styles.summaryRow} style={{ borderTop: '1px solid var(--border-color, #e2e8f0)', paddingTop: '0.75rem', marginTop: '0.75rem', fontWeight: 'bold' }}>
+                  <span>Grand Total</span>
+                  <span className={styles.totalPrice}>₹{total + 99}</span>
+                </div>
+                <p className={styles.taxInfo}>Including tax</p>
                 
                 <div className={styles.actionButtons}>
                   <button className={styles.continueBtn} onClick={closeCart}>

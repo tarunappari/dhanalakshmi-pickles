@@ -293,15 +293,30 @@
   margin-bottom: 0.5rem;
 
   span:first-child {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #444;
     font-weight: 500;
   }
 
   .totalPrice {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
     color: #111;
+  }
+}
+
+.deliveryRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+  span:first-child {
+    font-size: 0.8rem;
+  }
+
+  .totalPrice {
+    font-size: 0.9rem;
   }
 }
 
@@ -355,29 +370,29 @@
   }
 }
 
-
 @media (max-width: 570px) {
   .sidebar {
     max-width: 90%;
   }
 
   .header {
+    border: 3px solid red;
     .titleWrapper {
       gap: 0.5rem;
 
       h2 {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
       }
 
       .itemCount {
-        font-size: 0.875rem;
+        font-size: 0.8rem;
         padding: 1px 8px;
       }
     }
   }
 
   .itemsContainer {
-    padding: 16px 24px;
+    padding: 16px 16px;
   }
 
   .actionButtons {
@@ -386,6 +401,7 @@
 
   .continueBtn,
   .checkoutBtn {
-    padding: 0.75rem;
+    padding: 0.6rem;
+    font-size: 0.95rem;
   }
 }

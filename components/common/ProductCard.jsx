@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "@/styles/common/ProductCard.module.scss";
-import chicken from "@/public/assets/products/nonveg/chicken.png";
+import chicken from "@/public/assets/products/nonveg/chicken.webp";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 

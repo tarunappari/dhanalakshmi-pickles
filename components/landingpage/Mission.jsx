@@ -2,7 +2,7 @@ import React from 'react'
 
 // css will be in herosection 
 import styles from '@/styles/landingpage/Mission.module.scss'
-import palmoil from '@/public/assets/decors/nopalmoil.png'
+import palmoil from '@/public/assets/decors/nopalmoil.webp'
 import Image from 'next/image'
 
 const Mission = () => {

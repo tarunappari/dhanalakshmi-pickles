@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/styles/landingpage/About.module.scss";
-import grandpa from "@/public/assets/decors/grandpa2.png";
+import grandpa from "@/public/assets/decors/grandpa2.webp";
 
 const About = () => {
   return (

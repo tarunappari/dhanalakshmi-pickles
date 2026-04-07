@@ -2,9 +2,9 @@
 import React from "react";
 import { WobbleCard } from "@/components/ui/wobble-card";
 import styles from "@/styles/landingpage/DiscoverGreens.module.scss";
-import store3 from "@/public/assets/decors/rjytrain.png";
-import store2 from "@/public/assets/decors/village.png";
-import store1 from "@/public/assets/decors/cart.png";
+import store3 from "@/public/assets/decors/rjytrain.webp";
+import store2 from "@/public/assets/decors/village.webp";
+import store1 from "@/public/assets/decors/cart.webp";
 import Image from "next/image";
 
 export default function DiscoverAranyaGreens() {

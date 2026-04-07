@@ -46,7 +46,7 @@ const CheckoutPage = () => {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          amount: getCartTotal(),
+          amount: total,
           receipt: `receipt_${Date.now()}`,
           customer_details: formData,
           items: items.map((item) => ({
@@ -160,7 +160,8 @@ const CheckoutPage = () => {
   if (!mounted) return null;
 
   const subtotal = getCartTotal();
-  const total = subtotal; // Assuming shipping is free right now
+  const deliveryCharge = 99;
+  const total = subtotal + deliveryCharge;
 
   // Optionally redirect if cart is empty
   // if (items.length === 0) {
@@ -387,7 +388,7 @@ const CheckoutPage = () => {
                   </div>
                   <div className={styles.totalRow}>
                     <span>Shipping:</span>
-                    <span>Free</span>
+                    <span>₹{deliveryCharge}</span>
                   </div>
                   <div className={styles.grandTotal}>
                     <span>Total:</span>

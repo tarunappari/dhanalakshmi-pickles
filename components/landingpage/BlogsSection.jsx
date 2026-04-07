@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import blog1 from "@/public/assets/decors/village.png";
+import blog1 from "@/public/assets/decors/village.webp";
 import styles from "@/styles/landingpage/BlogsSection.module.scss";
 import Link from "next/link";
 
