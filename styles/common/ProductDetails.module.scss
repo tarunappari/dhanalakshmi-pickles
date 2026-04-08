@@ -25,7 +25,7 @@
     transition: color 0.2s;
 
     &:hover {
-      color: #d32f2f;
+      color: var(--claybrown);
     }
   }
 
@@ -115,7 +115,7 @@
 .currentPrice {
   font-size: 2rem;
   font-weight: 700;
-  color: #d32f2f;
+  color: var(--darkbrown);
 }
 
 .originalPrice {
@@ -182,9 +182,9 @@
   }
 
   &.active {
-    border-color: #d32f2f;
+    border-color: var(--claybrown);
     background-color: #fff5f5;
-    color: #d32f2f;
+    color: var(--claybrown);
   }
 }
 
@@ -256,18 +256,23 @@
   }
 
   &.addedSuccess {
-    background: #2e7d32;
-    border-color: #2e7d32;
+    background: var(--brown);
+    border-color: var(--brown);
     color: white;
   }
 }
 
 .buyNowBtn {
   flex: 1;
-  background: #d32f2f;
+  background: var(--brown);
+  border-color: var(--brown);
+  transition: 0.2s all;
+  color: white;
 
   &:hover {
-    background: #b71c1c;
+    background: var(--brown);
+    border-color: var(--brown);
+    color: white;
   }
 }
 
@@ -372,7 +377,6 @@
     margin-bottom: 0.5rem;
   }
 
-
   .variantBtn {
     padding: 0.4rem 1rem;
     font-size: 1rem;
@@ -384,7 +388,6 @@
   }
 
   .quantitySelector {
-
     padding: 2px;
 
     button {

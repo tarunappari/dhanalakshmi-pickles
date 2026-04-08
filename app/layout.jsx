@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Dhanalakshmi Ruchulu",
+  title: "Venkatraogari Vantillu",
   description: "",
 };
 

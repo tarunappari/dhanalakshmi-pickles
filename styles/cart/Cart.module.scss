@@ -84,6 +84,10 @@
   }
 }
 
+.taxInfo {
+  padding-top: 0.8rem;
+}
+
 .itemsContainer {
   flex: 1;
   overflow-y: auto;
@@ -359,12 +363,12 @@
 }
 
 .checkoutBtn {
-  background: #d32f2f;
+  background: #934d33;
   color: #fff;
   border: none;
 
   &:hover {
-    background: #b71c1c;
+    background: #934d33;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(211, 47, 47, 0.2);
   }
@@ -376,7 +380,6 @@
   }
 
   .header {
-    border: 3px solid red;
     .titleWrapper {
       gap: 0.5rem;
 
@@ -396,7 +399,7 @@
   }
 
   .actionButtons {
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
   }
 
   .continueBtn,
