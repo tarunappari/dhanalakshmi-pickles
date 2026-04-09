@@ -166,7 +166,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     display: flex;
     align-items: center;
@@ -176,13 +176,14 @@
   }
 
   .viewButton {
-    background: #9ca3af;
-    cursor: not-allowed;
+    background: #9ca3af !important;
+    border-color: #9ca3af !important;
+    cursor: not-allowed !important;
 
     &:hover {
-      background: #9ca3af;
-      transform: none;
-      box-shadow: none;
+      background: #9ca3af !important;
+      transform: none !important;
+      box-shadow: none !important;
     }
   }
 }

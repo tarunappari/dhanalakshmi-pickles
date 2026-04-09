@@ -32,7 +32,7 @@ export function ProductCard({ product }) {
     : "default-product";
 
   return (
-    <div className={styles.ProductCard}>
+    <div className={`${styles.ProductCard} ${!inStock ? styles.outOfStock : ""}`}>
       {/* Image at top */}
       <div className={styles.imageContainer}>
         {isOnSale && (
@@ -52,12 +52,18 @@ export function ProductCard({ product }) {
           <span className={styles.originalPrice}>₹{price}</span>
         </div>
 
-        <Link
-          href={`/products/${product?.id || handle}`}
-          className={styles.viewButton}
-        >
-          {inStock ? "VIEW PRODUCT" : "OUT OF STOCK"}
-        </Link>
+        {inStock ? (
+          <Link
+            href={`/products/${product?.id || handle}`}
+            className={styles.viewButton}
+          >
+            VIEW PRODUCT
+          </Link>
+        ) : (
+          <button className={styles.viewButton} disabled>
+            OUT OF STOCK
+          </button>
+        )}
       </div>
     </div>
   );

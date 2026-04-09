@@ -891,6 +891,8 @@ export const products = [
     },
     inStock: true,
   },
+
+  //snacks
   {
     id: 38,
     name: "Pappu Chakodi",
@@ -901,9 +903,8 @@ export const products = [
     image: pappu_chakodi,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 149, discountPrice: 129 },
       { weight: "500g", price: 279, discountPrice: 249 },
-      { weight: "1kg", price: 539, discountPrice: 479 },
+      { weight: "1kg", price: 539, discountPrice: 499 },
     ],
     tags: {
       fav: true,
@@ -925,8 +926,8 @@ export const products = [
     currency: "INR",
     variants: [
       { weight: "250g", price: 149, discountPrice: 129 },
-      { weight: "500g", price: 279, discountPrice: 249 },
-      { weight: "1kg", price: 539, discountPrice: 479 },
+      { weight: "500g", price: 279, discountPrice: 199 },
+      { weight: "1kg", price: 539, discountPrice: 399 },
     ],
     tags: {
       fav: false,
@@ -947,9 +948,9 @@ export const products = [
     image: all_mixture,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 149, discountPrice: 129 },
+      { weight: "250g", price: 149, discountPrice: 149 },
       { weight: "500g", price: 279, discountPrice: 249 },
-      { weight: "1kg", price: 539, discountPrice: 479 },
+      { weight: "1kg", price: 539, discountPrice: 499 },
     ],
     tags: {
       fav: true,
@@ -993,9 +994,9 @@ export const products = [
     image: agra_mixture,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 149, discountPrice: 129 },
+      { weight: "250g", price: 149, discountPrice: 149 },
       { weight: "500g", price: 279, discountPrice: 249 },
-      { weight: "1kg", price: 539, discountPrice: 479 },
+      { weight: "1kg", price: 539, discountPrice: 499 },
     ],
     tags: {
       fav: false,
@@ -1017,7 +1018,7 @@ export const products = [
     currency: "INR",
     variants: [
       { weight: "250g", price: 149, discountPrice: 129 },
-      { weight: "500g", price: 279, discountPrice: 249 },
+      { weight: "500g", price: 279, discountPrice: 199 },
       { weight: "1kg", price: 539, discountPrice: 479 },
     ],
     tags: {
@@ -1039,9 +1040,9 @@ export const products = [
     image: chekkalu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 159, discountPrice: 139 },
-      { weight: "500g", price: 299, discountPrice: 269 },
-      { weight: "1kg", price: 579, discountPrice: 519 },
+      { weight: "250g", price: 159, discountPrice: 149 },
+      { weight: "500g", price: 299, discountPrice: 249 },
+      { weight: "1kg", price: 579, discountPrice: 499 },
     ],
     tags: {
       fav: true,
@@ -1052,52 +1053,53 @@ export const products = [
     },
     inStock: true,
   },
-  {
-    id: 45,
-    name: "Gulabi Guthulu",
-    category: "snacks",
-    tagline: "Crispy rose cookies with a hint of sweetness.",
-    description:
-      "Traditional flower-shaped savory-sweet snack. These delicately shaped treats are a cherished part of Andhra's festive cooking heritage, traditionally made during weddings and religious celebrations as a symbol of beauty and auspiciousness.",
-    image: gulabi_guthulu,
-    currency: "INR",
-    variants: [
-      { weight: "250g", price: 169, discountPrice: 149 },
-      { weight: "500g", price: 319, discountPrice: 289 },
-      { weight: "1kg", price: 619, discountPrice: 559 },
-    ],
-    tags: {
-      fav: false,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
-  {
-    id: 46,
-    name: "Bellam Gavvalu",
-    category: "sweets",
-    tagline: "Sweet shells coated in jaggery syrup.",
-    description:
-      "Traditional Andhra snack made of flour and jaggery. Bellam Gavvalu hold deep cultural significance in Andhra — shaped like cowrie shells once used as currency, they are a traditional offering during festivals and a beloved symbol of prosperity.",
-    image: bellam_gavvalu,
-    currency: "INR",
-    variants: [
-      { weight: "250g", price: 189, discountPrice: 169 },
-      { weight: "500g", price: 349, discountPrice: 319 },
-      { weight: "1kg", price: 679, discountPrice: 619 },
-    ],
-    tags: {
-      fav: true,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
+  // {
+  //   id: 45,
+  //   name: "Gulabi Guthulu",
+  //   category: "snacks",
+  //   tagline: "Crispy rose cookies with a hint of sweetness.",
+  //   description:
+  //     "Traditional flower-shaped savory-sweet snack. These delicately shaped treats are a cherished part of Andhra's festive cooking heritage, traditionally made during weddings and religious celebrations as a symbol of beauty and auspiciousness.",
+  //   image: gulabi_guthulu,
+  //   currency: "INR",
+  //   variants: [
+  //     { weight: "250g", price: 169, discountPrice: 149 },
+  //     { weight: "500g", price: 319, discountPrice: 289 },
+  //     { weight: "1kg", price: 619, discountPrice: 559 },
+  //   ],
+  //   tags: {
+  //     fav: false,
+  //     ammammabest: true,
+  //     konaseemaclassics: true,
+  //     godavariflavors: true,
+  //     heritagerecipes: true,
+  //   },
+  //   inStock: true,
+  // },
+  // {
+  //   id: 46,
+  //   name: "Bellam Gavvalu",
+  //   category: "sweets",
+  //   tagline: "Sweet shells coated in jaggery syrup.",
+  //   description:
+  //     "Traditional Andhra snack made of flour and jaggery. Bellam Gavvalu hold deep cultural significance in Andhra — shaped like cowrie shells once used as currency, they are a traditional offering during festivals and a beloved symbol of prosperity.",
+  //   image: bellam_gavvalu,
+  //   currency: "INR",
+  //   variants: [
+  //     { weight: "500g", price: 349, discountPrice: 319 },
+  //     { weight: "1kg", price: 679, discountPrice: 619 },
+  //   ],
+  //   tags: {
+  //     fav: true,
+  //     ammammabest: true,
+  //     konaseemaclassics: true,
+  //     godavariflavors: true,
+  //     heritagerecipes: true,
+  //   },
+  //   inStock: true,
+  // },
+
+  //sweets
   {
     id: 47,
     name: "Pootharekulu (Dry Fruit Sugar)",
@@ -1108,8 +1110,9 @@ export const products = [
     image: pootharekulu_sugar,
     currency: "INR",
     variants: [
-      { weight: "box_of_10", price: 399, discountPrice: 349 },
-      { weight: "box_of_20", price: 749, discountPrice: 699 },
+      { weight: "box_of_5", price: 399, discountPrice: 249 },
+      { weight: "box_of_10", price: 499, discountPrice: 399 },
+      { weight: "box_of_20", price: 999, discountPrice: 899 },
     ],
     tags: {
       fav: true,
@@ -1120,51 +1123,29 @@ export const products = [
     },
     inStock: true,
   },
-  {
-    id: 48,
-    name: "Bellam Dry Fruit Pootharekulu",
-    category: "sweets",
-    tagline: "Healthy and sweet jaggery dry fruit papers.",
-    description:
-      "Authentic rice wafers with jaggery and premium nuts. This jaggery variant of the iconic Atreyapuram sweet beautifully marries ancient rice-paper craftsmanship with the wholesome sweetness of traditional unrefined jaggery used in Andhra for centuries.",
-    image: pootharekulu_bellam,
-    currency: "INR",
-    variants: [
-      { weight: "box_of_10", price: 449, discountPrice: 399 },
-      { weight: "box_of_20", price: 849, discountPrice: 799 },
-    ],
-    tags: {
-      fav: true,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
-  {
-    id: 49,
-    name: "Kandriga Kova",
-    category: "sweets",
-    tagline: "The legendary milk sweet.",
-    description:
-      "Rich, creamy milk solids slow-cooked to perfection. Named after the town of Kandriga, this kova has been crafted by dedicated milk-sweet artisans for generations and is considered one of Andhra's most iconic and geographically prized confections.",
-    image: kandriga_kova,
-    currency: "INR",
-    variants: [
-      { weight: "250g", price: 249, discountPrice: 219 },
-      { weight: "500g", price: 479, discountPrice: 449 },
-      { weight: "1kg", price: 929, discountPrice: 869 },
-    ],
-    tags: {
-      fav: true,
-      ammammabest: true,
-      konaseemaclassics: false,
-      godavariflavors: false,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
+  // {
+  //   id: 49,
+  //   name: "Kandriga Kova",
+  //   category: "sweets",
+  //   tagline: "The legendary milk sweet.",
+  //   description:
+  //     "Rich, creamy milk solids slow-cooked to perfection. Named after the town of Kandriga, this kova has been crafted by dedicated milk-sweet artisans for generations and is considered one of Andhra's most iconic and geographically prized confections.",
+  //   image: kandriga_kova,
+  //   currency: "INR",
+  //   variants: [
+  //     { weight: "250g", price: 249, discountPrice: 219 },
+  //     { weight: "500g", price: 479, discountPrice: 449 },
+  //     { weight: "1kg", price: 929, discountPrice: 869 },
+  //   ],
+  //   tags: {
+  //     fav: true,
+  //     ammammabest: true,
+  //     konaseemaclassics: false,
+  //     godavariflavors: false,
+  //     heritagerecipes: true,
+  //   },
+  //   inStock: true,
+  // },
   {
     id: 50,
     name: "Mamidi Thandra",
@@ -1175,9 +1156,8 @@ export const products = [
     image: mamidi_thandra,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 199, discountPrice: 179 },
-      { weight: "500g", price: 379, discountPrice: 349 },
-      { weight: "1kg", price: 729, discountPrice: 669 },
+      { weight: "500g", price: 499, discountPrice: 349 },
+      { weight: "1kg", price: 729, discountPrice: 599 },
     ],
     tags: {
       fav: true,
@@ -1198,9 +1178,8 @@ export const products = [
     image: palli_laddulu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 159, discountPrice: 139 },
-      { weight: "500g", price: 299, discountPrice: 269 },
-      { weight: "1kg", price: 579, discountPrice: 519 },
+      { weight: "500g", price: 399, discountPrice: 349 },
+      { weight: "1kg", price: 679, discountPrice: 599 },
     ],
     tags: {
       fav: false,
@@ -1232,7 +1211,7 @@ export const products = [
       godavariflavors: true,
       heritagerecipes: false,
     },
-    inStock: true,
+    inStock: false,
   },
   {
     id: 53,
@@ -1244,9 +1223,8 @@ export const products = [
     image: dry_fruit_laddu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 349, discountPrice: 299 },
       { weight: "500g", price: 649, discountPrice: 599 },
-      { weight: "1kg", price: 1249, discountPrice: 1149 },
+      { weight: "1kg", price: 1249, discountPrice: 1199 },
     ],
     tags: {
       fav: true,
@@ -1267,9 +1245,9 @@ export const products = [
     image: sunnundalu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 229, discountPrice: 199 },
+      { weight: "250g", price: 229, discountPrice: 249 },
       { weight: "500g", price: 429, discountPrice: 399 },
-      { weight: "1kg", price: 829, discountPrice: 769 },
+      { weight: "1kg", price: 829, discountPrice: 699 },
     ],
     tags: {
       fav: true,
@@ -1280,6 +1258,8 @@ export const products = [
     },
     inStock: true,
   },
+
+  //Dry non ve
   {
     id: 55,
     name: "Dry Fish – Katti Chepalu",
@@ -1290,9 +1270,9 @@ export const products = [
     image: katti_chepalu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 299, discountPrice: 249 },
-      { weight: "500g", price: 549, discountPrice: 499 },
-      { weight: "1kg", price: 1069, discountPrice: 969 },
+      { weight: "250g", price: 399, discountPrice: 299 },
+      { weight: "500g", price: 649, discountPrice: 599 },
+      { weight: "1kg", price: 1249, discountPrice: 1199 },
     ],
     tags: {
       fav: false,
@@ -1303,29 +1283,29 @@ export const products = [
     },
     inStock: true,
   },
-  {
-    id: 56,
-    name: "Royyapattu",
-    category: "drynonveg",
-    tagline: "A unique dry prawn preparation.",
-    description:
-      "Tiny prawns dried and seasoned, ready to fry or cook. Royyapattu is a treasured coastal specialty of Andhra, where traditional sun-drying of prawns has been a way of life for fishing families along the Godavari and Krishna deltas for generations.",
-    image: royyapattu,
-    currency: "INR",
-    variants: [
-      { weight: "250g", price: 349, discountPrice: 299 },
-      { weight: "500g", price: 649, discountPrice: 599 },
-      { weight: "1kg", price: 1249, discountPrice: 1149 },
-    ],
-    tags: {
-      fav: true,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
+  // {
+  //   id: 56,
+  //   name: "Royyapattu",
+  //   category: "drynonveg",
+  //   tagline: "A unique dry prawn preparation.",
+  //   description:
+  //     "Tiny prawns dried and seasoned, ready to fry or cook. Royyapattu is a treasured coastal specialty of Andhra, where traditional sun-drying of prawns has been a way of life for fishing families along the Godavari and Krishna deltas for generations.",
+  //   image: royyapattu,
+  //   currency: "INR",
+  //   variants: [
+  //     { weight: "250g", price: 349, discountPrice: 299 },
+  //     { weight: "500g", price: 649, discountPrice: 599 },
+  //     { weight: "1kg", price: 1249, discountPrice: 1149 },
+  //   ],
+  //   tags: {
+  //     fav: true,
+  //     ammammabest: true,
+  //     konaseemaclassics: true,
+  //     godavariflavors: true,
+  //     heritagerecipes: true,
+  //   },
+  //   inStock: true,
+  // },
   {
     id: 57,
     name: "Dry Prawns",
@@ -1336,9 +1316,9 @@ export const products = [
     image: dry_prawns,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 349, discountPrice: 299 },
-      { weight: "500g", price: 649, discountPrice: 599 },
-      { weight: "1kg", price: 1249, discountPrice: 1149 },
+      { weight: "250g", price: 449, discountPrice: 349 },
+      { weight: "500g", price: 849, discountPrice: 699 },
+      { weight: "1kg", price: 1249, discountPrice: 1399 },
     ],
     tags: {
       fav: false,
@@ -1359,9 +1339,9 @@ export const products = [
     image: koyyinga_dry_fish,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 299, discountPrice: 249 },
-      { weight: "500g", price: 549, discountPrice: 499 },
-      { weight: "1kg", price: 1069, discountPrice: 969 },
+      { weight: "250g", price: 299, discountPrice: 399 },
+      { weight: "500g", price: 549, discountPrice: 699 },
+      { weight: "1kg", price: 1069, discountPrice: 1299 },
     ],
     tags: {
       fav: false,
@@ -1372,6 +1352,8 @@ export const products = [
     },
     inStock: true,
   },
+
+  //fryums
   {
     id: 59,
     name: "Gummadi Vadiyalu",
@@ -1382,9 +1364,9 @@ export const products = [
     image: gummadi_vadiyalu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 199, discountPrice: 179 },
-      { weight: "500g", price: 379, discountPrice: 349 },
-      { weight: "1kg", price: 729, discountPrice: 669 },
+      { weight: "250g", price:499, discountPrice: 349 },
+      { weight: "500g", price: 899, discountPrice: 599 },
+      { weight: "1kg", price: 1729, discountPrice: 1299 },
     ],
     tags: {
       fav: true,
@@ -1416,7 +1398,7 @@ export const products = [
       godavariflavors: true,
       heritagerecipes: true,
     },
-    inStock: true,
+    inStock: false,
   },
   {
     id: 61,
@@ -1439,7 +1421,7 @@ export const products = [
       godavariflavors: true,
       heritagerecipes: false,
     },
-    inStock: true,
+    inStock: false,
   },
   {
     id: 62,
@@ -1451,9 +1433,9 @@ export const products = [
     image: pindi_vadiyalu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 149, discountPrice: 129 },
-      { weight: "500g", price: 279, discountPrice: 249 },
-      { weight: "1kg", price: 539, discountPrice: 479 },
+      { weight: "250g", price: 349, discountPrice: 249 },
+      { weight: "500g", price: 479, discountPrice: 399 },
+      { weight: "1kg", price: 839, discountPrice: 749 },
     ],
     tags: {
       fav: false,
