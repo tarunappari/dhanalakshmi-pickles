@@ -1,17 +1,32 @@
 .container {
-  display: flex;
-  padding: 0.5rem 2rem;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--green);
+  width: 100%;
+  overflow: hidden;
   background-color: #d4c79a;
+  padding: 0.5rem 0;
+  display: flex;
+}
+
+.marqueeTrack {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+  width: fit-content;
+}
+
+.text {
   font-size: 0.9rem;
   font-weight: 600;
-  text-align: center;
+  /* Ensuring spaces are preserved so the pipe separator looks good */
+  white-space: pre; 
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-25%); } 
 }
 
 @media (max-width: 550px) {
-  .container {
+  .text {
     font-size: 0.7rem;
   }
 }

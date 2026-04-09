@@ -8,15 +8,14 @@ import kathalu from "@/public/assets/landingpage/category/kathalu.webp";
 import chicken_pickle from "@/public/assets/products/nonveg/chicken.webp";
 import prawns_pickle from "@/public/assets/products/nonveg/prawn.webp";
 import mutton_pickle from "@/public/assets/products/nonveg/mutton.webp";
-import mutton_boneless from "@/public/assets/products/nonveg/chicken.webp";
 import fish_pickle from "@/public/assets/products/nonveg/fish.webp";
 import gongura_chicken from "@/public/assets/products/nonveg/chicken.webp";
 import gongura_chicken_boneless from "@/public/assets/products/nonveg/chickengongura.webp";
-import gongura_mutton_boneless from "@/public/assets/products/nonveg/chicken.webp";
 import crabs_pickle from "@/public/assets/products/nonveg/crab.webp";
 import chicken_boneless from "@/public/assets/products/nonveg/chiceknboneless.webp";
 import prawn_gongura from "@/public/assets/products/nonveg/gonguraprawn.webp";
-import gongura_mutton from "@/public/assets/products/nonveg/gonguramutton.webp";
+import muttongongura from "@/public/assets/products/nonveg/muttongongura.webp";
+
 import avakai_mango from "@/public/assets/products/veg/mango2.webp";
 import gongura_veg from "@/public/assets/products/veg/gongura.webp";
 import tomato_pickle from "@/public/assets/products/veg/tomato.webp";
@@ -28,44 +27,56 @@ import lemon_pickle from "@/public/assets/products/veg/lemon.webp";
 import pandu_mirchi from "@/public/assets/products/nonveg/chicken.webp";
 import dondakaya_pickle from "@/public/assets/products/veg/dhonda.webp";
 import munakkaya_pickle from "@/public/assets/products/veg/drum3.webp";
+import kothimera from "@/public/assets/products/veg/kothimera.webp";
+import amla from "@/public/assets/products/veg/amla.webp";
+import ginger from "@/public/assets/products/veg/ginger.webp";
+
 import kakarakaya_karam from "@/public/assets/products/powders/kakarkaaram.webp";
 import kandi_podi from "@/public/assets/products/powders/kandipodi.webp";
 import mungaku_karam from "@/public/assets/products/powders/munagakupodi.webp";
 import nalla_karam from "@/public/assets/products/powders/karapodi.webp";
-import ammamma_special_karam from "@/public/assets/products/nonveg/chicken.webp";
-import nuvvula_podi from "@/public/assets/products/nonveg/chicken.webp";
-import karvepaku_podi from "@/public/assets/products/nonveg/chicken.webp";
+import ammamma_special_karam from "@/public/assets/products/powders/ammammasplpodi.webp";
+import nuvvula_podi from "@/public/assets/products/powders/nuvvulapodi.webp";
+import karvepaku_podi from "@/public/assets/products/powders/currypodi.webp";
 import velluli_karam from "@/public/assets/products/nonveg/chicken.webp";
 import kobbari_karam from "@/public/assets/products/powders/kobbarikaaram.webp";
 import garam_masala from "@/public/assets/products/spices/garam.webp";
 import biryani_masala from "@/public/assets/products/spices/biryanimasala.webp";
 import dhaniya_powder from "@/public/assets/products/spices/dhaniyapodi.webp";
-import ammamma_special_karam_red from "@/public/assets/products/powders/karampodi.webp";
+import kaaram from "@/public/assets/products/spices/kaaram.webp";
 import turmeric_powder from "@/public/assets/products/spices/turmeric.webp";
-import pappu_chakodi from "@/public/assets/products/nonveg/chicken.webp";
-import andhra_karapusa from "@/public/assets/products/nonveg/chicken.webp";
+
+
+import pappu_chakodi from "@/public/assets/products/snacks/pappuchagodi.webp";
+import andhra_karapusa from "@/public/assets/products/snacks/pusa.webp";
 import all_mixture from "@/public/assets/products/snacks/mixture.webp";
-import ringulu from "@/public/assets/products/nonveg/chicken.webp";
-import agra_mixture from "@/public/assets/products/nonveg/chicken.webp";
-import chekka_pakodi from "@/public/assets/products/nonveg/chicken.webp";
+import ringulu from "@/public/assets/products/snacks/ringulu.webp";
+import agra_mixture from "@/public/assets/products/snacks/agra.webp";
+import chekka_pakodi from "@/public/assets/products/snacks/chekkapakodi.webp";
 import chekkalu from "@/public/assets/products/nonveg/chicken.webp";
-import gulabi_guthulu from "@/public/assets/products/nonveg/chicken.webp";
-import bellam_gavvalu from "@/public/assets/products/nonveg/chicken.webp";
-import pootharekulu_sugar from "@/public/assets/products/nonveg/chicken.webp";
+import gulabi_guthulu from "@/public/assets/products/snacks/gulabi.webp";
+
+import pootharekulu_sugar from "@/public/assets/products/sweets/pootharekulu.webp";
 import pootharekulu_bellam from "@/public/assets/products/nonveg/chicken.webp";
-import kandriga_kova from "@/public/assets/products/nonveg/chicken.webp";
-import mamidi_thandra from "@/public/assets/products/nonveg/chicken.webp";
-import palli_laddulu from "@/public/assets/products/nonveg/chicken.webp";
-import bellam_kommulu from "@/public/assets/products/nonveg/chicken.webp";
+import kandriga_kova from "@/public/assets/products/sweets/kova.webp";
+import mamidi_thandra from "@/public/assets/products/sweets/tandra.webp";
+import palli_laddulu from "@/public/assets/products/sweets/palliladdu.webp";
+import bellam_kommulu from "@/public/assets/products/sweets/kommulu.webp";
 import dry_fruit_laddu from "@/public/assets/products/sweets/dryfruitladdo.webp";
-import sunnundalu from "@/public/assets/products/nonveg/chicken.webp";
-import katti_chepalu from "@/public/assets/products/nonveg/chicken.webp";
-import royyapattu from "@/public/assets/products/nonveg/chicken.webp";
+import sunnundalu from "@/public/assets/products/sweets/sunnundalu.webp";
+
+
+import katti_chepalu from "@/public/assets/products/drynonveg/kattichepalu.webp";
 import dry_prawns from "@/public/assets/products/drynonveg/dryprawns.webp";
 import koyyinga_dry_fish from "@/public/assets/products/drynonveg/koyyinga.webp";
-import gummadi_vadiyalu from "@/public/assets/products/nonveg/chicken.webp";
+import pandukappa from "@/public/assets/products/drynonveg/pandukappa.webp";
+import nethallu from "@/public/assets/products/drynonveg/nethallu.webp";
+import savidayalu from "@/public/assets/products/drynonveg/savidayalu.webp";
+
+
+import gummadi_vadiyalu from "@/public/assets/products/fryums/gummid.webp";
 import challa_mirapakayalu from "@/public/assets/products/fryums/challamirapa.webp";
-import saggubiyyam_vadiyalu from "@/public/assets/products/nonveg/chicken.webp";
+import saggubiyyam_vadiyalu from "@/public/assets/products/fryums/saggu.webp";
 import pindi_vadiyalu from "@/public/assets/products/fryums/pindivadiyalu.webp";
 
 export const categoriesForLandingPage = [
@@ -198,7 +209,7 @@ export const products = [
     tagline: "The legendary tang of Gongura meets spicy chicken.",
     description:
       "A classic Andhra combination of sorrel leaves and chicken. Gongura has been the pride of Andhra kitchens for centuries, and its pairing with chicken is considered the ultimate expression of regional culinary identity.",
-    image: gongura_chicken,
+    image: gongura_chicken_boneless,
     currency: "INR",
     variants: [
       { weight: "300g", price: 549, discountPrice: 349 },
@@ -212,30 +223,6 @@ export const products = [
       konaseemaclassics: true,
       godavariflavors: true,
       heritagerecipes: true,
-    },
-    inStock: true,
-  },
-  {
-    id: 4,
-    name: "Gongura Chicken Boneless",
-    category: "nonveg",
-    tagline: "Tangy Gongura and tender boneless chicken.",
-    description:
-      "Hassle-free spicy and sour chicken pickle. Inspired by the traditional Gongura preparations passed down through Andhra grandmothers, this boneless version makes the heritage flavor accessible to every home.",
-    image: gongura_chicken_boneless,
-    currency: "INR",
-    variants: [
-      { weight: "300g", price: 499, discountPrice: 449 },
-      { weight: "500g", price: 899, discountPrice: 849 },
-      { weight: "1kg", price: 1599, discountPrice: 1499 },
-    ],
-    tags: {
-      new: true,
-      fav: false,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: false,
     },
     inStock: true,
   },
@@ -294,7 +281,7 @@ export const products = [
     tagline: "Melt-in-your-mouth boneless mutton chunks.",
     description:
       "Easy to eat, high-flavor boneless mutton pickle. This cherished recipe traces its roots to Andhra's rich non-vegetarian culinary heritage, where slow-cooked meats with hand-ground masalas were a mark of a skilled home cook.",
-    image: mutton_boneless,
+    image: mutton_pickle,
     currency: "INR",
     variants: [
       { weight: "300g", price: 600, discountPrice: 499 },
@@ -313,17 +300,17 @@ export const products = [
   },
   {
     id: 8,
-    name: "Gongura Mutton Boneless",
+    name: "Mutton Gongura Pickle",
     category: "nonveg",
-    tagline: "A royal treat of boneless mutton and sorrel leaves.",
+    tagline: "Melt-in-your-mouth boneless mutton chunks.",
     description:
-      "Rich mutton combined with the acidic punch of Gongura. This combination has long been celebrated at Andhra feasts and weddings, symbolizing the region's bold and unapologetic love for intense flavors.",
-    image: gongura_mutton_boneless,
+      "Easy to eat, high-flavor boneless mutton pickle. This cherished recipe traces its roots to Andhra's rich non-vegetarian culinary heritage, where slow-cooked meats with hand-ground masalas were a mark of a skilled home cook.",
+    image: muttongongura,
     currency: "INR",
     variants: [
-      { weight: "300g", price: 600, discountPrice: 549 },
-      { weight: "500g", price: 1300, discountPrice: 1149 },
-      { weight: "1kg", price: 2300, discountPrice: 2149 },
+      { weight: "300g", price: 600, discountPrice: 499 },
+      { weight: "500g", price: 1200, discountPrice: 1099 },
+      { weight: "1kg", price: 2200, discountPrice: 2099 },
     ],
     tags: {
       new: true,
@@ -384,6 +371,7 @@ export const products = [
     inStock: true,
   },
 
+  //veg pickles
   {
     id: 13,
     name: "Avakai (Mango)",
@@ -456,30 +444,7 @@ export const products = [
     inStock: true,
   },
   {
-    id: 17,
-    name: "Dosakaya Pickle",
-    category: "veg",
-    tagline: "Crunchy yellow cucumber in spicy mustard sauce.",
-    description:
-      "Fresh yellow cucumber pickle with an instant zest. A signature pickle of the Konaseema region, Dosakaya has been cultivated and preserved in this coastal belt for generations as a refreshing summer staple.",
-    image: dosakaya_pickle,
-    currency: "INR",
-    variants: [
-      { weight: "300g", price: 249, discountPrice: 199 },
-      { weight: "500g", price: 399, discountPrice: 349 },
-      { weight: "1kg", price: 699, discountPrice: 649 },
-    ],
-    tags: {
-      fav: false,
-      ammammabest: false,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: false,
-    },
-    inStock: true,
-  },
-  {
-    id: 18,
+    id: 16,
     name: "Karvepaku Pickle",
     category: "veg",
     tagline: "Healthy and aromatic Curry Leaf pickle.",
@@ -502,36 +467,36 @@ export const products = [
     inStock: true,
   },
   {
-    id: 19,
-    name: "Kakarakaya Pickle",
+    id: 17,
+    name: "Allam Pickle",
     category: "veg",
-    tagline: "The perfect balance of bitter and spicy.",
+    tagline: "Bold, spicy, and digestive-rich Ginger pickle.",
     description:
-      "Fried bitter gourd slices pickled in a rich spice blend. Bitter gourd has been revered in Andhra's traditional wellness culture for its medicinal properties, and this pickle is a timeless way to enjoy its benefits with bold flavor.",
-    image: kakarakaya_pickle,
+      "Fresh ginger blended with traditional spices and tangy tamarind to create a bold and flavorful Andhra classic. Known for its digestive benefits, Allam pickle has been a staple in Telugu households — especially enjoyed with hot rice and ghee during monsoons and winters.",
+    image: ginger,
     currency: "INR",
     variants: [
-      { weight: "300g", price: 249, discountPrice: 199 },
-      { weight: "500g", price: 499, discountPrice: 399 },
-      { weight: "1kg", price: 799, discountPrice: 699 },
+      { weight: "300g", price: 269, discountPrice: 219 },
+      { weight: "500g", price: 429, discountPrice: 379 },
+      { weight: "1kg", price: 749, discountPrice: 699 },
     ],
     tags: {
-      fav: false,
+      fav: true,
       ammammabest: true,
       konaseemaclassics: true,
-      godavariflavors: false,
+      godavariflavors: true,
       heritagerecipes: true,
     },
     inStock: true,
   },
   {
-    id: 20,
-    name: "Lemon (Nimmakaya)",
+    id: 18,
+    name: "Kothimera Pickle",
     category: "veg",
-    tagline: "Classic citrus tang for every meal.",
+    tagline: "Fresh, herby, and irresistibly aromatic Coriander pickle.",
     description:
-      "Zesty lemon pieces cured in salt and red chilli powder. Lemon pickle has been an indispensable part of the Andhra thali for centuries, cherished not only for its flavor but also as a traditional digestive aid.",
-    image: lemon_pickle,
+      "Made with freshly ground coriander leaves, green chilies, and traditional spices, this pickle bursts with vibrant flavors. A beloved Andhra delicacy, Kothimera pickle brings a refreshing twist to everyday meals — especially when paired with hot rice and a dollop of ghee.",
+    image: kothimera,
     currency: "INR",
     variants: [
       { weight: "300g", price: 249, discountPrice: 199 },
@@ -539,7 +504,7 @@ export const products = [
       { weight: "1kg", price: 699, discountPrice: 649 },
     ],
     tags: {
-      fav: true,
+      fav: false,
       ammammabest: true,
       konaseemaclassics: true,
       godavariflavors: true,
@@ -549,66 +514,20 @@ export const products = [
   },
   {
     id: 21,
-    name: "Pandu Mirchi",
+    name: "Amla Pickle",
     category: "veg",
-    tagline: "Fiery red chilli pickle that packs a punch.",
+    tagline: "Tangy, nutritious, and immunity-boosting Gooseberry pickle.",
     description:
-      "Ripe red chillies ground into a coarse, spicy paste. The Guntur and Godavari belts of Andhra are legendary for their chilli cultivation, and this bold pickle is a proud cultural symbol of the region's fiery heritage.",
-    image: pandu_mirchi,
+      "Made from fresh amla (usirikaya), blended with traditional spices and oil, this pickle delivers a perfect balance of tanginess and spice. Rich in Vitamin C and deeply rooted in Andhra kitchens, Amla pickle is both flavorful and nourishing — often enjoyed with hot rice and ghee as a wholesome comfort meal.",
+    image: amla,
     currency: "INR",
     variants: [
-      { weight: "300g", price: 249, discountPrice: 199 },
-      { weight: "500g", price: 399, discountPrice: 349 },
-      { weight: "1kg", price: 699, discountPrice: 649 },
-    ],
-    tags: {
-      fav: true,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
-  {
-    id: 22,
-    name: "Dondakaya Pickle",
-    category: "veg",
-    tagline: "Unique ivy gourd pickle with a crunch.",
-    description:
-      "Ivy gourd marinated in traditional Andhra spices. Dondakaya has been a beloved home garden vegetable across Andhra villages for generations, and pickling it is a time-honored way of preserving its seasonal goodness.",
-    image: dondakaya_pickle,
-    currency: "INR",
-    variants: [
-      { weight: "300g", price: 249, discountPrice: 199 },
-      { weight: "500g", price: 399, discountPrice: 349 },
-      { weight: "1kg", price: 699, discountPrice: 649 },
+      { weight: "300g", price: 259, discountPrice: 209 },
+      { weight: "500g", price: 419, discountPrice: 369 },
+      { weight: "1kg", price: 729, discountPrice: 679 },
     ],
     tags: {
       fav: false,
-      ammammabest: false,
-      konaseemaclassics: false,
-      godavariflavors: true,
-      heritagerecipes: false,
-    },
-    inStock: true,
-  },
-  {
-    id: 23,
-    name: "Munakkaya Pickle",
-    category: "veg",
-    tagline: "Drumstick pickle—the aroma you can't resist.",
-    description:
-      "Tender drumstick pieces in a flavorful mustard-spice mix. Drumstick trees have stood in the courtyards of Andhra homes for centuries, and this pickle is a cherished way of honoring every part of that sacred tree.",
-    image: munakkaya_pickle,
-    currency: "INR",
-    variants: [
-      { weight: "300g", price: 249, discountPrice: 199 },
-      { weight: "500g", price: 399, discountPrice: 349 },
-      { weight: "1kg", price: 699, discountPrice: 649 },
-    ],
-    tags: {
-      fav: true,
       ammammabest: true,
       konaseemaclassics: true,
       godavariflavors: true,
@@ -616,6 +535,7 @@ export const products = [
     },
     inStock: true,
   },
+  //podis
   {
     id: 24,
     name: "Kakarikaya Karam",
@@ -787,7 +707,7 @@ export const products = [
     image: garam_masala,
     currency: "INR",
     variants: [
-    { weight: "250g", price: 399, discountPrice: 249 },
+      { weight: "250g", price: 399, discountPrice: 249 },
       { weight: "500g", price: 799, discountPrice: 499 },
       { weight: "1kg", price: 1199, discountPrice: 999 },
     ],
@@ -852,7 +772,7 @@ export const products = [
     tagline: "High-grade red chilli powder with the right heat.",
     description:
       "Hand-pounded chillies from the Godavari belt. The Godavari delta is one of India's most celebrated chilli-growing regions, and this hand-pounded powder is a proud tribute to the farmers who have cultivated this fiery crop for generations.",
-    image: ammamma_special_karam_red,
+    image: kaaram,
     currency: "INR",
     variants: [
       { weight: "500g", price: 379, discountPrice: 299 },
@@ -1030,45 +950,22 @@ export const products = [
     },
     inStock: true,
   },
-  {
-    id: 44,
-    name: "Chekkalu",
-    category: "snacks",
-    tagline: "Rice crackers with lentils and curry leaves.",
-    description:
-      "Traditional homemade rice crackers, perfectly fried. Chekkalu are an integral part of Andhra's festive snack repertoire, traditionally prepared during Sankranti and Diwali as an offering of love and hospitality to family and guests.",
-    image: chekkalu,
-    currency: "INR",
-    variants: [
-      { weight: "250g", price: 159, discountPrice: 149 },
-      { weight: "500g", price: 299, discountPrice: 249 },
-      { weight: "1kg", price: 579, discountPrice: 499 },
-    ],
-    tags: {
-      fav: true,
-      ammammabest: true,
-      konaseemaclassics: true,
-      godavariflavors: true,
-      heritagerecipes: true,
-    },
-    inStock: true,
-  },
   // {
-  //   id: 45,
-  //   name: "Gulabi Guthulu",
+  //   id: 44,
+  //   name: "Chekkalu",
   //   category: "snacks",
-  //   tagline: "Crispy rose cookies with a hint of sweetness.",
+  //   tagline: "Rice crackers with lentils and curry leaves.",
   //   description:
-  //     "Traditional flower-shaped savory-sweet snack. These delicately shaped treats are a cherished part of Andhra's festive cooking heritage, traditionally made during weddings and religious celebrations as a symbol of beauty and auspiciousness.",
-  //   image: gulabi_guthulu,
+  //     "Traditional homemade rice crackers, perfectly fried. Chekkalu are an integral part of Andhra's festive snack repertoire, traditionally prepared during Sankranti and Diwali as an offering of love and hospitality to family and guests.",
+  //   image: chekkalu,
   //   currency: "INR",
   //   variants: [
-  //     { weight: "250g", price: 169, discountPrice: 149 },
-  //     { weight: "500g", price: 319, discountPrice: 289 },
-  //     { weight: "1kg", price: 619, discountPrice: 559 },
+  //     { weight: "250g", price: 159, discountPrice: 149 },
+  //     { weight: "500g", price: 299, discountPrice: 249 },
+  //     { weight: "1kg", price: 579, discountPrice: 499 },
   //   ],
   //   tags: {
-  //     fav: false,
+  //     fav: true,
   //     ammammabest: true,
   //     konaseemaclassics: true,
   //     godavariflavors: true,
@@ -1076,6 +973,29 @@ export const products = [
   //   },
   //   inStock: true,
   // },
+  {
+    id: 45,
+    name: "Gulabi Guthulu",
+    category: "snacks",
+    tagline: "Crispy rose cookies with a hint of sweetness.",
+    description:
+      "Traditional flower-shaped savory-sweet snack. These delicately shaped treats are a cherished part of Andhra's festive cooking heritage, traditionally made during weddings and religious celebrations as a symbol of beauty and auspiciousness.",
+    image: gulabi_guthulu,
+    currency: "INR",
+    variants: [
+      { weight: "250g", price: 169, discountPrice: 149 },
+      { weight: "500g", price: 319, discountPrice: 289 },
+      { weight: "1kg", price: 619, discountPrice: 559 },
+    ],
+    tags: {
+      fav: false,
+      ammammabest: true,
+      konaseemaclassics: true,
+      godavariflavors: true,
+      heritagerecipes: true,
+    },
+    inStock: true,
+  },
   // {
   //   id: 46,
   //   name: "Bellam Gavvalu",
@@ -1102,7 +1022,7 @@ export const products = [
   //sweets
   {
     id: 47,
-    name: "Pootharekulu (Dry Fruit Sugar)",
+    name: "Pootharekulu (Dry Fruit)",
     category: "sweets",
     tagline: "Paper-sweet layers from Atreyapuram.",
     description:
@@ -1123,29 +1043,29 @@ export const products = [
     },
     inStock: true,
   },
-  // {
-  //   id: 49,
-  //   name: "Kandriga Kova",
-  //   category: "sweets",
-  //   tagline: "The legendary milk sweet.",
-  //   description:
-  //     "Rich, creamy milk solids slow-cooked to perfection. Named after the town of Kandriga, this kova has been crafted by dedicated milk-sweet artisans for generations and is considered one of Andhra's most iconic and geographically prized confections.",
-  //   image: kandriga_kova,
-  //   currency: "INR",
-  //   variants: [
-  //     { weight: "250g", price: 249, discountPrice: 219 },
-  //     { weight: "500g", price: 479, discountPrice: 449 },
-  //     { weight: "1kg", price: 929, discountPrice: 869 },
-  //   ],
-  //   tags: {
-  //     fav: true,
-  //     ammammabest: true,
-  //     konaseemaclassics: false,
-  //     godavariflavors: false,
-  //     heritagerecipes: true,
-  //   },
-  //   inStock: true,
-  // },
+  {
+    id: 49,
+    name: "Kandriga Kova",
+    category: "sweets",
+    tagline: "The legendary milk sweet.",
+    description:
+      "Rich, creamy milk solids slow-cooked to perfection. Named after the town of Kandriga, this kova has been crafted by dedicated milk-sweet artisans for generations and is considered one of Andhra's most iconic and geographically prized confections.",
+    image: kandriga_kova,
+    currency: "INR",
+    variants: [
+      { weight: "250g", price: 249, discountPrice: 219 },
+      { weight: "500g", price: 479, discountPrice: 449 },
+      { weight: "1kg", price: 929, discountPrice: 869 },
+    ],
+    tags: {
+      fav: true,
+      ammammabest: true,
+      konaseemaclassics: false,
+      godavariflavors: false,
+      heritagerecipes: true,
+    },
+    inStock: true,
+  },
   {
     id: 50,
     name: "Mamidi Thandra",
@@ -1259,7 +1179,7 @@ export const products = [
     inStock: true,
   },
 
-  //Dry non ve
+  //Dry non veg
   {
     id: 55,
     name: "Dry Fish – Katti Chepalu",
@@ -1283,29 +1203,29 @@ export const products = [
     },
     inStock: true,
   },
-  // {
-  //   id: 56,
-  //   name: "Royyapattu",
-  //   category: "drynonveg",
-  //   tagline: "A unique dry prawn preparation.",
-  //   description:
-  //     "Tiny prawns dried and seasoned, ready to fry or cook. Royyapattu is a treasured coastal specialty of Andhra, where traditional sun-drying of prawns has been a way of life for fishing families along the Godavari and Krishna deltas for generations.",
-  //   image: royyapattu,
-  //   currency: "INR",
-  //   variants: [
-  //     { weight: "250g", price: 349, discountPrice: 299 },
-  //     { weight: "500g", price: 649, discountPrice: 599 },
-  //     { weight: "1kg", price: 1249, discountPrice: 1149 },
-  //   ],
-  //   tags: {
-  //     fav: true,
-  //     ammammabest: true,
-  //     konaseemaclassics: true,
-  //     godavariflavors: true,
-  //     heritagerecipes: true,
-  //   },
-  //   inStock: true,
-  // },
+  {
+    id: 56,
+    name: "Pandukappa Dry Fish",
+    category: "drynonveg",
+    tagline: "Traditional coastal Pandukappa dry fish.",
+    description:
+      "Naturally sun-dried along the coastal regions, Pandukappa dry fish is known for its intense aroma and bold, salty flavor. A staple in Andhra households, it pairs perfectly with hot rice and spicy chutneys, bringing an authentic village-style taste to your plate.",
+    image: pandukappa,
+    currency: "INR",
+    variants: [
+      { weight: "250g", price: 349, discountPrice: 449 },
+      { weight: "500g", price: 649, discountPrice: 799 },
+      { weight: "1kg", price: 1249, discountPrice: 1499 },
+    ],
+    tags: {
+      fav: false,
+      ammammabest: true,
+      konaseemaclassics: true,
+      godavariflavors: true,
+      heritagerecipes: true,
+    },
+    inStock: true,
+  },
   {
     id: 57,
     name: "Dry Prawns",
@@ -1352,24 +1272,45 @@ export const products = [
     },
     inStock: true,
   },
-
-  //fryums
   {
     id: 59,
-    name: "Gummadi Vadiyalu",
-    category: "vadiyalu",
-    tagline: "Ash gourd nuggets for your dal rice.",
+    name: "Nethallu Dry Fish",
+    category: "drynonveg",
+    tagline: "Crispy, flavorful anchovy dry fish.",
     description:
-      "Traditional sun-dried ash gourd and lentil drops. Sun-drying vegetables into vadiyalu is a time-honored Andhra technique for preserving seasonal produce, and Gummadi Vadiyalu hold a cherished place in the region's culinary memory.",
-    image: gummadi_vadiyalu,
+      "Nethallu (anchovies) are a beloved coastal delicacy, carefully cleaned and sun-dried to preserve their rich umami flavor. Known for their crispy texture when fried, they are perfect for spicy Andhra-style fry or chutney. A must-have for seafood lovers craving authentic village taste.",
+    image: nethallu,
     currency: "INR",
     variants: [
-      { weight: "250g", price:499, discountPrice: 349 },
-      { weight: "500g", price: 899, discountPrice: 599 },
-      { weight: "1kg", price: 1729, discountPrice: 1299 },
+      { weight: "250g", price: 279, discountPrice: 349 },
+      { weight: "500g", price: 499, discountPrice: 649 },
+      { weight: "1kg", price: 949, discountPrice: 1199 },
     ],
     tags: {
       fav: true,
+      ammammabest: true,
+      konaseemaclassics: true,
+      godavariflavors: true,
+      heritagerecipes: false,
+    },
+    inStock: true,
+  },
+  {
+    id: 72,
+    name: "Savidayalu Dry Fish",
+    category: "drynonveg",
+    tagline: "Rich, traditional Savidayalu dry fish.",
+    description:
+      "Savidayalu dry fish is a classic coastal delicacy, known for its deep flavor and slightly chewy texture. Carefully sun-dried using traditional methods, it delivers a strong, authentic taste that pairs perfectly with onion, chili, and hot rice. A true favorite in Andhra village-style cooking.",
+    image: savidayalu,
+    currency: "INR",
+    variants: [
+      { weight: "250g", price: 299, discountPrice: 379 },
+      { weight: "500g", price: 549, discountPrice: 699 },
+      { weight: "1kg", price: 1049, discountPrice: 1299 },
+    ],
+    tags: {
+      fav: false,
       ammammabest: true,
       konaseemaclassics: true,
       godavariflavors: true,
@@ -1377,6 +1318,9 @@ export const products = [
     },
     inStock: true,
   },
+
+  //fryums
+
   {
     id: 60,
     name: "Challa Mirapakayalu",
@@ -1439,6 +1383,29 @@ export const products = [
     ],
     tags: {
       fav: false,
+      ammammabest: true,
+      konaseemaclassics: true,
+      godavariflavors: true,
+      heritagerecipes: true,
+    },
+    inStock: true,
+  },
+  {
+    id: 59,
+    name: "Gummadi Vadiyalu",
+    category: "vadiyalu",
+    tagline: "Ash gourd nuggets for your dal rice.",
+    description:
+      "Traditional sun-dried ash gourd and lentil drops. Sun-drying vegetables into vadiyalu is a time-honored Andhra technique for preserving seasonal produce, and Gummadi Vadiyalu hold a cherished place in the region's culinary memory.",
+    image: gummadi_vadiyalu,
+    currency: "INR",
+    variants: [
+      { weight: "250g", price: 499, discountPrice: 349 },
+      { weight: "500g", price: 899, discountPrice: 599 },
+      { weight: "1kg", price: 1729, discountPrice: 1299 },
+    ],
+    tags: {
+      fav: true,
       ammammabest: true,
       konaseemaclassics: true,
       godavariflavors: true,
