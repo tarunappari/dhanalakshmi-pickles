@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
-import sweets from "@/public/assets/landingpage/category/sweets.webp";
+import sweets from "@/public/assets/products/sweets/pootharekulu.webp";
 import { useCartStore } from "@/store/cartStore";
 
 const PlantOfTheWeek = () => {
@@ -28,22 +28,21 @@ const PlantOfTheWeek = () => {
     subtitle: "World famous",
     rating: 4.8,
     reviewCount: 127,
-    originalPrice: 380,
-    discountedPrice: 10,
-    discount: getDiscount(380, 350),
+    originalPrice: 1120,
+    discountedPrice: 899,
+    discount: getDiscount(1120, 899),
     description:
-      "The Monstera Deliciosa is a stunning tropical plant known for its iconic split leaves and easy care requirements. Perfect for brightening up any indoor space, this plant thrives in medium to bright indirect light and adds a touch of jungle vibes to your home.",
+      "The Athreyapuram Pootharekulu is a traditional Andhra sweet made with thin rice sheets, jaggery, and ghee. It is a delicate and crispy sweet that melts in your mouth.",
     features: [
-      "Air purifying qualities",
-      "Low maintenance care",
-      "Fast growing",
-      "Pet-friendly option available",
+      "Made with pure ghee",
+      "No added preservatives",
+      "Handmade by skilled artisans",
+      "Authentic Athreyapuram recipe",
     ],
     images: [
       sweets.src,
-      "https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1463320726281-696a485928c7?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800&auto=format&fit=crop",
+      "https://i.pinimg.com/736x/2c/f7/31/2cf7313ab122189e2971b826fb650e5b.jpg",
+      "https://i.pinimg.com/1200x/f5/78/11/f57811c5f20835ae137de8e3689efa74.jpg",
     ],
     inStock: true,
     stockCount: 23,
@@ -166,7 +165,7 @@ const PlantOfTheWeek = () => {
                 </div>
                 <div className={styles.stockInfo}>
                   {plantData.inStock ? (
-                    <span className={styles.inStock}>✓ In Stock</span>
+                    <span className={styles.inStock}>✓ pack of 20</span>
                   ) : (
                     <span className={styles.outOfStock}>Out of Stock</span>
                   )}
