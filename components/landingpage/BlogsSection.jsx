@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import blog1 from "@/public/assets/decors/village.webp";
+import blog2 from "@/public/assets/blog/moonwalk.webp";
+import blog3 from "@/public/assets/blog/endless2.webp";
 import styles from "@/styles/landingpage/BlogsSection.module.scss";
 import Link from "next/link";
 
@@ -29,28 +31,24 @@ const BlogsSection = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imgContainer}>
-            <Image src={blog1} alt="img" />
+            <Image src={blog2} alt="img" />
           </div>
           <div className={styles.content}>
-            <h3>From Amma’s Kitchen to Your Plate ❤️🍲</h3>
+            <h3>The Moon That Walked With Us 🌙</h3>
             <p>
-              Step into a world where recipes are not written, but passed down
-              through generations. Experience the warmth, care, and
-              unforgettable flavours that make every bite feel like home. 🏡💛
+              On our walk home, we believed the moon followed us. With Amma beside us, those quiet village nights felt like pure magic. ✨🌾
             </p>
             <Link href="/blog"><button>Read More</button></Link>
           </div>
         </div>
         <div className={styles.card}>
           <div className={styles.imgContainer}>
-            <Image src={blog1} alt="img" />
+            <Image src={blog3} alt="img" />
           </div>
           <div className={styles.content}>
-            <h3>Why Homemade Snacks Taste Better (And Always Will) 🌿✨</h3>
+            <h3>Stories During Power Cuts 🌧️🕯️</h3>
             <p>
-              It’s not just about ingredients—it’s about intention. Learn why
-              traditional, homemade snacks bring unmatched flavour, purity, and
-              nostalgia compared to mass-produced alternatives. 💛🍘
+             When lights went off, the real magic began. Candlelight, rain sounds, and stories made those nights warmer than electricity. 🌙💫
             </p>
             <Link href="/blog"><button>Read More</button></Link>
           </div>

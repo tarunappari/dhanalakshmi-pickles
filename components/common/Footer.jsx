@@ -27,7 +27,7 @@ const Footer = () => {
         {/* Brand & About */}
         <div className={styles.footerBrand}>
           <div className={styles.logoContainer}>
-            <Image src={logo} alt="Dhanalakshmi Ruchulu Logo" />
+            <Image src={logo} alt="Venkatraogari Vantillu Logo" />
           </div>
           <p className={styles.aboutText}>
             Delivering the authentic taste of Andhra directly to your home. Handcrafted with love, patience, and age-old traditional recipes.
@@ -86,11 +86,11 @@ const Footer = () => {
       </div>
 
       <div className={styles.footerBottom}>
-        <p>&copy; {new Date().getFullYear()} Dhanalakshmi Ruchulu. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Venkatraogari Vantillu. All rights reserved.</p>
         <div className={styles.bottomLinks}>
           <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Service</Link>
-          <Link href='/refund-policy'>Refunds & Returns</Link>
+          <Link href='/refund'>Refunds & Returns</Link>
         </div>
       </div>
     </footer>

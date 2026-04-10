@@ -20,7 +20,7 @@ const SuccessContent = () => {
         </div>
         <h1 className={styles.title}>Order Confirmed!</h1>
         <p className={styles.message}>
-          Thank you for choosing Dhanalakshmi Pickles. We have received your order and will begin preparing it right away.
+          Thank you for choosing Venkatraogari Vantillu. We have received your order and will begin preparing it right away.
         </p>
 
         {paymentId && (

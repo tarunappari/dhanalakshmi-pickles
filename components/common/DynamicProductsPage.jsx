@@ -71,7 +71,7 @@ const DynamicProductsPage = ({ categoryId, searchTerm }) => {
         <div>
           <h2>🌿 Our Products – Made with Love, Just Like Home</h2>
           <p>
-            At Dhanalakshmi Ruchulu, every product is more than just food — it’s
+            At Venkatraogari Vantillu, every product is more than just food — it’s
             a memory 🏡, a feeling, a piece of home.
           </p>
           <p>
@@ -100,7 +100,7 @@ const DynamicProductsPage = ({ categoryId, searchTerm }) => {
         </div>
         <div>
           <h2>
-            Dhanalakshmi Ruchulu is not just food… it’s love served in every
+            Venkatraogari Vantillu is not just food… it’s love served in every
             bite.💛✨
           </h2>
         </div>

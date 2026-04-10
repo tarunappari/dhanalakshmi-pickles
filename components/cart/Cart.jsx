@@ -187,7 +187,7 @@ const Cart = () => {
                   style={{ marginTop: "0.5rem" }}
                 >
                   <span>Delivery Charge</span>
-                  <span className={styles.totalPrice}>₹99</span>
+                  <span className={styles.totalPrice}>₹0</span>
                 </div>
                 <div
                   className={styles.summaryRow}
@@ -207,7 +207,7 @@ const Cart = () => {
                     }}
                   >
                     <p className={styles.taxInfo}>Including tax</p>
-                    <span className={styles.totalPrice}>₹{total + 99}</span>
+                    <span className={styles.totalPrice}>₹{total}</span>
                   </div>
                 </div>
 

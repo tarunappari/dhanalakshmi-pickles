@@ -71,7 +71,7 @@ const CheckoutPage = () => {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: orderData.order.amount,
         currency: orderData.order.currency,
-        name: "Dhanalakshmi Pickles",
+        name: "Venkatraogari Vantillu",
         description: "Order Checkout",
         order_id: orderData.order.id,
         handler: async function (response) {
@@ -160,7 +160,7 @@ const CheckoutPage = () => {
   if (!mounted) return null;
 
   const subtotal = getCartTotal();
-  const deliveryCharge = 99;
+  const deliveryCharge = 0;
   const total = subtotal + deliveryCharge;
 
   // Optionally redirect if cart is empty
