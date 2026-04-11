@@ -24,13 +24,13 @@ const PlantOfTheWeek = () => {
 
   // Sample plant data - you can replace this with props or API data
   const plantData = {
-    name: "Pootharekulu",
+    name: "Dry Fruit Pootharekulu(Athreyapuram)",
     subtitle: "World famous",
     rating: 4.8,
     reviewCount: 127,
-    originalPrice: 1120,
-    discountedPrice: 899,
-    discount: getDiscount(1120, 899),
+    originalPrice: 599,
+    discountedPrice: 399,
+    discount: getDiscount(600, 399),
     description:
       "The Athreyapuram Pootharekulu is a traditional Andhra sweet made with thin rice sheets, jaggery, and ghee. It is a delicate and crispy sweet that melts in your mouth.",
     features: [
@@ -165,7 +165,7 @@ const PlantOfTheWeek = () => {
                 </div>
                 <div className={styles.stockInfo}>
                   {plantData.inStock ? (
-                    <span className={styles.inStock}>✓ pack of 20</span>
+                    <span className={styles.inStock}>✓ pack of 10</span>
                   ) : (
                     <span className={styles.outOfStock}>Out of Stock</span>
                   )}

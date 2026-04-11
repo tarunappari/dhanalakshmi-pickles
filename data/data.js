@@ -89,67 +89,67 @@ export const categoriesForLandingPage = [
 
 export const testimonials = [
   {
-    text: "I ordered a peace lily and ceramic pot from Aranya — both arrived beautifully packed. The pot design is so minimal, it fits my aesthetic perfectly.",
+    text: "The mango pickle tasted exactly like what my grandmother used to make. The aroma, the spice — everything felt like home. Truly authentic!",
     image:
-      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Aanya Mehra",
-    role: "Home Decor Blogger",
+      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    name: "Sravani Reddy",
+    role: "Homemaker",
   },
   {
-    text: "Aranya helped me bring greenery into my studio apartment without the overwhelm. Their curated collections and care tips are beginner-friendly and spot on!",
+    text: "I ordered gongura chicken pickle and it was absolutely amazing. The flavor was so rich and traditional — you can really feel it's homemade.",
+    image:
+      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    name: "Rahul Kumar",
+    role: "Software Engineer",
+  },
+  {
+    text: "The packaging was neat, but what impressed me more was the taste. It reminded me of my village days in Godavari. Loved it!",
     image:
       "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Karan Singh",
-    role: "Young Professional",
+    name: "Anusha Devi",
+    role: "Teacher",
   },
   {
-    text: "The jade plant and hand-glazed pot I ordered are absolutely stunning. Aranya really nails quality and presentation.",
-    image:
-      "https://images.pexels.com/photos/1199437/pexels-photo-1199437.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Samantha D’Souza",
-    role: "Plant Lover",
-  },
-  {
-    text: "What I love most is Aranya’s focus on sustainability. Even the packaging felt eco-friendly. Will definitely order again!",
-    image:
-      "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Ravi Joshi",
-    role: "Conscious Consumer",
-  },
-  {
-    text: "I bought a ZZ plant and a clay pot combo from Aranya for my office desk. It’s been thriving with minimal effort — love it!",
+    text: "I tried the sunnundalu and murukku — both were fresh, crispy, and perfectly made. You can tell it's not factory food.",
     image:
       "https://images.pexels.com/photos/1832323/pexels-photo-1832323.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Ishita Banerjee",
-    role: "Product Designer",
+    name: "Karthik Varma",
+    role: "Food Lover",
   },
   {
-    text: "As someone who kills every plant, I was hesitant. But Aranya’s starter plant kits made it foolproof — and now I have 4!",
-    image:
-      "https://images.pexels.com/photos/1832323/pexels-photo-1832323.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Tanya Verma",
-    role: "First-Time Plant Parent",
-  },
-  {
-    text: "The rare pothos I received was even better than the photos. It came with a care guide and eco-friendly pot — impressive!",
+    text: "Dry fish pickle was top-notch! Authentic Godavari taste. Haven’t found this quality anywhere online before.",
     image:
       "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Neeraj Malhotra",
-    role: "Rare Plant Collector",
+    name: "Sai Teja",
+    role: "Seafood Enthusiast",
   },
   {
-    text: "I gifted a succulent trio to my sister from Aranya — it was beautifully wrapped and arrived on time. Such a thoughtful gift option.",
+    text: "What I loved most is that everything feels real — not commercial. The taste, the texture, even the oil — just like homemade.",
+    image:
+      "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    name: "Lavanya Sri",
+    role: "Home Chef",
+  },
+  {
+    text: "Ordered for my parents and they were so happy. They said it reminded them of old Konaseema days. That says everything!",
+    image:
+      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    name: "Praneeth Raju",
+    role: "Working Professional",
+  },
+  {
+    text: "The podis are amazing — especially kandi podi. With hot rice and ghee, it was just perfect. Will order again for sure.",
     image:
       "https://images.pexels.com/photos/3851871/pexels-photo-3851871.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Anjali Rao",
-    role: "Gifting Enthusiast",
+    name: "Sneha Chowdary",
+    role: "Student",
   },
   {
-    text: "Aranya’s pots are not just functional but incredibly stylish. I bought 3 for my living room and they instantly elevated the space.",
+    text: "This is not just food, it’s an experience. You can feel the love and tradition in every bite.",
     image:
-      "https://images.pexels.com/photos/1585744/pexels-photo-1585744.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
-    name: "Dev Patel",
-    role: "Interior Styling Hobbyist",
+      "https://images.pexels.com/photos/1199437/pexels-photo-1199437.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+    name: "Vamsi Krishna",
+    role: "Entrepreneur",
   },
 ];
 
