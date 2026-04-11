@@ -91,65 +91,109 @@ export const testimonials = [
   {
     text: "The mango pickle tasted exactly like what my grandmother used to make. The aroma, the spice — everything felt like home. Truly authentic!",
     image:
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/7685999/pexels-photo-7685999.jpeg?_gl=1*hafhft*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5NTE4JGozNCRsMCRoMA..", 
     name: "Sravani Reddy",
     role: "Homemaker",
   },
   {
     text: "I ordered gongura chicken pickle and it was absolutely amazing. The flavor was so rich and traditional — you can really feel it's homemade.",
     image:
-      "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2", // male
     name: "Rahul Kumar",
     role: "Software Engineer",
   },
   {
     text: "The packaging was neat, but what impressed me more was the taste. It reminded me of my village days in Godavari. Loved it!",
     image:
-      "https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/15328445/pexels-photo-15328445.jpeg?_gl=1*1jjnjt0*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5NzQxJGo1MSRsMCRoMA..", // female
     name: "Anusha Devi",
     role: "Teacher",
   },
   {
     text: "I tried the sunnundalu and murukku — both were fresh, crispy, and perfectly made. You can tell it's not factory food.",
     image:
-      "https://images.pexels.com/photos/1832323/pexels-photo-1832323.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/36876207/pexels-photo-36876207.jpeg?_gl=1*1q3tg1b*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODkzJGo2MCRsMCRoMA..", // male
     name: "Karthik Varma",
     role: "Food Lover",
   },
   {
     text: "Dry fish pickle was top-notch! Authentic Godavari taste. Haven’t found this quality anywhere online before.",
     image:
-      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/36876208/pexels-photo-36876208.jpeg?_gl=1*6hni3w*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODgyJGoxMCRsMCRoMA..", // male
     name: "Sai Teja",
     role: "Seafood Enthusiast",
   },
   {
     text: "What I loved most is that everything feels real — not commercial. The taste, the texture, even the oil — just like homemade.",
     image:
-      "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/20762226/pexels-photo-20762226.jpeg?_gl=1*8ecovz*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5NzMyJGo2MCRsMCRoMA..", // female
     name: "Lavanya Sri",
     role: "Home Chef",
   },
   {
     text: "Ordered for my parents and they were so happy. They said it reminded them of old Konaseema days. That says everything!",
     image:
-      "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/17551806/pexels-photo-17551806.jpeg?_gl=1*1sa6hbb*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODc2JGoxNiRsMCRoMA..", // male
     name: "Praneeth Raju",
-    role: "Working Professional",
+    role: "Electrician",
   },
   {
     text: "The podis are amazing — especially kandi podi. With hot rice and ghee, it was just perfect. Will order again for sure.",
     image:
-      "https://images.pexels.com/photos/3851871/pexels-photo-3851871.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/36854200/pexels-photo-36854200.jpeg?_gl=1*1mj7gns*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5NzI1JGoyJGwwJGgw", // female
     name: "Sneha Chowdary",
     role: "Student",
   },
   {
     text: "This is not just food, it’s an experience. You can feel the love and tradition in every bite.",
     image:
-      "https://images.pexels.com/photos/1199437/pexels-photo-1199437.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&dpr=2",
+      "https://images.pexels.com/photos/28772242/pexels-photo-28772242.jpeg?_gl=1*elnocu*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODYxJGozMSRsMCRoMA..", // male
     name: "Vamsi Krishna",
-    role: "Entrepreneur",
+    role: "Developer",
+  },
+
+  // NEW
+  {
+    text: "Bellam sweets were perfectly balanced — not too sweet, just like how we make at home. Highly recommended!",
+    image:
+      "https://images.pexels.com/photos/7173466/pexels-photo-7173466.jpeg?_gl=1*mnf493*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5NzE1JGoxMiRsMCRoMA..", // female
+    name: "Deepika Nair",
+    role: "Nutritionist",
+  },
+  {
+    text: "Finally found authentic Andhra snacks online. The karam and spice levels are just perfect!",
+    image:
+      "https://images.pexels.com/photos/20431931/pexels-photo-20431931.jpeg?_gl=1*qw21o3*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODUzJGozOSRsMCRoMA..", // male
+    name: "Harsha Vardhan",
+    role: "Business Analyst",
+  },
+  {
+    text: "Every product feels handcrafted. You can clearly see the quality and effort put into making them.",
+    image:
+      "https://images.pexels.com/photos/34651316/pexels-photo-34651316.jpeg?_gl=1*1y0pos0*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5NjY3JGo2MCRsMCRoMA..", // female
+    name: "Meghana Rao",
+    role: "Designer",
+  },
+  {
+    text: "I stay abroad and this was the closest I got to real home food. Truly nostalgic experience.",
+    image:
+      "https://images.pexels.com/photos/29041818/pexels-photo-29041818.jpeg?_gl=1*chz4f2*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODQ0JGo0OCRsMCRoMA..", // male
+    name: "Arvind Iyer",
+    role: "NRI Customer",
+  },
+  {
+    text: "Loved the freshness! Unlike store-bought items, everything tasted recently made and full of flavor.",
+    image:
+      "https://images.pexels.com/photos/32161002/pexels-photo-32161002.jpeg?_gl=1*1yh0lyw*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5Njg1JGo0MiRsMCRoMA..", // female
+    name: "Pooja Sharma",
+    role: "HR Manager",
+  },
+  {
+    text: "Perfect for gifting! I sent these to my relatives and they absolutely loved the taste and packaging.",
+    image:
+      "https://images.pexels.com/photos/7669975/pexels-photo-7669975.jpeg?_gl=1*4lh69u*_ga*MTk2NDYxMTk0My4xNzUyMjA4NTM4*_ga_8JE65Q40S6*czE3NzU5Mjk0OTIkbzI0JGcxJHQxNzc1OTI5ODM5JGo1MyRsMCRoMA..", // male
+    name: "Rohit Agarwal",
+    role: "Finance",
   },
 ];
 
