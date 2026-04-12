@@ -197,7 +197,7 @@ const ProductDetails = ({ product }) => {
                         ? "Added to Cart ✓"
                         : "Add to Cart"}
                   </button>
-                  <button className={styles.buyNowBtn}>Buy it Now</button>
+                  <button  className={styles.buyNowBtn}>Contact us</button>
                 </div>
               </div>
 

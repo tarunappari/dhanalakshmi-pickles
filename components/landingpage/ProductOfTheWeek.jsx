@@ -211,7 +211,7 @@ const PlantOfTheWeek = () => {
                     </button>
                     <button className={styles.buyNowBtn}>
                       <Zap className="w-5 h-5" />
-                      Buy Now
+                     Contact Us
                     </button>
                   </div>
                 </div>
