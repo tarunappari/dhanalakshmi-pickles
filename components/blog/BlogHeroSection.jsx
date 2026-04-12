@@ -10,7 +10,7 @@ const BlogHeroSection = () => {
     <div className={styles.blogContainer}>
       <div className={styles.heroSection}>
         <div className={styles.heroImg}>
-          <Image src={cover} alt="hero" />
+          <Image src={cover} alt="hero" priority />
         </div>
       </div>
 
@@ -27,7 +27,7 @@ const BlogHeroSection = () => {
           {blogData.map((item) => (
             <div className={styles.card} key={item.id}>
               <div className={styles.imgContainer}>
-                <Image src={item.image} alt={item.title} />
+                <Image src={item.image} alt={item.title} loading="lazy" />
               </div>
               <div className={styles.content}>
                 <h3>{item.title}</h3>

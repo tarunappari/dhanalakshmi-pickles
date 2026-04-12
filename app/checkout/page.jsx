@@ -353,6 +353,7 @@ const CheckoutPage = () => {
                             src={item.product.image}
                             alt={item.product.name}
                             fill
+                            loading="lazy"
                           />
                         </div>
                         <div className={styles.itemInfo}>

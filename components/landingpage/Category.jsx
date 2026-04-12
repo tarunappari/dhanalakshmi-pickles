@@ -62,7 +62,7 @@ const Category = () => {
         {categories.map((cat, index) => (
           <Link href={cat.link} key={index} className={styles.categoryCard}>
             <div className={styles.imgContainer}>
-              <Image src={cat.img} alt={cat.name} />
+              <Image src={cat.img} alt={cat.name} loading="lazy" />
             </div>
             <h3>{cat.name}</h3>
           </Link>

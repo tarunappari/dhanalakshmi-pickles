@@ -49,7 +49,7 @@ const DynamicProductsPage = ({ categoryId, searchTerm }) => {
   return (
     <div className={styles.container}>
       <div className={styles.cover}>
-        <Image src={cover} alt="cover" />
+        <Image src={cover} alt="cover" priority />
       </div>
       <div>
         <div className={styles.sectionContainer}>

@@ -16,7 +16,7 @@ const BlogsSection = () => {
       <div className={styles.blogCards}>
         <div className={styles.card}>
           <div className={styles.imgContainer}>
-            <Image src={blog1} alt="img" />
+            <Image src={blog1} alt="img" loading="lazy" />
           </div>
           <div className={styles.content}>
             <h3>The Secret Behind Authentic Konaseema Pickles 🌴✨</h3>
@@ -31,7 +31,7 @@ const BlogsSection = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imgContainer}>
-            <Image src={blog2} alt="img" />
+            <Image src={blog2} alt="img" loading="lazy" />
           </div>
           <div className={styles.content}>
             <h3>The Moon That Walked With Us 🌙</h3>
@@ -43,7 +43,7 @@ const BlogsSection = () => {
         </div>
         <div className={styles.card}>
           <div className={styles.imgContainer}>
-            <Image src={blog3} alt="img" />
+            <Image src={blog3} alt="img" loading="lazy" />
           </div>
           <div className={styles.content}>
             <h3>Stories During Power Cuts 🌧️🕯️</h3>

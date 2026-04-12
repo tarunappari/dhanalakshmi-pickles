@@ -61,7 +61,7 @@ const Navbar = () => {
     <div className={styles.container}>
       <div className={styles.title}>
         <Link href="/">
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" priority />
         </Link>
       </div>
       <div className={styles.linksContainer}>

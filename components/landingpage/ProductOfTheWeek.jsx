@@ -118,6 +118,7 @@ const PlantOfTheWeek = () => {
                         src={image}
                         alt={`${plantData.name} - Image ${index + 1}`}
                         className={styles.plantImage}
+                        loading="lazy"
                       />
                       {plantData.discount > 0 && index === 0 && (
                         <div className={styles.discountBadge}>
