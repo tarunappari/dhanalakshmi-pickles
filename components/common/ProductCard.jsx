@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "@/styles/common/ProductCard.module.scss";
+import { generateSlug } from "@/lib/utils";
 import chicken from "@/public/assets/products/nonveg/chicken.webp";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -24,15 +25,10 @@ export function ProductCard({ product }) {
   const isOnSale = discountPercent > 0;
 
   // Create a handle from title for URL
-  const handle = product
-    ? title
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "")
-    : "default-product";
+  const handle = generateSlug(title);
 
   return (
-    <Link href={`/products/${product?.id || handle}`}>
+    <Link href={`/products/${handle}`}>
       <div
         className={`${styles.ProductCard} ${!inStock ? styles.outOfStock : ""}`}
       >
@@ -56,12 +52,7 @@ export function ProductCard({ product }) {
           </div>
 
           {inStock ? (
-            <Link
-              href={`/products/${product?.id || handle}`}
-              className={styles.viewButton}
-            >
-              VIEW PRODUCT
-            </Link>
+            <button className={styles.viewButton}>VIEW PRODUCT</button>
           ) : (
             <button className={styles.viewButton} disabled>
               OUT OF STOCK
