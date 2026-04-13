@@ -6,11 +6,45 @@ import Image from 'next/image';
 import Link from 'next/link';
 import styles from '@/styles/blog/BlogPost.module.scss';
 import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
+import Script from 'next/script';
 
 export async function generateStaticParams() {
   return blogData.map((post) => ({
     blogId: post.id,
   }));
+}
+
+export async function generateMetadata({ params }) {
+  const { blogId } = await params;
+  const post = blogData.find((p) => p.id === blogId);
+
+  if (!post) {
+    return {
+      title: "Story Not Found",
+    };
+  }
+
+  return {
+    title: post.title,
+    description: post.excerpt || post.fullStory.substring(0, 160) + '...',
+    openGraph: {
+      title: post.title,
+      description: post.excerpt || post.fullStory.substring(0, 160) + '...',
+      url: `https://venkatraogarivantillu.com/blog/${blogId}`,
+      images: [
+        {
+          url: post.image?.src || "/favicon.ico",
+          alt: post.title,
+        },
+      ],
+      type: 'article',
+      publishedTime: post.date ? new Date(post.date).toISOString() : undefined,
+      authors: [post.author || "Venkatraogari Vantillu"],
+    },
+    alternates: {
+      canonical: `/blog/${blogId}`,
+    },
+  };
 }
 
 const BlogPost = async ({ params }) => {
@@ -29,8 +63,34 @@ const BlogPost = async ({ params }) => {
     );
   }
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "image": `https://venkatraogarivantillu.com${post.image?.src || "/favicon.ico"}`,
+    "author": {
+      "@type": "Person",
+      "name": post.author || "Venkatraogari Vantillu"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Venkatraogari Vantillu",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://venkatraogarivantillu.com/favicon.ico"
+      }
+    },
+    "datePublished": post.date ? new Date(post.date).toISOString() : undefined,
+    "description": post.excerpt || post.fullStory.substring(0, 160) + '...'
+  };
+
   return (
     <div className={`${styles.pageContainer} pageContainer`}>
+      <Script
+        id={`article-schema-${post.id}`}
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <Navbar />
       <div className={styles.postContainer}>
         <div className={styles.heroImageContainer}>

@@ -90,7 +90,7 @@ const ProductDetails = ({ product }) => {
               className={styles.mainImageContainer}
             >
               <div className={styles.imageWrapper}>
-                <Image src={product.image} alt={product.name} fill />
+                <Image src={product.image} alt={product.name} fill priority />
               </div>
             </motion.div>
           </div>

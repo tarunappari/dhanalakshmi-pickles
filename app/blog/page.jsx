@@ -6,6 +6,14 @@ import styles from '@/styles/blog/BlogHeroSection.module.scss'
 import Footer from '@/components/common/Footer';
 import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible';
 
+export const metadata = {
+  title: "Blog & Stories - Food, Culture & Pickles",
+  description: "Read our stories about traditional recipes, Godavari foods and pickles, and the rich pickling culture of Konaseema.",
+  alternates: {
+    canonical: "/blog",
+  },
+};
+
 const Blog = () => {
   return (
     <div className='pageContainer'>
