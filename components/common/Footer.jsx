@@ -33,16 +33,16 @@ const Footer = () => {
             Delivering the authentic taste of Andhra directly to your home. Handcrafted with love, patience, and age-old traditional recipes.
           </p>
           <div className={styles.socialIcons}>
-            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <Link href="https://www.facebook.com/people/Venkatraogarivantillu/61573370144066/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <IconBrandFacebook stroke={1.5} />
             </Link>
-            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Link href="https://www.instagram.com/venkatraogarivantilluofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <IconBrandInstagram stroke={1.5} />
             </Link>
-            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <Link href="https://x.com/VGari_Vantillu" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <IconBrandTwitter stroke={1.5} />
             </Link>
-            <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <Link href="https://www.youtube.com/@VenkatraogariVantillu" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <IconBrandYoutube stroke={1.5} />
             </Link>
           </div>
@@ -59,6 +59,7 @@ const Footer = () => {
             <li><Link href="/products">Shop All</Link></li>
             <li><Link href="/categories">Categories</Link></li>
             <li><Link href="/blog">Ammamma kathalu</Link></li>
+            <li><Link href="/shipping">Shipping</Link></li>
           </ul>
         </div>
 
@@ -71,15 +72,15 @@ const Footer = () => {
           <div className={`${styles.contactInfoWrapper} ${openSection === 'contact' ? styles.open : ''}`}>
             <div className={styles.contactItem}>
               <IconMapPin stroke={1.5} />
-              <span>12/4 Heritage Street, Godavari District, Andhra Pradesh, India.</span>
+              <span>Devarapalli.Ravulapalem,East Godavari,Andhra Pradesh,India.</span>
             </div>
             <div className={styles.contactItem}>
               <IconPhone stroke={1.5} />
-              <span>+91 98765 43210</span>
+              <Link href={'tel:+918333856713'}>+918333856713</Link>
             </div>
             <div className={styles.contactItem}>
               <IconMail stroke={1.5} />
-              <span>hello@dhanalakshmiruchulu.com</span>
+              <Link href={'mail:venkatraogarivantillu@gmail.com'}>venkatraogarivantillu@gmail.com</Link>
             </div>
           </div>
         </div>

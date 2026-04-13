@@ -11,7 +11,7 @@ import Image from 'next/image'
 const Mission = () => {
   return (
     <div className={styles.missionContainer}>
-      <div className={styles.missionCard}>
+      <div className={`${styles.missionCard} ${styles.missionCard1}`}>
         <div>
           <Image src={palmoil} alt='img' loading='lazy'/>
         </div>

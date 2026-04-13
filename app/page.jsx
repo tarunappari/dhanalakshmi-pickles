@@ -13,7 +13,7 @@ import BlogsSection from "@/components/landingpage/BlogsSection";
 import About from "@/components/landingpage/About";
 
 export const metadata = {
-  title: "Buy Homemade Andhra Foods & Pickles Online | Venkatraogari Vantillu",
+  title: "Venkatraogari Vantillu | Homemade Andhra Foods & Pickles Online",
   description: "Experience the authentic taste of Godavari foods and pickles. Order Konaseema specials like Chicken Pickle, Gongura Pickle, Avakai & more. Pure ingredients.",
   alternates: {
     canonical: "/",

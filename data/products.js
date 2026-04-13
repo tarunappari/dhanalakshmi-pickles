@@ -1214,7 +1214,7 @@ export const products = [
     image: challa_mirapakayalu,
     currency: "INR",
     variants: [
-      { weight: "250g", price: 149, discountPrice: 1 },
+      { weight: "250g", price: 249, discountPrice: 199 },
       { weight: "500g", price: 279, discountPrice: 249 },
       { weight: "1kg", price: 539, discountPrice: 479 },
     ],

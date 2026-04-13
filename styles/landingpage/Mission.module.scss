@@ -16,11 +16,22 @@
     flex-direction: column;
 
     img {
-      width: 8rem;
+      width: 7rem;
     }
     p {
       font-size: 0.9rem;
       font-weight: 700;
+      margin-top: 0rem;
+    }
+  }
+
+  .missionCard1 {
+    img{
+      width: 8rem;
+    }
+
+    p{
+      margin-top: -1rem;
     }
   }
 }
