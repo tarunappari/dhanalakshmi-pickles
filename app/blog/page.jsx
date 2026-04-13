@@ -10,7 +10,7 @@ const Blog = () => {
   return (
     <div className='pageContainer'>
       <Navbar />
-      <BlogHeroSection />
+      <BlogHeroSection />    
       <Footer />
     </div>
   )
