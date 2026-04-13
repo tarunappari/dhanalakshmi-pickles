@@ -3,6 +3,9 @@ import React from 'react'
 // css will be in herosection 
 import styles from '@/styles/landingpage/Mission.module.scss'
 import palmoil from '@/public/assets/decors/nopalmoil.webp'
+import nopreservatives from '@/public/assets/decors/nopreservatives.webp'
+import noaddedcolors from '@/public/assets/decors/noaddedcolors.webp'
+import freshlyprepared from '@/public/assets/decors/freshly.webp'
 import Image from 'next/image'
 
 const Mission = () => {
@@ -16,19 +19,19 @@ const Mission = () => {
       </div>
       <div className={styles.missionCard}>
         <div>
-          <Image src={palmoil} alt='img' loading='lazy'/>
+          <Image src={nopreservatives} alt='img' loading='lazy'/>
         </div>
         <p>No preservatives</p>
       </div>
       <div className={styles.missionCard}>
         <div>
-          <Image src={palmoil} alt='img' loading='lazy'/>
+          <Image src={noaddedcolors} alt='img' loading='lazy'/>
         </div>
         <p>No added colors</p>
       </div>
       <div className={styles.missionCard}>
         <div>
-          <Image src={palmoil} alt='img' loading='lazy'/>
+          <Image src={freshlyprepared} alt='img' loading='lazy'/>
         </div>
         <p>Freshly prepared</p>
       </div>

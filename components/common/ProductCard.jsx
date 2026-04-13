@@ -32,39 +32,43 @@ export function ProductCard({ product }) {
     : "default-product";
 
   return (
-    <div className={`${styles.ProductCard} ${!inStock ? styles.outOfStock : ""}`}>
-      {/* Image at top */}
-      <div className={styles.imageContainer}>
-        {isOnSale && (
-          <div className={styles.saleBadge}>-{discountPercent}%</div>
-        )}
-        {/* <div className={styles.rating}>
+    <Link href={`/products/${product?.id || handle}`}>
+      <div
+        className={`${styles.ProductCard} ${!inStock ? styles.outOfStock : ""}`}
+      >
+        {/* Image at top */}
+        <div className={styles.imageContainer}>
+          {isOnSale && (
+            <div className={styles.saleBadge}>-{discountPercent}%</div>
+          )}
+          {/* <div className={styles.rating}>
           4.82<span style={{color:'#1c9c57'}}>★</span>
         </div> */}
-        <Image src={product?.image || chicken} alt={title} loading="lazy" />
-      </div>
-
-      <div className={styles.cardContent}>
-        <h3 className={styles.title}>{title}</h3>
-
-        <div className={styles.priceContainer}>
-          <span className={styles.discountedPrice}>₹{discountedPrice}</span>
-          <span className={styles.originalPrice}>₹{price}</span>
+          <Image src={product?.image || chicken} alt={title} loading="lazy" />
         </div>
 
-        {inStock ? (
-          <Link
-            href={`/products/${product?.id || handle}`}
-            className={styles.viewButton}
-          >
-            VIEW PRODUCT
-          </Link>
-        ) : (
-          <button className={styles.viewButton} disabled>
-            OUT OF STOCK
-          </button>
-        )}
+        <div className={styles.cardContent}>
+          <h3 className={styles.title}>{title}</h3>
+
+          <div className={styles.priceContainer}>
+            <span className={styles.discountedPrice}>₹{discountedPrice}</span>
+            <span className={styles.originalPrice}>₹{price}</span>
+          </div>
+
+          {inStock ? (
+            <Link
+              href={`/products/${product?.id || handle}`}
+              className={styles.viewButton}
+            >
+              VIEW PRODUCT
+            </Link>
+          ) : (
+            <button className={styles.viewButton} disabled>
+              OUT OF STOCK
+            </button>
+          )}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }

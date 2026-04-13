@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
+import { IconBrandWhatsapp } from '@tabler/icons-react';
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
 import sweets from "@/public/assets/products/sweets/pootharekulu.webp";
 import { useCartStore } from "@/store/cartStore";
@@ -211,7 +212,7 @@ const PlantOfTheWeek = () => {
                           : "Add to Cart"}
                     </button>
                     <button className={styles.buyNowBtn}>
-                      <Zap className="w-5 h-5" />
+                      <IconBrandWhatsapp  />
                      Contact Us
                     </button>
                   </div>

@@ -18,6 +18,7 @@ import styles from "@/styles/common/ProductDetails.module.scss";
 import clsx from "clsx";
 import Cart from "../cart/Cart";
 import { useCartStore } from "@/store/cartStore";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 const ProductDetails = ({ product }) => {
   const [selectedVariantIdx, setSelectedVariantIdx] = useState(0);
@@ -101,7 +102,6 @@ const ProductDetails = ({ product }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-
               <h1 className={styles.title}>{product.name}</h1>
 
               <div className={styles.reviews}>
@@ -197,7 +197,10 @@ const ProductDetails = ({ product }) => {
                         ? "Added to Cart ✓"
                         : "Add to Cart"}
                   </button>
-                  <button  className={styles.buyNowBtn}>Contact us</button>
+                  <button className={styles.buyNowBtn} style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem'}}>
+                    <IconBrandWhatsapp />
+                    Contact us
+                  </button>
                 </div>
               </div>
 
