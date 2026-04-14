@@ -178,6 +178,37 @@ const Cart = () => {
             {/* Fixed Footer */}
             {items.length > 0 && (
               <div className={styles.footer}>
+                {total < 999 ? (
+                  <div className={styles.freeDeliveryContainer}>
+                    <div className={styles.freeDeliveryText}>
+                      Add <span>₹{999 - total}</span> more to get free delivery
+                    </div>
+                    <div className={styles.progressBarBg}>
+                      <motion.div 
+                        className={styles.progressBarFill} 
+                        initial={{ width: 0 }}
+                        animate={{ width: `${(total / 999) * 100}%` }}
+                        transition={{ duration: 0.5 }}
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  <div className={styles.freeDeliveryContainer}>
+                    <div className={styles.freeDeliveryText}>
+                      🎉 Yay! You get <span>Free Delivery!</span>
+                    </div>
+                    <div className={styles.progressBarBg}>
+                      <motion.div 
+                        className={styles.progressBarFill} 
+                        initial={{ width: 0 }}
+                        animate={{ width: '100%' }}
+                        transition={{ duration: 0.5 }}
+                        style={{ backgroundColor: '#2e7d32' }}
+                      />
+                    </div>
+                  </div>
+                )}
+
                 <div className={styles.summaryRow}>
                   <span>Subtotal</span>
                   <span className={styles.totalPrice}>₹{total}</span>
@@ -187,7 +218,7 @@ const Cart = () => {
                   style={{ marginTop: "0.5rem" }}
                 >
                   <span>Delivery Charge</span>
-                  <span className={styles.totalPrice}>₹0</span>
+                  <span className={styles.totalPrice}>{total > 999 ? "₹0" : "₹99"}</span>
                 </div>
                 <div
                   className={styles.summaryRow}
@@ -207,7 +238,7 @@ const Cart = () => {
                     }}
                   >
                     <p className={styles.taxInfo}>Including tax</p>
-                    <span className={styles.totalPrice}>₹{total}</span>
+                    <span className={styles.totalPrice}>₹{total > 999 ? total : total + 99}</span>
                   </div>
                 </div>
 

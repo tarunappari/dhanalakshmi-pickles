@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 import Script from "next/script";
 import { ArrowLeft, CreditCard, User, Mail, Phone, MapPin } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
@@ -160,7 +161,7 @@ const CheckoutPage = () => {
   if (!mounted) return null;
 
   const subtotal = getCartTotal();
-  const deliveryCharge = 0;
+  const deliveryCharge = subtotal > 999 ? 0 : 99;
   const total = subtotal + deliveryCharge;
 
   // Optionally redirect if cart is empty
@@ -383,13 +384,43 @@ const CheckoutPage = () => {
                 </div>
 
                 <div className={styles.summaryTotals}>
+                  {subtotal < 999 ? (
+                    <div className={styles.freeDeliveryContainer}>
+                      <div className={styles.freeDeliveryText}>
+                        Add <span>₹{999 - subtotal}</span> more to your cart to get free delivery!
+                      </div>
+                      <div className={styles.progressBarBg}>
+                        <motion.div 
+                          className={styles.progressBarFill} 
+                          initial={{ width: 0 }}
+                          animate={{ width: `${(subtotal / 999) * 100}%` }}
+                          transition={{ duration: 0.5 }}
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <div className={styles.freeDeliveryContainer}>
+                      <div className={styles.freeDeliveryText}>
+                        🎉 Yay! You have successfully unlocked <span>Free Delivery!</span>
+                      </div>
+                      <div className={styles.progressBarBg}>
+                        <motion.div 
+                          className={styles.progressBarFill} 
+                          initial={{ width: 0 }}
+                          animate={{ width: '100%' }}
+                          transition={{ duration: 0.5 }}
+                          style={{ backgroundColor: '#2e7d32' }}
+                        />
+                      </div>
+                    </div>
+                  )}
                   <div className={styles.totalRow}>
                     <span>Subtotal:</span>
                     <span>₹{subtotal.toLocaleString("en-IN")}</span>
                   </div>
                   <div className={styles.totalRow}>
                     <span>Shipping:</span>
-                    <span>₹{deliveryCharge}</span>
+                    <span>{deliveryCharge === 0 ? "₹0" : `₹${deliveryCharge}`}</span>
                   </div>
                   <div className={styles.grandTotal}>
                     <span>Total:</span>
