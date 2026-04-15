@@ -197,10 +197,19 @@ const ProductDetails = ({ product }) => {
                         ? "Added to Cart ✓"
                         : "Add to Cart"}
                   </button>
-                  <button className={styles.buyNowBtn} style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'0.5rem'}}>
+                  <Link
+                    href="https://wa.me/918333856713" target="_blank"
+                    className={styles.buyNowBtn}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "0.5rem",
+                    }}
+                  >
                     <IconBrandWhatsapp />
                     Contact us
-                  </button>
+                  </Link>
                 </div>
               </div>
 

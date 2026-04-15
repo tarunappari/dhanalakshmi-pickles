@@ -11,9 +11,18 @@ const HeroSection = () => {
       <div className={styles.categoryContainer}>
         <div className={styles.categoriesList}>
           {categoriesForLandingPage.map((category, index) => (
-            <Link href={category.path || '/products'} key={index} className={styles.categoryCard}>
+            <Link
+              href={category.path || "/products"}
+              key={index}
+              className={styles.categoryCard}
+            >
               <div className="imgContainer">
-                <Image src={category.image} alt={`${category.label} - Andhra Pickles category`} width={130} priority />
+                <Image
+                  src={category.image}
+                  alt={`${category.label} - Andhra Pickles category`}
+                  width={130}
+                  priority
+                />
               </div>
               <p>{category.label}</p>
             </Link>
@@ -22,7 +31,11 @@ const HeroSection = () => {
       </div>
       <div className={styles.containerHero}>
         <div className={styles.imgContainer}>
-          <Image src={bgImg} alt="Homemade Andhra Pickles assortments and traditional dishes" priority />
+          <Image
+            src={bgImg}
+            alt="Homemade Andhra Pickles assortments and traditional dishes"
+            priority
+          />
         </div>
       </div>
     </div>

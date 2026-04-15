@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 import {
   Carousel,
   CarouselContent,
@@ -8,11 +7,12 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Star, Plus, Minus, ShoppingCart, Zap } from "lucide-react";
-import { IconBrandWhatsapp } from '@tabler/icons-react';
+import { Star, Plus, Minus, ShoppingCart } from "lucide-react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 import styles from "@/styles/landingpage/PlantOfTheWeek.module.scss";
 import sweets from "@/public/assets/products/sweets/pootharekulu.webp";
 import { useCartStore } from "@/store/cartStore";
+import Link from "next/link";
 
 const PlantOfTheWeek = () => {
   const [quantity, setQuantity] = useState(1);
@@ -211,10 +211,12 @@ const PlantOfTheWeek = () => {
                           ? "Added to Cart ✓"
                           : "Add to Cart"}
                     </button>
-                    <button className={styles.buyNowBtn}>
-                      <IconBrandWhatsapp  />
-                     Contact Us
-                    </button>
+                    <Link href="https://wa.me/918333856713" target="_blank">
+                      <button className={styles.buyNowBtn}>
+                        <IconBrandWhatsapp />
+                        Contact Us
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
