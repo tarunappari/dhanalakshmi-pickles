@@ -104,7 +104,7 @@ export const products = [
     image: chicken_boneless,
     currency: "INR",
     variants: [
-      { weight: "300g", price: 400, discountPrice: 1 },
+      { weight: "300g", price: 400, discountPrice: 349 },
       { weight: "500g", price: 800, discountPrice: 599 },
       { weight: "1kg", price: 1500, discountPrice: 1199 },
     ],
