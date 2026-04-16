@@ -69,7 +69,8 @@ export async function POST(request) {
           pincode: customer_details.pinCode,
           total_amount: amount,
           payment_status: "pending",
-          order_status: "placed"
+          order_status: "placed",
+          created_at: new Date().toISOString()
         },
       ])
       .select();

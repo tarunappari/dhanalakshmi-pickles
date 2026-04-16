@@ -104,13 +104,17 @@ export default function AdminDashboard() {
   };
 
   const formatDate = (dateString) => {
+    if (!dateString) return "N/A";
+    const date = new Date(dateString);
+    if (isNaN(date.getTime()) || date.getTime() === 0) return "N/A";
+    
     return new Intl.DateTimeFormat('en-IN', {
       day: 'numeric',
       month: 'short',
       year: 'numeric',
       hour: '2-digit',
       minute: '2-digit'
-    }).format(new Date(dateString));
+    }).format(date);
   };
 
   const getStatusColor = (status) => {
