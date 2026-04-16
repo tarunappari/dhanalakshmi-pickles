@@ -146,15 +146,23 @@ export default function AdminDashboard() {
       const orderDate = new Date(o.created_at);
       const now = new Date();
       
-      if (dateFilter === 'today') {
+      if (!o.created_at || isNaN(orderDate)) {
+        matchesDate = false;
+      } else if (dateFilter === 'today') {
         matchesDate = orderDate.toDateString() === now.toDateString();
+      } else if (dateFilter === 'yesterday') {
+        const yesterday = new Date(now);
+        yesterday.setDate(yesterday.getDate() - 1);
+        matchesDate = orderDate.toDateString() === yesterday.toDateString();
       } else if (dateFilter === '7days') {
         const sevenDaysAgo = new Date(now);
         sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+        sevenDaysAgo.setHours(0, 0, 0, 0); // Start of the day 7 days ago
         matchesDate = orderDate >= sevenDaysAgo;
       } else if (dateFilter === '30days') {
         const thirtyDaysAgo = new Date(now);
         thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+        thirtyDaysAgo.setHours(0, 0, 0, 0); // Start of the day 30 days ago
         matchesDate = orderDate >= thirtyDaysAgo;
       }
     }
@@ -163,7 +171,12 @@ export default function AdminDashboard() {
   });
 
   // Derived stats (Now based on filteredOrders to dynamically reflect applied date/status filters)
-  const totalRevenue = filteredOrders.reduce((sum, order) => sum + Number(order.total_amount || 0), 0);
+  const totalRevenue = filteredOrders.reduce((sum, order) => {
+    if (order.payment_status?.toLowerCase() === 'paid') {
+      return sum + Number(order.total_amount || 0);
+    }
+    return sum;
+  }, 0);
   const totalOrdersCount = filteredOrders.length;
   const pendingOrdersCount = filteredOrders.filter(o => o.order_status === "placed" || o.order_status === "processing").length;
   const deliveredOrdersCount = filteredOrders.filter(o => o.order_status === "delivered").length;
@@ -240,6 +253,7 @@ export default function AdminDashboard() {
                 >
                   <option value="all">All Time</option>
                   <option value="today">Today</option>
+                  <option value="yesterday">Yesterday</option>
                   <option value="7days">Last 7 Days</option>
                   <option value="30days">Last 30 Days</option>
                 </select>
